@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>ME-RIISE</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- bootstrap 4 css -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		
+		<!-- fontawesome cdn -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/newcss.css" />
+        
+        <script defer src="assets/js/newjs.js"></script>
+        
+    
+ <style>       
+        .main {
+            text-align: center;
+        }
+         
+        .marq {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        
+
+        .blink {
+  animation: blink 2s infinite;
+}
+
+.poster{
+    
+    
+    text-align: center;
+}
+
+.posterImage{
+    margin-top: 0.75rem;
+    height: 55%;
+    width: 70%;
+    
+    border-radius:.6em;
+}
+
+.title-text{
+    font-weight: 800;
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Styles for the countdown section */
+
+
+.countdown-timer {
+  font-size: 27px;
+  color: #ffffff;
+  font-weight: 700;
+  background-color: #1E8B85;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.5s;
+}
+
+/* Animation when countdown completes */
+@keyframes countdownCompleteAnimation {
+  0% { background-color: #1E8B85; }
+  50% { background-color: #FBC300; color: #1E8B85; }
+  100% { background-color: #1E8B85; }
+}
+.countdown-timer.complete {
+  animation: countdownCompleteAnimation 4s ease-in-out;
+}
+
+/* Styles for the photo div */
+.photo-hidden {
+  display: none;
+}
+#photoDiv {
+  text-align: center;
+  margin-top: 20px;
+}
+#photoDiv img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+/* Styles for the buttons */
+.buttons-container {
+  margin-top: 20px;
+}
+.buttons-container button {
+  margin-right: 10px;
+  background-color: #FBC300;
+  color: #ffffff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.buttons-container button:hover {
+  background-color: #1E8B85;
+}
+
+/* Styles for the crackers animation */
+.crackers-hidden {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999; /* Set a high z-index to place the crackers on top of the timer */
+}
+.cracker {
+  width: 30px;
+  height: 30px;
+  background-color: #FBC300;
+  border-radius: 50%;
+  position: absolute;
+  animation: crackersAnimation 0.5s linear;
+}
+@keyframes crackersAnimation {
+  0% {
+    transform: translateY(0) rotate(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Styles for the countdown section */
+
+@keyframes blink {
+  0% {
+    opacity: 5;
+  }
+  100% {
+    opacity: 2;
+    color: red;
+  }
+}
+    </style>
+    </head>
+
+    <body>
+        <div class="ssheader c-hero">
+            <h2 class="h-txt">
+                MALNAD ENCLAVE FOR RESEARCH, INNOVATION, INCUBATION, STARTUPS AND
+                ENTREPRENEURSHIP
+            </h2>
+        </div>
+
+        <div class="snav-bar">
+            <!--logo-->
+            <div class="logo">
+                <a href="index.html">
+                    <img class="mr-logo" src="images/rect78.png" />
+                </a>
+            </div>
+
+            <div class="nav-link">
+                <ul class="nvl">
+                    <li><a href="index.html">Home</a></li>                    
+                    
+                    <!--About US-->
+                    <li><a href="aboutmeriise.html">About US</a></li>
+                    
+                    <!--Faculty members-->
+                    <li><a href="faculty.html">Faculty</a></li>
+
+                    <!--Student members-->
+                    <li><a href="team.html">Student Members</a></li>
+                    <!--IIC-->
+                    
+                    <div class="dropdown" style="display: inline-block">
+                        <button
+                            class="dropbtn"
+                            id="dropbtn"
+                            onclick="handleMoreBtn()"
+                        >
+                            More
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+
+                        <div class="dropdown-content" id="dropdown-content">
+                            <a href="http://www.mcehassan.ac.in"
+                                >Malnad College of Engineering</a> 
+                            <a href="events.html">Successful Events</a>                           
+                            <a href="prag.html">PRAGYATHA - 19</a>
+                            <a href="documents.html">Documents</a>
+                            <a href="collab.html">Collaborations</a>
+                            <a href="Nisp.html">MCE NISP Policy</a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="smenu-btn">
+                <button onclick="openNav()">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                ><i class="fa fa-times"></i
+            ></a>
+            <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="aboutmeriise.html">About Us</a>
+                <a href="faculty.html">Faculty</a>
+                <a href="team.html">Student Members</a>
+
+                <a href="Pragyatha.html">Pragyatha-21</a>
+                
+                
+                <a href="startups.html">Start-Ups</a>
+                
+                <a href="http://www.mcehassan.ac.in"
+                    >Malnad College of Engineering</a
+                >
+                <a href="events.html">Successful Events</a>
+                <a href="prag.html">PRAGYATHA - 19</a>
+                <a href="documents.html">Documents</a>
+                <a href="collab.html">Collaborations</a>
+
+            </div>
+            
+        </div>
+
+        <!-- One -->
+        
+
+        
+          
+        <section id="two" class="wrapper style3">
+            <div class="inner">
+                <header class="align-center">
+                    <h1 style="font-size: 28px">Time left to submit solution is</h1>
+                    <div id="countdown" class="countdown-timer">Calculating...</div>
+                    <div id="photoDiv"> <!--class="photo-hidden"-->
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc-sxe9SC87nJ78NWfze-Zm6dzJy9Chj56oTtdln2pbQN1kjg/viewform?embedded=true" width="100%" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                        
+                    </div>
+                    
+                
+                <script>
+                    // Function to open the registration link
+
+                  function getTimeUntilFriday() {
+                    const now = new Date();
+                    const dayOfWeek = now.getDay();
+                    const daysUntilFriday = (2 - dayOfWeek + 7) % 7; // 5 is Friday, 0 is Sunday, 1 is Monday, and so on
+                    const nextFriday = new Date(now.getTime() + daysUntilFriday * 24 * 60 * 60 * 1000);
+                    nextFriday.setHours(0,0, 0, 0);
+                
+                    const timeUntilFriday = nextFriday.getTime() - now.getTime();
+                    return timeUntilFriday;
+                  }
+                
+                  function updateCountdown() {
+                    const countdownDiv = document.getElementById('countdown');
+                    const timeUntilFriday = getTimeUntilFriday();
+                
+                    if (timeUntilFriday <= 0) {
+                      countdownDiv.innerHTML = "It's Monday!, We have our new challenge here";
+                      countdownDiv.classList.add('complete');
+                      const photoDiv = document.getElementById('photoDiv');
+                        photoDiv.classList.remove('photo-hidden');
+                        const headerText = document.querySelector('h1');
+                        headerText.textContent = "Here's a Challenge";
+
+                        const crackersAnimation = document.getElementById('crackerAnimation');
+    crackersAnimation.classList.remove('crackers-hidden');
+                    } else {
+                      const days = Math.floor(timeUntilFriday / (1000 * 60 * 60 * 24));
+                      const hours = Math.floor((timeUntilFriday % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                      const minutes = Math.floor((timeUntilFriday % (1000 * 60 * 60)) / (1000 * 60));
+                      const seconds = Math.floor((timeUntilFriday % (1000 * 60)) / 1000);
+                
+                      countdownDiv.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+                    }
+
+                  }
+                  
+
+                
+                  setInterval(updateCountdown, 1000);
+                </script>
+                </header>
+            </div>
+        </section>
+
+        <!-- Footer -->
+<br> 
+        <footer id="footer">
+            <div class="container">
+                <ul class="icons">
+                    <li>
+                        <a href="#" class="icon fa-twitter"
+                        style="color: rgb(51, 183, 235);text-decoration: none;"
+                            ><span class="label">Twitter</span></a
+                             >
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/mce.startup.club" class="icon fa-facebook"
+                        style="color: rgb(43, 43, 247);text-decoration: none;"
+                            ><span class="label">Facebook</span></a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.instagram.com/me_riise/"
+                            class="icon fa-instagram"
+                            style="color: rgb(250, 43, 112);;text-decoration:none"
+                            ><span class="label">Instagram</span></a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="mailto:meriisehsn@gmail.com"
+                            class="icon fa-envelope"
+                            style="color: rgb(228, 54, 11);text-decoration:none"
+                            ><span class="label">Email</span></a
+                        >
+                    </li>
+                </ul>
+            </div>
+            <div class="copyright">&copy; ME-RIISE. All rights reserved</div>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/skel.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+        <!--<script src="assets/js/from/jquery.min.js"></script>
+			<script src="assets/js/from/skel.min.js"></script>
+			<script src="assets/js/from/skel-layers.min.js"></script>
+			<script src="assets/js/from/init.js"></script>-->
+    </body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>ME-RIISE</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- bootstrap 4 css -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <!-- fontawesome cdn -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"
+      integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg=="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- custom css -->
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="assets/css/newcss.css" />
+
+    <style>
+      .inner-new {
+        width: 97%;
+        margin: 0 auto;
+      }
+
+      .main-card {
+        background: #1d1e22;
+        padding: 10px 18px;
+        margin: 10px 0;
+        margin-top: 20px;
+        border-radius: 10px;
+      }
+      h2.d-title {
+        color: coral !important;
+        font-weight: 500 !important;
+      }
+      .vision {
+        background: white;
+        border: solid 2px transparent;
+        background-clip: padding-box;
+        box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+      }
+
+      .glass {
+        background: white;
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        background-clip: padding-box;
+        border-radius: 6px;
+        padding: 10px 20px;
+      }
+
+      .glass h3 {
+        color: #151e5d !important;
+        font-weight: 500 !important;
+      }
+
+      p.mb-5 {
+        color: white;
+      }
+
+      .stu li {
+        list-style-type: "📁";
+      }
+      .work li {
+        list-style-type: "✅";
+        margin-bottom: 4px;
+      }
+    </style>
+  </head>
+
+  <body
+    data-gr-c-s-loaded="true"
+    class="vsc-initialized"
+    style="user-select: auto"
+  >
+    <div class="snav-bar" style="background-color: black">
+      <div class="logo">
+        <a href="index.html">
+          <img class="mr-logo mt-1" src="img/logo.png" />
+        </a>
+      </div>
+
+      <div class="nav-link">
+        <ul class="nvl">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="faculty.html">Faculty</a></li>
+          <li><a href="team.html">Student Members</a></li>
+          <li><a href="startups.html">Start-Ups</a></li>
+
+          <div class="dropdown" style="display: inline-block">
+            <button class="dropbtn" id="dropbtn" onclick="handleMoreBtn()">
+              More
+              <i class="fa fa-caret-down" style="color: rgb(65, 142, 243)"></i>
+            </button>
+
+            <div class="dropdown-content" id="dropdown-content">
+              <a href="http://www.mcehassan.ac.in"
+                >Malnad College of Engineering</a
+              >
+              <a href="events.html">Successful Events</a>
+              <a href="prag.html">PRAGYATHA - 19</a>
+              <!-- <a href="alumni.html">Alumni</a> -->
+              <a href="Nisp.html">NISP-policy</a>
+            </div>
+          </div>
+        </ul>
+      </div>
+
+      <div class="smenu-btn">
+        <button onclick="openNav()" style="background- outline: none">
+          <i
+            class="fa fa-bars"
+            style="color: rgb(65, 142, 243)"
+            aria-hidden="true"
+          ></i>
+        </button>
+      </div>
+    </div>
+    <div id="myNav" class="overlay" style="margin-top: 70px">
+      <a
+        href="javascript:void(0)"
+        class="closebtn"
+        style="font-size: 15px"
+        onclick="closeNav()"
+        ><i class="fa fa-times"></i
+      ></a>
+      <div class="overlay-content">
+        <a href="index.html">Home</a>
+        <a href="faculty.html">Faculty</a>
+        <a href="team.html">Student Members</a>
+        <a href="startups.html">Start-Ups</a>
+        <a href="http://www.mcehassan.ac.in">Malnad College of Engineering</a>
+        <a href="events.html">Successful Events</a>
+        <a href="prag.html">PRAGYATHA - 19</a>
+        <!-- <a href="alumni.html">Alumni</a> -->
+        <a href="Nisp.html">NISP-policy</a>
+      </div>
+    </div>
+
+    <div class="inner-new">
+      <div class="main-card">
+        <div class="content">
+          <h2 class="d-title">AwAke</h2>
+          <br />
+
+          <p style="font-size: 16px; text-align: center" class="mb-5">
+            Started by <em>Achal J</em> and <em>Anirudha H A</em> in the
+            year 2021. 
+          </p>
+        </div>
+
+        <div class="mb-3 vision glass">
+          <br />
+          <h3 style="font-size: 26px">VISION</h3>
+          <p>
+           Building technologically sound solutions for modern and new-gen problems
+          </p>
+        </div>
+
+        <div class="mb-3 vision pb-3 glass">
+          <br />
+          <h3 style="font-size: 26px">MISSION</h3>
+          <p>
+            1. To enhance the technical coherence in the campus
+            <br />
+            2. To organize events to make technological learnings accessible to everyone<br />
+            3. To bring awareness of modern work culture in IT.
+          </p>
+        </div>
+
+        <div class="mb-3 vision pb-3 glass">
+          <br />
+          <h3 style="font-size: 26px; margin-bottom: 35px">TEAM MEMBERS</h3>
+          <div class="row pb-1">
+            <div class="col-md-4 stu">
+              <ul style="margin-left: 30px; margin-top: -20px">
+                <li class="mt-2">Achal J</li>
+                <li class="mt-2">Anirudha H A</li>
+                <li class="mt-2">Chinthan V</li>
+                <li class="mt-2">Shashank D S</li>
+                <li class="mt-2">Chinmayi R Shankar</li>
+                <li class="mt-2">Raksha Bharadwaj</li>
+                <li class="mt-2">Meghana H M</li>
+                <li class="mt-2">Gagan S G</li>
+                <li class="mt-2">Raksha Bharadwaj</li>
+              </ul>
+            </div>
+            <div class="col-md-4 stu">
+
+              <ul style="margin-left: 30px; margin-top: -20px">
+                <li class="mt-2">Hariharan K</li>
+                <li class="mt-2">Dhyan S Agni</li>
+                <li class="mt-2">Kruthi H U</li>
+                <li class="mt-2">Ranjani</li>
+                <li class="mt-2">Sinchana</li>
+                <li class="mt-2">Varsha</li>
+                <li class="mt-2">Vanditha</li>
+                <li class="mt-2">Chirag K Deshbhandari</li>
+                <li class="mt-2">Bindu C K</li>
+              </ul>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 align-center">
+                <img src="img/aw5.jpeg" alt="" class="img-fluid pb-3 w-100" />
+              </div>
+              <div class="col-md-3 align-center">
+                <img src="img/aw4.jpeg" alt="" class="img-fluid pb-3 w-100" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-3 vision pb-3 glass work">
+          <h3 style="font-size: 26px; margin-bottom: 20px">AwAke flutter bootstrap</h3>
+          <ul>
+            <li>
+              Organized a two-day app development bootcamp where the participants were able to develop their own basic calculator
+            </li>
+          </ul>
+          <div class="container" >
+          <div class ="row">
+          <div class="col-md-4 align-center">
+            <img src="img/aw8.jpeg" alt="" class="img-fluid pb-3 w-100" 
+            width="200" height="300" />/>
+          </div>
+          <div class="col-md-4 align-center">
+            <img src="img/aw7.jpeg" alt="" class="img-fluid pb-3 w-100" />
+          </div>
+        </div>
+
+        </div>
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 align-center">
+                <img src="img/aw1.jpeg" alt="" class="img-fluid pb-3 w-100" />
+              </div>
+              <div class="col-md-3 align-center">
+                <img src="img/aw3.jpeg" alt="" class="img-fluid pb-3 w-100" />
+              </div>
+
+              <div class="col-md-3 align-center">
+                <img src="img/aw2.jpeg" alt="" class="img-fluid pb-3 w-100" />
+              </div>
+              <div class="col-md-3 align-center">
+                <img src="img/aw6.jpeg" alt="" class="img-fluid pb-3 w-100" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+    <footer id="footer">
+      <div class="container">
+        <ul class="icons">
+          <li>
+            <a
+              href="#"
+              class="icon fa-twitter"
+              style="color: rgb(51, 183, 235); text-decoration: none"
+              ><span class="label">Twitter</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/mce.startup.club"
+              class="icon fa-facebook"
+              style="color: rgb(43, 43, 247); text-decoration: none"
+              ><span class="label">Facebook</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/me_riise/"
+              class="icon fa-instagram"
+              style="color: rgb(250, 43, 112); text-decoration: none"
+              ><span class="label">Instagram</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="mailto:meriisehsn@gmail.com"
+              class="icon fa-envelope"
+              style="color: rgb(228, 54, 11); text-decoration: none"
+              ><span class="label">Email</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="copyright">© Developers Community. All rights reserved.</div>
+    </footer>
+  </body>
+</html>

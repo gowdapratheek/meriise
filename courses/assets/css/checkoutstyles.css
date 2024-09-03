@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    background-color: #fdfdfd;
+    margin: 0 10px;
+}
+
+.card-container {
+    width: 75%;
+    background: #fff;
+    margin: 65px auto;
+    height: auto;
+    padding: 15px;
+    padding-top: 20px;
+    border-radius: 3px;
+    -webkit-box-shadow: -1px 8px 29px -6px rgba(153, 153, 153, 0.97);
+    -moz-box-shadow: -1px 8px 29px -6px rgba(153, 153, 153, 0.97);
+    box-shadow: -1px 8px 29px -6px rgba(153, 153, 153, 0.97);
+}
+
+/*//checkout-text// */
+.card-container h2 {
+    text-align: center;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    color: #077fad;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.line {
+    width: 41%;
+    border-bottom: 0.5px solid #cddacde0;
+    margin: auto;
+}
+
+.card-item {
+    margin: 20px 10px;
+    text-align: center;
+}
+
+#name {
+    font-size: 30px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+#email {
+    text-align: center;
+    font-weight: lighter;
+    margin-top: 0;
+    color: #000000cc;
+}
+
+.course-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 1%;
+    text-align: start;
+}
+
+#selected-courses {
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+#billing-amount {
+    display: flex;
+    font-size: 20px;
+    padding: 10px 1%;
+    font-weight: bolder;
+}
+.course-amount {
+    margin-left: auto;
+}
+
+button,
+.razorpay-payment-button {
+    border: 0;
+    padding: 5px 12px;
+    font-size: 15px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.buttons {
+    width: 100%;
+    border-radius: 2px;
+    margin: 15px auto 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.razorpay-payment-button,
+#back {
+    margin: 0 3%;
+}
+
+#back {
+    background: #3b403c;
+    color: white;
+    border: 1px solid #3b403c;
+    padding: 10px 30px;
+    width: 120px;
+    transition: background 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+#back:hover {
+    cursor: pointer;
+    background: white;
+    color: #3b403c;
+    border: 1px solid #3b403c;
+}
+
+form {
+    display: block;
+    width: 120px;
+}
+
+.razorpay-payment-button {
+    display: block;
+    padding: 10px 30px;
+    background: #13aa52;
+    border: 1px solid #13aa52;
+    color: white;
+    box-sizing: border-box;
+    transition: background 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+.razorpay-payment-button:hover {
+    cursor: pointer;
+    color: #13aa52;
+    background: white;
+    border: 1px solid #13aa52;
+}
+
+.info{
+   font-size: 25px;
+    color: #211f1f;
+    margin: 30px 10px 10px;
+}
+
+#spn{
+    color: red;
+    font-weight: bold;
+}
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+
+    .card-container {
+        margin: 35px auto;
+        width: 99%;
+        padding: 15px 2px;
+    }
+
+    .course-wrapper {
+        font-size: 12px;
+    }
+    .course-name {
+        max-width: 80%;
+    }
+
+    .buttons {
+        justify-content: space-around;
+    }
+
+    .razorpay-payment-button,
+    #back {
+        margin: 0;
+    }
+
+.info{
+   font-size: 18px;
+    color: #211f1f;
+    margin: 30px 10px 10px;
+}
+}

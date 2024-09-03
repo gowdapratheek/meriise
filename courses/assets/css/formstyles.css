@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Barlow:ital,wght@1,900&family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,700&display=swap");
+
+html {
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+label {
+    font-family: "Open Sans", sans-serif;
+    font-weight: lighter;
+    margin-bottom: 2px;
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+#small-txt {
+    font-family: "Open Sans", sans-serif;
+    font-weight: lighter !important;
+    margin: 10px 0 2px;
+    font-size: 1.2em;
+    display: block;
+}
+
+.header-container {
+    width: 100%;
+    padding: 1%;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+    -webkit-box-shadow: 6px 6px 18px -6px rgba(150, 126, 150, 0.66);
+    -moz-box-shadow: 6px 6px 18px -6px rgba(150, 126, 150, 0.66);
+    box-shadow: 6px 6px 18px -6px rgba(150, 126, 150, 0.66);
+}
+
+.header-container h3 {
+    padding: 0% 2%;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bolder;
+    background: linear-gradient(43deg, #30a2bb 35%, #1b7386 97%);
+    background: -webkit-linear-gradient(43deg, #30a2bb 35%, #1b7386 97%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header-container p {
+    color: #545454;
+    font-family: "Staatliches", cursive;
+    margin-bottom: 2px;
+    padding-bottom: 0;
+    text-shadow: 2px 2px #e3e3e330;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.header-text {
+    margin: auto;
+    flex-grow: 3;
+}
+
+.logo1 {
+    margin-bottom: -10px;
+    margin-top: -5px;
+    height: 50px;
+    flex-grow: 1;
+    margin-left: auto;
+    margin-right: -25px;
+}
+.logo2 {
+    margin-left: auto;
+    margin-bottom: -10px;
+    margin-top: -5px;
+    height: 75px;
+    flex-grow: 1;
+}
+
+.container {
+    border-radius: 7px;
+    background: white;
+    margin-bottom: 30px;
+
+    -webkit-box-shadow: 6px 6px 18px -6px rgba(150, 126, 150, 0.66);
+    -moz-box-shadow: 6px 6px 18px -6px rgba(150, 126, 150, 0.66);
+    box-shadow: 6px 6px 18px -6px rgba(150, 126, 150, 0.66);
+}
+
+#register {
+    font-family: "Montserrat", sans-serif;
+    margin: 20px 0 10px;
+    font-weight: lighter;
+    padding: 10px;
+    font-size: 40px;
+    color: #0d64bb;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.checkout {
+    margin: 20px 0;
+    border: 0;
+    background: #5675e4;
+    background-image: linear-gradient(50deg, #30c3e4 0%, #5675e4 99%);
+    border: 1px solid white;
+    color: white;
+    box-shadow: none;
+    border-radius: 6px;
+    width: 100%;
+    padding: 15px;
+    text-transform: uppercase;
+    transition: background 0.2s ease;
+}
+
+.checkout:hover {
+    cursor: pointer;
+    background: white;
+    border: 1px solid #5675e4;
+    color: black;
+}
+
+button.btn.dropdown-toggle.btn-light.bs-placeholder {
+    background: #e2f3ff96;
+    color: black;
+}
+
+.btn-light {
+    color: #000;
+    background-color: #e2f3ff96;
+    border-color: #f8f9fa;
+}
+
+.bootstrap-select .dropdown-menu li {
+    position: relative;
+    margin-bottom: 2px;
+}
+
+label,
+.select-courses {
+    font-size: 1.2em;
+}
+
+.select-courses {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.total-amount-container {
+    display: block;
+    padding: 25px 12px;
+}
+
+#total-amount {
+    font-weight: bold;
+    color: #000;
+}
+
+.bootstrap-select .bs-ok-default::after {
+    width: 0.3em;
+    height: 0.6em;
+    border-width: 0 0.1em 0.1em 0;
+    transform: rotate(45deg) translateY(0.5rem);
+}
+
+.btn.dropdown-toggle:focus {
+    outline: none !important;
+}
+
+.footer-container {
+    width: 100%;
+    background: #efeeee;
+    padding: 2% 4% 1%;
+}
+.footer-container p {
+    margin-bottom: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+.scrollupBtn {
+    display: none;
+    float: right;
+    position: fixed;
+    bottom: 15px;
+    right: 3%;
+    background: #464544;
+    color: white;
+    border: 0;
+    border-radius: 50%;
+    padding: 4px 8px 6px;
+    text-align: center;
+    outline: none;
+}
+
+.scrollupBtn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background: #5675e4;
+}
+
+.scrollupBtn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+
+@media only screen and (max-width: 500px) {
+    .header-container {
+        padding: 4px;
+        flex-direction: column;
+    }
+    .logo2 {
+        display: none;
+    }
+    .container {
+        width: 95%;
+    }
+    .input[type="submit"] {
+        width: 80%;
+        margin: auto;
+    }
+
+    .header-container h3 {
+        font-size: 17px;
+    }
+
+    .header-container p {
+        font-size: 12px;
+    }
+    .footer-container p {
+        font-size: 10px;
+    }
+
+    .dropdown-menu {
+        width: 200px;
+    }
+
+    .dropdown-menu .dropdown-item {
+      white-space: normal;
+    }
+}
+
+

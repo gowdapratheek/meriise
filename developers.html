@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>ME-RIISE</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- bootstrap 4 css -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <!-- fontawesome cdn -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"
+      integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg=="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- custom css -->
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="assets/css/newcss.css" />
+
+    <style>
+      .inner-new {
+        width: 97%;
+        margin: 0 auto;
+      }
+
+      .main-card {
+        background: #1d1e22;
+        padding: 10px 18px;
+        margin: 10px 0;
+        margin-top: 20px;
+        border-radius: 10px;
+      }
+      h2.d-title {
+        color: coral !important;
+        font-weight: 500 !important;
+      }
+      .vision {
+        background: white;
+        border: solid 2px transparent;
+        background-clip: padding-box;
+        box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+      }
+
+      .glass {
+        background: white;
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        background-clip: padding-box;
+        border-radius: 6px;
+        padding: 10px 20px;
+      }
+
+      .glass h3 {
+        color: #151e5d !important;
+        font-weight: 500 !important;
+      }
+
+      p.mb-5 {
+        color: white;
+      }
+
+      .stu li {
+        list-style-type: "📁";
+      }
+      .work li {
+        list-style-type: "✅";
+        margin-bottom: 4px;
+      }
+    </style>
+  </head>
+
+  <body
+    data-gr-c-s-loaded="true"
+    class="vsc-initialized"
+    style="user-select: auto"
+  >
+    <div class="snav-bar" style="background-color: black">
+      <div class="logo">
+        <a href="index.html">
+          <img class="mr-logo mt-1" src="img/logo.png" />
+        </a>
+      </div>
+
+      <div class="nav-link">
+        <ul class="nvl">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="faculty.html">Faculty</a></li>
+          <li><a href="team.html">Student Members</a></li>
+          <li><a href="startups.html">Start-Ups</a></li>
+
+          <div class="dropdown" style="display: inline-block">
+            <button class="dropbtn" id="dropbtn" onclick="handleMoreBtn()">
+              More
+              <i class="fa fa-caret-down" style="color: rgb(65, 142, 243)"></i>
+            </button>
+
+            <div class="dropdown-content" id="dropdown-content">
+              <a href="http://www.mcehassan.ac.in"
+                >Malnad College of Engineering</a
+              >
+              <a href="events.html">Successful Events</a>
+              <a href="prag.html">PRAGYATHA - 19</a>
+              <!-- <a href="alumni.html">Alumni</a> -->
+              <a href="Nisp.html">NISP-policy</a>
+            </div>
+          </div>
+        </ul>
+      </div>
+
+      <div class="smenu-btn">
+        <button onclick="openNav()" style="background- outline: none">
+          <i
+            class="fa fa-bars"
+            style="color: rgb(65, 142, 243)"
+            aria-hidden="true"
+          ></i>
+        </button>
+      </div>
+    </div>
+    <div id="myNav" class="overlay" style="margin-top: 70px">
+      <a
+        href="javascript:void(0)"
+        class="closebtn"
+        style="font-size: 15px"
+        onclick="closeNav()"
+        ><i class="fa fa-times"></i
+      ></a>
+      <div class="overlay-content">
+        <a href="index.html">Home</a>
+        <a href="faculty.html">Faculty</a>
+        <a href="team.html">Student Members</a>
+        <a href="startups.html">Start-Ups</a>
+        <a href="http://www.mcehassan.ac.in">Malnad College of Engineering</a>
+        <a href="events.html">Successful Events</a>
+        <a href="prag.html">PRAGYATHA - 19</a>
+        <!-- <a href="alumni.html">Alumni</a> -->
+        <a href="Nisp.html">NISP-policy</a>
+      </div>
+    </div>
+
+    <div class="inner-new">
+      <div class="main-card">
+        <div class="content">
+          <h2 class="d-title">DEVELOPERS COMMUNITY</h2>
+          <br />
+
+          <p style="font-size: 16px; text-align: center" class="mb-5">
+            Started by <em>Adarsh D</em> and <em>Manoj Kumar H R</em> in the
+            year 2020. Our motto of this community is to spread knowledge and
+            develop interests in the students to learn coding in the industry
+            standard and contribute to the college and society.
+          </p>
+        </div>
+
+        <div class="mb-3 vision glass">
+          <br />
+          <h3 style="font-size: 26px">VISION</h3>
+          <p>
+            We have the vision of developing Projects at Industrial Standards
+            for the betterment of the society and provide a platform for
+            upcoming talents in this field.
+          </p>
+        </div>
+
+        <div class="mb-3 vision pb-3 glass">
+          <br />
+          <h3 style="font-size: 26px">MISSION</h3>
+          <p>
+            1. Provide learning ambience to generate innovative software
+            projects with professionalism.
+            <br />
+            2. To create facilities and expertise in software development.<br />
+            3. To induce ethical values and spirit of social commitment.
+          </p>
+        </div>
+
+        <div class="mb-3 vision pb-3 glass">
+          <br />
+          <h3 style="font-size: 26px; margin-bottom: 35px">TEAM MEMBERS</h3>
+          <div class="row pb-1">
+            <div class="col-md-4 stu">
+              <h5 style="font-size: 22px; margin-bottom: 35px; color: coral">
+                SENIORS
+              </h5>
+
+              <ul style="margin-left: 30px; margin-top: -20px">
+                <li class="mt-2">Adarsh D</li>
+                <li class="mt-2">Manoj Kumar H R</li>
+                <li class="mt-2">Harshitha</li>
+                <li class="mt-2">Pratheeka K</li>
+                <li class="mt-2">Nithin</li>
+                <li class="mt-2">Amritha</li>
+              </ul>
+            </div>
+            <div class="col-md-4 stu">
+              <h5 style="font-size: 22px; margin-bottom: 35px; color: coral">
+                JUNIORS
+              </h5>
+
+              <ul style="margin-left: 30px; margin-top: -20px">
+                <li class="mt-2">Shreyas H C</li>
+                <li class="mt-2">Nikhil S Bhat</li>
+                <li class="mt-2">K B Srushti</li>
+                <li class="mt-2">Srilakshmi</li>
+                <li class="mt-2">Uthsavi</li>
+                <li class="mt-2">Subramanya</li>
+                <li class="mt-2">Amogh</li>
+                <li class="mt-2">Savyasachi Bongale</li>
+                <li class="mt-2">Shishir</li>
+              </ul>
+            </div>
+            <div class="col-md-4 stu">
+              <h5
+                style="
+                  font-size: 22px;
+
+                  margin-bottom: 35px;
+                  color: coral;
+                "
+              >
+                SOPHOMORES
+              </h5>
+
+              <ul style="margin-left: 30px; margin-top: -20px">
+                <li class="mt-2">Raksha Bharadwaj</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="mb-3 vision pb-3 glass work">
+          <h3 style="font-size: 26px; margin-bottom: 20px">WORK DONE</h3>
+          <ul>
+            <li>
+              Developed a web-based application for monitoring people under home
+              quarantine during the pandemic situation of COVID-19. This app was
+              handed over to police department for their use.
+            </li>
+            <li>
+              Developed Leave Application for Hassan Police Department.
+            </li>
+            <li>
+              Developed Leave Management System Application for MCE.
+            </li>
+            <li>MCE online system service tracking portal.</li>
+            <li>Developing MCE- Faculty Development Program portal</li>
+            <li>Developing MCE- Temple management application for Divya Chaitanya and Ganapati
+              temple</li>
+            <li>
+              Designing wed-based platforms for various applications, imparting
+              coding knowledge to carryout realtime projects.
+            </li>
+            <li>
+              Developed a portal to register for Micro Engineering Certification
+              Program.
+            </li>
+            <li>Management seat booking for Malnad College of Engineering.</li>
+          </ul>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 align-center">
+                <img src="img/d1.jpeg" alt="" class="img-fluid pb-3 w-100" />
+              </div>
+              <div class="col-md-3 align-center">
+                <img src="img/d4.jpeg" alt="" class="img-fluid pb-3 w-100" />
+              </div>
+
+              <div class="col-md-3 align-center">
+                <img src="img/d2.jpeg" alt="" class="img-fluid pb-3 w-100" />
+              </div>
+              <div class="col-md-3 align-center">
+                <img src="img/d3.jpeg" alt="" class="img-fluid pb-3 w-100" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+    <footer id="footer">
+      <div class="container">
+        <ul class="icons">
+          <li>
+            <a
+              href="#"
+              class="icon fa-twitter"
+              style="color: rgb(51, 183, 235); text-decoration: none"
+              ><span class="label">Twitter</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/mce.startup.club"
+              class="icon fa-facebook"
+              style="color: rgb(43, 43, 247); text-decoration: none"
+              ><span class="label">Facebook</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/me_riise/"
+              class="icon fa-instagram"
+              style="color: rgb(250, 43, 112); text-decoration: none"
+              ><span class="label">Instagram</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="mailto:meriisehsn@gmail.com"
+              class="icon fa-envelope"
+              style="color: rgb(228, 54, 11); text-decoration: none"
+              ><span class="label">Email</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="copyright">© Developers Community. All rights reserved.</div>
+    </footer>
+  </body>
+</html>

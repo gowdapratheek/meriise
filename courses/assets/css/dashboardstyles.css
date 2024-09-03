@@ -1,0 +1,93 @@
+.admin {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    flex-grow: 1;
+}
+
+.c-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.mc {
+    flex-grow: 1;
+}
+.display-4 {
+    flex-grow: 1;
+    color: #13aa52;
+    font-weight: bolder;
+}
+
+.email {
+    font-weight: lighter;
+    margin-right: 7px;
+}
+
+.line {
+    width: 30%;
+    border-bottom: 0.5px solid #00000040;
+    margin: auto;
+}
+
+.card {
+    border-radius: 0px;
+    border: 1px solid #fff;
+    -webkit-box-shadow: 3px 3px 12px -3px rgba(150, 126, 150, 0.66);
+    -moz-box-shadow: 3px 3px 12px -3px rgba(150, 126, 150, 0.66);
+    box-shadow: 3px 3px 12px -3px rgba(150, 126, 150, 0.66) 3;
+}
+
+.card-itm {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.go-btn {
+    background-color: #13aa52;
+    border-radius: 0px;
+    padding: 1px 17px;
+    border: 2px solid #13aa52 !important;
+}
+.go-btn:hover {
+    background-color: #fff;
+    color: #13aa52;
+}
+
+.btn {
+    border-radius: 0px;
+}
+
+.btn-danger {
+    background: #c82333;
+    border: 1px solid #bd2130 !important;
+    border-radius: 20px !important;
+}
+
+.btn-danger:hover {
+    background: #fff;
+    color: #c82333;
+    border-radius: 20px !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .c-nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .email {
+        font-size: 0.7em;
+        margin-bottom: 0;
+    }
+    .admin-item-btn {
+        font-size: 0.6em;
+        margin-top: 2px;
+    }
+
+    .display-4 {
+        font-size: 30px !important;
+    }
+}

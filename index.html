@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>ME-RIISE</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- bootstrap 4 css -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		
+		<!-- fontawesome cdn -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/newcss.css" />
+        
+        <script defer src="assets/js/newjs.js"></script>
+        
+    
+ <style>       
+        .main {
+            text-align: center;
+        }
+         
+        .marq {
+            padding-top: 30px;
+            padding-bottom: 10px;
+        }
+        
+
+        .blink {
+  animation: blink 2s infinite;
+  color:blue;
+        }
+        .event-list{
+            padding-top:-50px;
+            width:100%;
+        }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 5;
+  }
+  100% {
+    opacity: 2;
+    color: red;
+  }
+}
+    </style>
+    </head>
+
+    <body>
+        <div class="ssheader c-hero">
+            <h2 class="h-txt">
+                MALNAD ENCLAVE FOR RESEARCH, INNOVATION, INCUBATION, STARTUPS AND
+                ENTREPRENEURSHIP
+            </h2>
+            <h4 class="h-txt2">Malnad College of Engineering,Hassan</h4>
+        </div>
+
+        <div class="snav-bar">
+            <!--logo-->
+            <div class="logo">
+                <a href="index.html">
+                    <img class="mr-logo" src="images/rect78.png" />
+                </a>
+            </div>
+
+            <div class="nav-link">
+                <ul class="nvl">
+                    <li><a href="index.html">Home</a></li>                    
+                    
+                    <!--About US-->
+                    <li><a href="aboutmeriise.html">About US</a></li>
+                    
+                    <!--Faculty members-->
+                    <li><a href="faculty.html">Faculty</a></li>
+
+                    <!--Student members-->
+                    <li><a href="team.html">Student Members</a></li>
+                    <!--IIC-->
+                    <li><a href="iic.html">MHRD-IIC</a></li>
+
+                    <!--NAIN-->
+                    <li><a href="nain.html">NAIN</a></li>                  
+
+                    <!--UBA-->
+                    <li><a href="uba.html">UBA</a></li>
+                   
+                    
+                    <!--Successful Events-->
+                    <li><a href="infrastructure.html">Infrastructure</a></li>
+
+                    <!--Startups-->
+                    <li><a href="startups.html">Start-Ups</a></li>
+                    <li><a href="pragyatha23.html">Pragyatha'23</a></li>
+                    <div class="dropdown" style="display: inline-block">
+                        <button
+                            class="dropbtn"
+                            id="dropbtn"
+                            onclick="handleMoreBtn()"
+                        >
+                            More
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+
+                        <div class="dropdown-content" id="dropdown-content">
+                            <a href="http://www.mcehassan.ac.in"
+                                >Malnad College of Engineering</a> 
+                            <a href="events.html">Successful Events</a> 
+                            <a href="pragyatha22.html">Pragyatha-22</a>                          
+                            <a href="prag.html">PRAGYATHA - 19</a>
+                            <a href="documents.html">Documents</a>
+                            <a href="collab.html">Collaborations</a>
+                            <a href="Nisp.html">MCE NISP Policy</a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="smenu-btn">
+                <button onclick="openNav()">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                ><i class="fa fa-times"></i
+            ></a>
+            <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="aboutmeriise.html">About Us</a>
+                <a href="faculty.html">Faculty</a>
+                <a href="team.html">Student Members</a>
+                <a href="pragyatha23.html">Pragyatha'23</a>
+                <a href="Pragyatha.html">Pragyatha-21</a>
+                
+                
+                <a href="startups.html">Start-Ups</a>
+                
+                <a href="http://www.mcehassan.ac.in"
+                    >Malnad College of Engineering</a
+                >
+                <a href="events.html">Successful Events</a>
+                <a href="prag.html">PRAGYATHA - 19</a>
+                <a href="documents.html">Documents</a>
+                <a href="collab.html">Collaborations</a>
+
+            </div>
+            
+        </div>
+      
+
+        <section class="banner full">
+            
+             
+            <article>
+                
+                <img src="images/iic.jpg" alt="" />
+                <div class="inner">
+                    <header></header>
+                </div>
+            </article>
+            <article>
+                
+                <img src="images/nain.jpg" alt="" />
+                <div class="inner">
+                    <header></header>
+                </div>
+            </article>
+
+            <article>
+                
+                <img src="images/uba.jpg" alt="" />
+                <div class="inner">
+                    <header></header>
+                </div>
+            </article>
+
+            <article>
+                
+                <img src="images/Banner.jpg" alt="" />
+                <div class="inner">
+                    <header></header>
+                </div>
+            </article>
+            
+
+            <article>
+                
+                <img src="images/mce_gate.jpg" alt="" />
+                <div class="inner">
+                    <header></header>
+                </div>
+            </article>
+
+            <article>
+                
+                <img src="images/g7.jpg" alt="" />
+                <div class="inner">
+                    <header></header>
+                </div>
+            </article>
+
+            <article>
+               
+                <img src="images/g8.jpg" alt="" />
+                <div class="inner">
+                    <header></header>
+                </div>
+            </article>
+
+            
+
+            <article>
+               
+                <img src="images/bootcamp1.jpg" alt="" />
+                <div class="inner">
+                    <header>
+                        <h2>
+                            <a href="http://www.mcehassan.ac.in">ME-RIISE </a>
+                        </h2>
+                        <p>
+                            <b
+                                ><a href="http://www.mcehassan.ac.in"
+                                    >Malnad Enclave for Research, Innovatiton,
+                                    Startups and Entrepreneurship</a
+                                ></b
+                            >
+                        </p>
+                    </header>
+                </div>
+            </article>
+            <article>
+                <img src="images/ideagentoincubation.jpg" alt="" />
+                <div class="inner">
+                    <header>
+                        <h2><a href="http://www.mcehassan.ac.in"></a></h2>
+                        <p>
+                            <b><a href="http://www.mcehassan.ac.in"></a></b>
+                        </p>
+                    </header>
+                </div>
+            </article>
+           
+            <article>
+                <img src="images/slide07.jpg" alt="" />
+                <div class="inner">
+                    <header>
+                        <h2><a href="http://www.mcehassan.ac.in"> MCE </a></h2>
+                        <p>
+                            <b
+                                ><a href="http://www.mcehassan.ac.in">
+                                    Malnad college of engineering</a
+                                ></b
+                            >
+                        </p>
+                    </header>
+                </div>
+            </article>
+           
+        </section>
+     
+
+<br/>
+        <header class="majo"></header>
+
+        <section id="one" class="wrapper style2" >
+            <div class="inner">
+               
+               
+               
+                    <section class="specia">
+                        <h1 class="sub-head" style="text-align: center">
+                           <!--India Startup Day - 1st October-->
+                        </h1>
+                        
+                        <ul class="action">
+                        <!-- <div class="main">
+                            
+                               
+                                
+                            <a href="pragyatha22.html" class="button alt" style="width:100% ; height:25%; background-color:#12EECA; ">
+                                          <b><font color="black" size="7px">Pragyatha 22 Portal <u><blink class="blink"><font size="7px"> Click Here..! </font> </blink></u></font></b></a>
+                                         </center>
+                             -->
+                             
+                             <!--
+                               <marquee class="marq"
+                                             bgcolor=#51E1ED
+                                             direction="left"
+                                             loop="10">
+                                       <a href="http://www.meriise.org/wc.html" class="button alt" style="background-color:#51E1ED;">
+                                           <b><font color="black" size="5px" weight="bold">Weekly Challenge  <u><blink class="blink">Click Here..! </blink></u></font></b></a>
+                                </marquee>
+                               -->
+                        <div class="event-list" style="text-align: center;" >
+
+                            <h1 style="margin-bottom: 20px ; font-size:2rem" >Pragyatha'23 Media</h1>   
+                            <img src="images/pra news.jpeg" style="height: 100vh;width: 80vw;" >
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+                        <!-- <ul><li><a href="http://www.meriise.org/wc.html" style="background-color:white"><b><font color="black" size="5px" weight="bold">Weekly Challenge  <u><blink class="blink">Click Here..! </blink></u></font></b></a></li>
+                        
+                        <li><a href="http://www.meriise.org/robo.html" style="background-color:white">
+                                           <b><font color="black" size="5px" weight="bold">RoboTechX - Soccer Bots Challenge <u><blink class="blink">Know More..!</blink></u></font></b></a></li></ul>
+                         
+                        <li><a href="http://meriise.org/teamUpcoming.html" style="background-color:white">
+                                           <b><font color="black" size="5px" weight="bold">Upcoming Events (23/08/2023 - 25/08/2023)<u><blink class="blink">Know More..!</blink></u></font></b></a></li></ul> -->
+                        </div>
+                            <!--<marquee behavior="scroll" direction="left" width="200%" height="60%" scrollamount="10"><a href="pragyatha22.html" class="button alt" style="width:50%; background-color:purple;"><b><font color="white" size="5px"><u>Click here..! &nbsp &nbsp &nbsp Pragyatha 22 Portal</u></font></b></a></marquee>-->
+                           <!-- <p style="text-align-last:center; text-size:50px">   -->
+                                
+                              <!--<a href="pragyatha22.html" class="button alt" style="width:40%; background-color:#1c68d0;"><b><font color="white" size="5px">Pragyatha 22 Portal</font></b></a>
+                              <a href="https://forms.gle/VTsPGP3u8UjFowRM6" class="button alt" style="width:50%; background-color:#83E9EE; font-weight: bold;">FEEDBACK FORM</a> 
+                            </p>
+                        </ul>
+                        <br/><br/> 
+                      
+                        <a href="pragyatha22.html" class="image fit"><center><img id="mcp" src="img/Pragyatha22/finalposter.jpeg" Width="50px" height="100px" alt="" /></center> </a>
+                   
+                        <ul class="action">
+                            <p style="text-align-last: center; text-size:50px">
+                              <a href="pragyatha22.html" class="button alt" style="width:40%; background-color:#1c68d0;"><b><font color="white" size="5px">Pragyatha 22 Portal</font></b></a>
+                              <!--<a href="https://forms.gle/VTsPGP3u8UjFowRM6" class="button alt" style="width:50%; background-color:#83E9EE; font-weight: bold;">FEEDBACK FORM</a> 
+                            </p>
+                        </ul>
+                      -->
+                    </section>
+            </div>
+        </section>
+        
+        
+    
+
+        <!-- One -->
+        
+
+        <section id="two" class="wrapper style3">
+            <div class="inner">
+                <header class="align-center">
+                    <h1 style="font-size: 28px">Board of Directors</h1>
+                </header>
+            </div>
+        </section>
+
+        <section id="two" class="wrappe style2">
+            <header class="majo">
+                <br /><br /><br />
+                <center>
+                   
+                </center>
+            </header>
+            <center>
+                <div class="carrd">
+                    <div class="containerr">
+                        
+                        <div class="row  pb-3 text-center pt-2 " style="border-bottom: 1px solid grey;">
+                            <div class="col-md-6 text-center">
+                                <img src="images/bod/ah.jpeg" alt="explore" class="img-fluid  w-50"  style="border: 1px solid black;">
+                            </div>
+                            <div class="col-md-6 pt-2 ">
+                                <h2 style="margin-left: 10px;">Sri. Ashok Haranahalli</h2>
+                                <p style="margin-left: -20px;font-size: 13px;"></p>
+                                <h4>Chairman, ME-RIISE FOUNDATION</h4>
+                                <h4></h4>
+                               <p style="margin-left: -10px;">
+                                </p>
+                            
+                             </div> 
+                        </div>
+                        
+                        <div class="row  pb-3 text-center pt-2 " style="border-bottom: 1px solid grey;">
+                            <div class="col-md-6 text-center">
+                                <img src="images/bod/gk.jpeg" alt="explore" class="img-fluid   w-50"  style="border: 1px solid black;">
+                            </div>
+
+                        
+                            <div class="col-md-6 pt-2 ">
+                                <h2 style="margin-left: 10px;">Dr.A.Geetha Kiran</h2>
+                                <p style="margin-left: -20px;font-size: 13px;"></p>
+                                <h4>CEO, ME-RIISE FOUNDATION </h4>
+                                <h4></h4>
+                               <p style="margin-left: -10px;">
+                                </p>
+                            
+                             </div>  
+
+                   
+                        </div>
+                        
+                        <div class="row  pb-3 text-center pt-2 " style="border-bottom: 1px solid grey;">
+                            <div class="col-md-6 text-center">
+                                <img src="images/bod/ar.png" alt="explore" class="img-fluid   w-50"  style="border: 1px solid black;">
+                            </div>
+                            <div class="col-md-6 pt-2 ">
+                                <h2 style="margin-left: 10px;">Sri. Ananth Ravi</h2>
+                                <p style="margin-left: -20px;font-size: 13px;"></p>
+                                <h4>Director, ME-RIISE FOUNDATION </h4>
+                                <h4></h4>
+                               <p style="margin-left: -10px;">
+                                </p>
+                            
+                             </div>  
+                  
+                        </div>
+                        
+                        <div class="row  pb-3 text-center pt-2 " style="border-bottom: 1px solid grey;">
+                            <div class="col-md-6 text-center">
+                                <img src="images/bod/sri .jpg" alt="explore" class="img-fluid   w-50"  style="border: 1px solid black;">
+                            </div>
+                            <div class="col-md-6 pt-2 ">
+                                <h2 style="margin-left: 10px;">Sri. S G Sridhar</h2>
+                                <p style="margin-left: -20px;font-size: 13px;"></p>
+                                <h4>Director, ME-RIISE FOUNDATION</h4>
+                                <h4></h4>
+                               <p style="margin-left: -10px;">
+                                </p>
+                            
+                             </div>  
+                        
+                        </div>
+                        
+                        <div class="row  pb-3 text-center pt-2 " style="border-bottom: 1px solid grey;">
+                            <div class="col-md-6 text-center">
+                                <img src="images/bod/pradeep.jpeg" alt="explore" class="img-fluid   w-50"  style="border: 1px solid black;">
+                            </div>
+                            <div class="col-md-6 pt-2 ">
+                                <h2 style="margin-left: 10px;">Dr. S Pradeep</h2>
+                                <p style="margin-left: -20px;font-size: 13px;"></p>
+                                <h4>Director, ME-RIISE FOUNDATION</h4>
+                                <h4></h4>
+                               <p style="margin-left: -10px;">
+                                </p>
+                            
+                             </div>  
+                   
+                        </div>
+                        
+                        <div class="row  pb-3 text-center pt-2 " style="border-bottom: 1px solid grey;">
+                            <div class="col-md-6 text-center">
+                                <img src="images/bod/kss.jpeg" alt="explore" class="img-fluid   w-50"  style="border: 1px solid black;">
+                            </div>
+                            <div class="col-md-6 pt-2 ">
+                                <h2 style="margin-left: 10px;">Mr. Krishnaswamy Subbarao</h2>
+                                <p style="margin-left: -20px;font-size: 13px;"></p>
+                                <h4>Advisor, ME-RIISE FOUNDATION</h4>
+                                <h4></h4>
+                               <p style="margin-left: -10px;">
+                                </p>
+                            
+                             </div>  
+                        
+                        </div>
+                        
+                        <div class="row  pb-3 text-center pt-2 " style="border-bottom: 1px solid grey;">
+                            <div class="col-md-6 text-center">
+                                <img src="images/bod/shridhar.jpeg" alt="explore" class="img-fluid   w-50"  style="border: 1px solid black;">
+                            </div>
+                            <div class="col-md-6 pt-2 ">
+                                <h2 style="margin-left: 10px;">Mr. Kiran H A</h2>
+                                <p style="margin-left: -20px;font-size: 13px;"></p>
+                                <h4>Advisor, ME-RIISE FOUNDATION</h4>
+                                <h4></h4>
+                               <p style="margin-left: -10px;">
+                                </p>
+                            
+                             </div>  
+                        
+                        </div>
+                        
+                      <!--
+                        <div class="row  pb-3 text-center pt-2 " style="border-bottom: 1px solid grey;">
+                            <div class="col-md-6 text-center">
+                                <img src="assets/Achalnew.jpg" alt="explore" class="img-fluid   w-50"  style="border: 1px solid black;">
+                            </div>
+                            <div class="col-md-6 pt-2 ">
+                                <h2 style="margin-left: 10px;">Achal. J</h2>
+                                <p style="margin-left: -1px;font-size: 13px;">4th Year CSE</p>
+                                <h4>President & Treasurer</h4>
+                                <h4>ME-RIISE</h4>
+                               <p style="margin-left: -10px;">Phone number - 91106 15254
+                                </p>
+                            
+                             </div>  
+                        
+                        </div>-->
+
+                    </div>
+                </div>
+            </center>
+        </section>
+
+        
+        <!-- Two -->
+        <section id="two" class="wrapper style3">
+            <div class="inner">
+                <header class="align-center">
+                    <h1 style="color: white; font-size: 28px">
+                        MALNAD COLLEGE OF ENGINEERING
+                    </h1>
+                    <p class="sub-p">Hassan, Karnataka</p>
+                </header>
+            </div>
+        </section>
+
+        <!-- Three -->
+        <section id="three" class="wrapper style2">
+            <div class="inner">
+                <!--<header class="align-center">
+						<p class="special">Nam vel ante sit amet libero scelerisque facilisis eleifend vitae urna</p>
+						<h2>Morbi maximus justo</h2>
+					</header>-->
+                <div class="gallery">
+                    <div>
+                        <div class="image fit">
+                            <a href="#"><img src="images/meriiseFront.JPG" alt="" /></a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="image fit">
+                            <a href="#"><img src="images/mce_gate.jpg" alt="" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="two" class="wrappe style2">
+            <center>
+                <div class="carrd" style="width: 90%; border: 0">
+                    <div class="containerr">
+                        <p style="padding-left: 10px; padding-right: 10px">
+                            Ever wondered if an institution can be so diverse
+                            with varied thinking, ideas, culture and turn out to
+                            induce as one? That is MCE to you. MCE has set a
+                            benchmark as one of the most premiere institutes in
+                            the country.Giving responsible and technically sound
+                            engineers to the nation. </p>
+                        <p style="padding-left: 10px; padding-right: 10px">
+                            It’s not only an institute
+                            but a hub of technical associates whose aim is to
+                            excel in this pertained field. The seed of MCE was
+                            first sowed in the year 1960 by the then chief
+                            minister Mr. B. D. Jatti, under the second five year
+                            plan of the Government of India. It was a joint
+                            venture between, the Government of India, Government
+                            Of Karnataka and the Malnad Technical Education
+                            Society.Today MCE has grown in a huge fashion, with
+                            a strong base. MCE is one of the oldest Government
+                            Aided engineering colleges. It was affiliated to
+                            University of Mysore, Visveswaraya Technological
+                            University and now from the year 2007, it stands
+                            high and proud as an Autonomous institute.The
+                            college has got ISTE award as one of the best
+                            engineering colleges in the country.It has also got
+                            funding from world bank under TEQIP III. The
+                            institute is built on a campus of about 42 acres in
+                            one of the prime location.MCE is dedicated to give
+                            quality education to budding engineers with modern
+                            infrastructure like library, labs, and research
+                            centers.It also imparts life, fitness skills to
+                            protrude students to top heights. The college
+                            offered UG courses in mechanical, electrical and
+                            civil programs initially but now offers 9 UG and 6
+                            PG programs. Even after 59 years, the motto “NAHI
+                            JNANENA SADRUSHAM” In Sanskrit meaning “NOTHING IS
+                            EQUAL TO KNOWLEDGE” remains achieved.
+                        </p>
+                    </div>
+                </div>
+            </center>
+            <header class="majo">
+                <br /><br /><br />
+                <center>
+                    <h2></h2>
+                </center>
+            </header>
+        </section>
+
+        <section id="two" class="wrapper style3">
+            <div class="inner">
+                <header class="align-center">
+                    <h1 style="font-size: 28px">COLLABORATIONS</h1>
+                    <p style="color: white">
+                        A glimpse of key collaborations and activities conducted
+                        by ME-RIISE are:
+                    </p>
+                </header>
+            </div>
+        </section>
+
+        <section id="two" class="wrappe style2">
+            <center>
+                <div class="carrd" style="width: 90%; border: 0">
+                    <div class="sub-head">
+                        MHRD Institution Innovation Council
+                    </div>
+
+                    <div class="containerr">
+                        <p style="padding-left: 10px; padding-right: 10px">
+                            Ministry of Education (MoE), Govt. of India has
+                            established ‘ MoE’s Innovation Cell (MIC)’ to
+                            systematically foster the culture of innovation
+                            amongst all Higher Education Institutions(HEIs). The
+                            primary mandate of MIC is to encourage, inspire, and
+                            nurture young students by supporting them to work
+                            with new ideas and transform them int prototypes
+                            while they are informative years. MIC has envisioned
+                            encouraging the creation of ‘Institution’s
+                            Innovation Council (IICs)’ across selected HEIs. A
+                            network of these IICs will be established to promote
+                            innovation in the Institution through multitudinous
+                            modes leading to an innovation promotion eco-system
+                            in the campuses. In collaboration with ME-RIISE
+                            (Malnad Enclave for Research, Innovation,
+                            Incubation, Start-ups, and Entrepreneurship )
+                            Institution Innovation Cell has been established in
+                            the college with the vision of fostering innovation
+                            and support students to enrich their spirit of
+                            entrepreneurship.
+                        </p>
+                    </div>
+                    <div class="gallery">
+                        <div class="img-wrap">
+                            <div class="image fit">
+                                <a href="#"
+                                    ><img src="images/c1.jpg" alt=""
+                                /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </center>
+        </section>
+
+        <section id="two" class="wrappe style2">
+            <center>
+                <div class="carrd" style="width: 90%; border: 0">
+                    <div class="sub-head">Collaboration with ICT Academy</div>
+
+                    <div class="containerr">
+                        <p style="padding-left: 10px; padding-right: 10px">
+                            ME-RIISE has association with ICT Academy which has
+                            led to the establishment of Centre of Excellence
+                            powered by Autodesk and Fusion 360. Workshops
+                            conducted: Fusion 360, Revit Architecture and
+                            Salesforce Developer 402 Awards: <br />
+                            • State Cloud Championship Award and best under
+                            institution for extensive participation in Cloud
+                            literacy month 2018 <br />
+                            • Coordinator of ME-RIISE was awarded with best
+                            cloud champion award under coordinator category in
+                            cloud literacy month 2018 <br />
+                            • ICT Academy Partner’s In Growth Awarded for
+                            outstanding partnership and active participation in
+                            initiatives of ICT Academy <br />
+                        </p>
+                    </div>
+                    <div class="gallery">
+                        <div class="img-wrap">
+                            <div class="image fit">
+                                <a href="#"
+                                    ><img src="images/c2.jpg" alt=""
+                                /></a>
+                            </div>
+                        </div>
+                        <div class="img-wrap">
+                            <div class="image fit">
+                                <a href="#"
+                                    ><img src="images/c3.jpg" alt=""
+                                /></a>
+                            </div>
+                        </div>
+                        <div class="img-wrap">
+                            <div class="image fit">
+                                <a href="#"
+                                    ><img src="images/c4.jpg" alt=""
+                                /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </center>
+        </section>
+
+        <section id="two" class="wrappe style2">
+            <center>
+                <div class="carrd" style="width: 90%; border: 0">
+                    <div class="sub-head">Unnat Bharat Abhiyan</div>
+                    <div class="gallery">
+                        <div class="img-wrap">
+                            <div class="image fit">
+                                <a href="#"
+                                    ><img src="images/unnat bharat.jfif" alt="" height:25%
+                                /></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="containerr">
+                        <p style="padding-left: 10px; padding-right: 10px">
+                            ME-RIISE, has also found a cause in bringing
+                            transformational change in rural development under
+                            Unnat Bharath Abhiyan. Five villages around Hassan
+                            have been adopted and activities are being conducted
+                            to move towards holistic development of the
+                            villages.
+                        </p>
+                    </div>
+                    <div class="gallery">
+                        <div class="img-wrap">
+                            <div class="image fit">
+                                <a href="#"
+                                    ><img src="images/UBA.png" alt=""
+                                /></a>
+                            </div>
+                        </div>
+
+                        <div class="img-wrap">
+                            <div class="image fit">
+                                <a href="#"
+                                    ><img
+                                        style="max-width: 400px; height: 300px"
+                                        src="images/c7.jpg"
+                                        alt=""
+                                /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </center>
+        </section>
+
+        <section id="two" class="wrappe style2">
+            <center>
+                <div class="carrd" style="width: 90%; border: 0">
+                    <div class="sub-head">
+                        New Age Innovation Network (NAIN)
+                    </div>
+                    
+                    
+                    <div class="gallery">
+                        <div class="img-wrap">
+                            <div class="image fit">
+                                <a href="#"
+                                    ><img src="images/new age1.jpg" alt="" height:25%
+                                /></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="containerr">
+                        <p style="padding-left: 10px; padding-right: 10px">
+                            ME-RIISE is associated with New Age Innovation
+                            Network and is working towards bringing up
+                            incubation centers that will encourage students,
+                            researchers, scholars, and alumni to share their
+                            ideas, nurture, and bring out technical solutions to
+                            problems that are local-centric. <br />
+                            Entrepreneurship development and mentoring are one
+                            of the ten initiatives of KIG 2020 for creating new
+                            opportunities and jobs. One of the tasks under this
+                            head is to build ‘ KARNATAKA NEW AGE INNOVATION
+                            NETWORK.’ The main objective of the NAIN Scheme is
+                            to encourage students, research scholars, and alumni
+                            to share their ideas to solve the chosen problems
+                            which are local-centric and to validate, refine, and
+                            nurture the ideas. Incubation Center shall provide
+                            an eco-system to convert the ideas in proof of
+                            concept and upgrade them to a level of commercial
+                            value. After successful incubation, encourage and
+                            lead the teams towards setting up a business
+                            enterprise
+                        </p>
+                    </div>
+                </div>
+            </center>
+        </section>
+
+        <section id="two" class="wrappe style2">
+            <center>
+                <div class="carrd" style="width: 90%; border: 0">
+                    <div class="sub-head">MoU with Atal Incubation Centre</div>
+                    
+                    
+                    <div class="gallery">
+                        <div class="img-wrap">
+                            <div class="image fit">
+                                <a href="#"
+                                    ><img src="images/mou.jfif" alt="" height:25%
+                                /></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="containerr">
+                        <p style="padding-left: 10px; padding-right: 10px">
+                            ME-RIISE has a MoU with Atal Incubation Centre,
+                            Jyothi Institute of Technology, Bangalore. This
+                            association has provided a platform for
+                            collaborative research between two different
+                            institutes and various other activities.
+                        </p>
+                    </div>
+                    <div class="gallery">
+                        <div class="img-wrap">
+                            <div class="image fit">
+                                <a href="#"
+                                    ><img src="images/c8.jpg" alt=""
+                                /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </center>
+        </section>
+        <section id="two" class="wrappe style2">
+            <center>
+                <div class="carrd" style="width: 90%; border: 0">
+                    <div class="sub-head">Memorandum of Understanding With</div>
+
+                    <div class="containerr">
+                        <p style="padding-left: 10px; padding-right: 10px">
+                            • KASSIA (KARNATAKA SMALL SCALE INDUSTRIES
+                            ASSOCIATION) <br />
+
+                            • ICT ACADEMY <br />
+
+                            • AIC-JIC (ATAL INCUBATION CENTRE-JYOTHY INSTITUTE
+                            OF TECHNOLOGY)
+                        </p>
+                    </div>
+                </div>
+            </center>
+        </section>
+
+        <section id="two" class="wrappe style2">
+            <center>
+                <div class="carrd" style="width: 90%; border: 0">
+                    <div class="sub-head">
+                        Innovation & Centralized Research Laboratory
+                    </div>
+
+                    <div class="containerr">
+                        <p style="padding-left: 10px; padding-right: 10px">
+                            Innovation lab of ME-RIISE fosters innovative
+                            activities and supports students to enrich their
+                            spirit of entrepreneurship. The innovation lab
+                            comprises IoT facilities for developing innovative
+                            projects and high-performance computing facilities
+                            for carrying out research. The Innovation Lab has
+                            facilitated the following activities and has led to
+                            establishment of two Startup Ventures.
+                        </p>
+                    </div>
+                </div>
+            </center>
+        </section>
+
+        
+
+        <!-- <div class="sildehead" style="text-align: center">
+            <h1 class="sub-head">Feedbacks</h1>
+        </div>
+
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <q
+                    >Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.</q
+                >
+                <p class="author">- Person Name1</p>
+            </div>
+
+            <div class="mySlides">
+                <q
+                    >Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamc Excepteur sint occaecat cupidatat non proident, sunt
+                    in culpa qui officia deserunt mollit anim id est laborum.</q
+                >
+                <p class="author">- Person2</p>
+            </div>
+
+            <div class="mySlides">
+                <q
+                    >Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labxcepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.</q
+                >
+                <p class="author">- Person3</p>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div> -->
+
+        <!-- Footer -->
+
+
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+   
+    <img src="images/ind.jpg" style="width:100%">
+    
+  </div>
+
+ <div class="mySlides fade">
+   
+    <img src="images/ev2.jpg" style="width:100%">
+    
+  </div>
+
+ <div class="mySlides fade">
+   
+    <img src="images/ev3.jpg" style="width:100%">
+    
+  </div>
+
+ <div class="mySlides fade">
+   
+    <img src="images/ev4.jpg" style="width:100%">
+    
+  </div>
+
+  <div class="mySlides fade">
+   
+    <img src="images/g9.jpg" style="width:100%">
+    
+  </div>
+
+ 
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+
+<br> <br> <br>
+
+        <footer id="footer">
+            <div class="container">
+                <ul class="icons">
+                    <li>
+                        <a href="#" class="icon fa-twitter"
+                        style="color: rgb(51, 183, 235);text-decoration: none;"
+                            ><span class="label">Twitter</span></a
+                        >
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/mce.startup.club" class="icon fa-facebook"
+                        style="color: rgb(43, 43, 247);text-decoration: none;"
+                            ><span class="label">Facebook</span></a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.instagram.com/me_riise/"
+                            class="icon fa-instagram"
+                            style="color: rgb(250, 43, 112);;text-decoration:none"
+                            ><span class="label">Instagram</span></a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="mailto:meriisehsn@gmail.com"
+                            class="icon fa-envelope"
+                            style="color: rgb(228, 54, 11);text-decoration:none"
+                            ><span class="label">Email</span></a
+                        >
+                    </li>
+                </ul>
+            </div>
+            <div class="copyright">&copy; ME-RIISE. All rights reserved</div>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/skel.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+        <!--<script src="assets/js/from/jquery.min.js"></script>
+			<script src="assets/js/from/skel.min.js"></script>
+			<script src="assets/js/from/skel-layers.min.js"></script>
+			<script src="assets/js/from/init.js"></script>-->
+    </body>
+</html>
