@@ -1979,8 +1979,9 @@
 	input[type="button"],
 	button,
 	.button {
-		background-color: #f2f2f2;
-		color: #000 !important;
+		/* background-color: #f2f2f2; */
+		/* color: #000 !important; */
+		color: blue;
 	}
 
 		input[type="submit"]:hover,
