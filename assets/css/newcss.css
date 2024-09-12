@@ -110,6 +110,7 @@ q {
 
 .ssheader {
     box-sizing: border-box;
+    /* height: 30vh; */
     padding: 1%;
     text-align: center;
     background-color: black;
