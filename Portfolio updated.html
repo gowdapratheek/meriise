@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+    body {
+
+      font-weight: 500;
+      font-style: normal;
+    }
+
+    #img {
+      place-items: center;
+    }
+  </style>
+
+  <body>
+    <!-- <div class="ssheader c-hero">
+        <h2 class="h-txt text-2xl">
+            MALNAD ENCLAVE FOR RESEARCH, INNOVATION, INCUBATION, STARTUPS AND ENTREPRENEURSHIP
+        </h2>
+        <h4 class="h-txt2 text-3xl mt-4">Malnad College of Engineering, Hassan</h4>
+    </div> -->
+
+    <div class="snav-bar sticky top-0 z-50">
+        <!-- Navbar -->
+        <div class="w-full bg-black h-[13vh] flex items-center justify-between px-6 z-50">
+            <a href="http://www.meriise.org/" class="cursor-pointer">
+                <img src="images/meriise-logo new.png" alt="Logo" class="h-[9rem] w-auto">
+            </a>
+
+            <!-- Hamburger Menu for small screens -->
+            <div id="hamburger-menu" class="space-y-2 mx-4 mt-4 lg:hidden cursor-pointer">
+                <span class="block h-0.5 w-8" style="background-color: #01adfc;"></span>
+                <span class="block h-0.5 w-8" style="background-color: #01adfc;"></span>
+                <span class="block h-0.5 w-8" style="background-color: #01adfc;"></span>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div id="mobile-nav" class="hidden lg:hidden flex-col bg-black text-xl font-bold text-[#01adfc] space-y-4 p-4 absolute top-[13vh] left-0 w-full z-50">
+                <ul>
+                    <li><a href="index.html" class="cursor-pointer">Home</a></li>
+                    <li><a href="aboutmeriise.html" class="cursor-pointer">About Us</a></li>
+                    <li><a href="faculty.html" class="cursor-pointer">Faculty</a></li>
+                    <li><a href="team.html" class="cursor-pointer">Student Members</a></li>
+                    <li><a href="iic.html" class="cursor-pointer">MHRD-IIC</a></li>
+                    <li><a href="nain.html" class="cursor-pointer">Nain</a></li>
+                    <li><a href="uba.html" class="cursor-pointer">UBA</a></li>
+                    <li><a href="infrastructure.html" class="cursor-pointer">Infrastructure</a></li>
+                    <li><a href="startups.html" class="cursor-pointer">Startup</a></li>
+                    <li><a href="collab.html" class="cursor-pointer">Collaborations</a></li>
+                    <li><a href="Nisp.html" class="cursor-pointer">MCE-NISP Policy</a></li>
+                    <li><a href="documents.html" class="cursor-pointer">Docs</a></li>
+                    
+                    <!-- Pragyatha Dropdown in Mobile -->
+                    <li class="relative">
+                        <button id="pragyatha-mobile-btn" class="cursor-pointer flex items-center">
+                            Pragyatha <span class="ml-1">&#9660;</span>
+                        </button>
+                        <ul id="pragyatha-mobile-dropdown" class="hidden bg-white text-[#01adfc] p-2 font-bold rounded space-y-2 mt-2 w-auto min-w-[min-content] ">
+                            <li><a href="pragyatha23.html" class="cursor-pointer">Pragyatha-23</a></li>
+                            <li><a href="Pragyatha.html" class="cursor-pointer">Pragyatha-21</a></li>
+                            <li><a href="prag.html" class="cursor-pointer">Pragyatha-19</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Desktop Navigation Menu -->
+            <div class="hidden lg:flex flex-row justify-center items-center w-full text-xl font-bold whitespace-nowrap" style="color: #01adfc;">
+                <ul class="flex flex-row space-x-8 items-center">
+                    <li><a href="index.html" class="cursor-pointer">Home</a></li>
+                    <li><a href="aboutmeriise.html" class="cursor-pointer">About Us</a></li>
+                    <li><a href="faculty.html" class="cursor-pointer">Faculty</a></li>
+                    <li><a href="Portfolio updated.html" class="cursor-pointer">Team Members</a></li>
+                    <li><a href="iic.html" class="cursor-pointer">MHRD-IIC</a></li>
+                    <li><a href="nain.html" class="cursor-pointer">Nain</a></li>
+                    <li><a href="uba.html" class="cursor-pointer">UBA</a></li>
+                    <li><a href="infrastructure.html" class="cursor-pointer">Infrastructure</a></li>
+                    <li><a href="startups.html" class="cursor-pointer">Startup</a></li>
+                    <li><a href="collab.html" class="cursor-pointer">Collaborations</a></li>
+                    <li><a href="Nisp.html" class="cursor-pointer">MCE-NISP Policy</a></li>
+                    <li><a href="documents.html" class="cursor-pointer">Docs</a></li>
+                    <!-- Pragyatha Dropdown -->
+                    <ul class="relative group flex items-center">
+                        <li class="relative group">
+                            <button id="pragyatha-btn" class="cursor-pointer rounded-xl px-2 flex items-center" style="color: inherit;">
+                                Pragyatha <span class="ml-1">&#9660;</span>
+                            </button>
+                            <ul id="pragyatha-dropdown" class="hidden group-hover:flex flex-col bg-white text-[#01adfc] p-4 font-bold absolute mt-2 right-0 rounded-xl space-y-2 inline-block">
+                                <li><a href="pragyatha23.html" class="cursor-pointer">Pragyatha-23</a></li>
+                                <li><a href="Pragyatha.html" class="cursor-pointer">Pragyatha-21</a></li>
+                                <li><a href="prag.html" class="cursor-pointer">Pragyatha-19</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script for mobile menu and Pragyatha dropdown -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Toggle mobile menu
+            const hamburgerMenu = document.getElementById('hamburger-menu');
+            const mobileNav = document.getElementById('mobile-nav');
+
+            hamburgerMenu.addEventListener('click', function() {
+                // Toggle the visibility of the mobile navigation menu
+                mobileNav.classList.toggle('hidden');
+            });
+
+            // Toggle Pragyatha dropdown in mobile
+            const pragyathaMobileBtn = document.getElementById('pragyatha-mobile-btn');
+            const pragyathaMobileDropdown = document.getElementById('pragyatha-mobile-dropdown');
+
+            pragyathaMobileBtn.addEventListener('click', function() {
+                // Toggle the visibility of the Pragyatha dropdown
+                pragyathaMobileDropdown.classList.toggle('hidden');
+            });
+        });
+    </script>
+</body>
+
+
+    <div class="max-w-[1320px] mx-auto bg-white mt-12">
+      <h1 class="md:text-4xl lg:text-4xl text-center text-blue-600">
+        Office Bearers | ME-RIISE
+      </h1>
+      <h2 class="md:text-4xl lg:text-4xl text-center text-black-600 p-10 pt-4  underline">
+        LEADS
+      </h2>
+    </div>
+
+    <div class="grid gap-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 p-3 pt-0 mt-2">
+
+
+
+<div
+      class="bg-blue-400 rounded-2xl m-24 flex flex-col"
+      style="box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.5)"
+      >
+        <div class="items-center">
+          <img
+            src="portfolionew/Fahadnew.jpg"
+            alt=""
+            class="object-fit-cover w-full h-full rounded-t-2xl"
+          />
+        </div>
+        <div class="bg-black text-white text-center p-4 font-bold">
+          <h1 class="text-2xl">Mohammed Fahad Khan</h1>
+        </div>
+        <div
+          class="bg-gray-300 text-center p-4 rounded-b-xl flex-grow min-h-[100px]"
+        >
+          <h2 class="text-gray-800 font-bold text-xl">Executive Lead</h2>
+          <h2 class="text-gray-800">Mechanical Engg.</h2>
+
+          <div class="flex justify-center items-center space-x-4">
+            <a href="https://www.linkedin.com/in/fahad9118" target="_blank">
+              <img src="portfolionew/link3.jpg" alt="" class="h-5" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/fahad9118"
+              target="_blank"
+              class="text-blue-600 hover:underline"
+            >
+              Mohammed Fahad Khan
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-blue-400 rounded-2xl m-24 flex flex-col"
+        style="box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.5)"
+      >
+        <div class="items-center">
+          <img
+            src="portfolionew/Anaghanew.jpg"
+            alt=""
+            class="object-fit-cover w-full h-full rounded-t-2xl"
+          />
+        </div>
+        <div class="bg-black text-white text-center p-4 font-bold">
+          <h1 class="text-2xl">Anagha B S</h1>
+        </div>
+        <div
+          class="bg-gray-300 text-center p-4 rounded-b-xl flex-grow min-h-[100px]"
+        >
+          <h2 class="text-gray-800 text-xl font-bold">Executive & H R Lead</h2>
+          <h2 class="text-gray-800">Computer Science Engg.</h2>
+
+          <div class="flex justify-center items-center space-x-4">
+            <a
+              href="https://www.linkedin.com/in/anagha-b-s-0763b6229?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+              target="_blank"
+            >
+              <img
+                src="portfolionew/link3.jpg"
+                alt="LinkedIn"
+                class="h-5 rounded-0"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/anagha-b-s-0763b6229?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+              target="_blank"
+              class="text-blue-600 hover:underline"
+            >
+              Anagha B S
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-blue-400 rounded-2xl m-24 flex flex-col"
+        style="box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.5)"
+      >
+        <div class="items-center">
+          <img
+            src="portfolionew/PratheekaGanapathinew.png"
+            alt=""
+            class="object-fit-cover w-full h-full rounded-t-2xl"
+          />
+        </div>
+        <div class="bg-black text-white text-center p-4 font-bold">
+          <h1 class="text-2xl">P Pratheeka Ganapathi</h1>
+        </div>
+        <div
+          class="bg-gray-300 text-center p-4 rounded-b-xl flex-grow min-h-[100px]"
+        >
+          <h2 class="text-gray-800 font-bold text-xl">
+            Executive & Digital Lead
+          </h2>
+          <h2 class="text-gray-800 text-xl font-bold">
+            Startup & Research Lead
+          </h2>
+          <h2 class="text-gray-800">Information Science Engg.</h2>
+
+          <div class="flex justify-center items-center space-x-4">
+            <a
+              href="https://www.linkedin.com/in/p-pratheeka-ganapathi-9433a7229"
+              target="_blank"
+            >
+              <img src="portfolionew/link3.jpg" alt="" class="h-5" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/p-pratheeka-ganapathi-9433a7229"
+              target="_blank"
+              class="text-blue-600 hover:underline"
+            >
+              P Pratheeka Ganapathi
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-blue-400 rounded-2xl m-24 flex flex-col"
+        style="box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.5)"
+      >
+        <div class="items-center">
+          <img
+            src="portfolionew/Chaithanyanew.jpg"
+            alt=""
+            class="object-fit-cover w-full h-full rounded-t-2xl"
+          />
+        </div>
+        <div class="bg-black text-white text-center p-4 font-bold">
+          <h1 class="text-2xl">Chaithanya S L</h1>
+        </div>
+        <div
+          class="bg-gray-300 text-center p-4 rounded-b-xl flex-grow min-h-[100px]"
+        >
+          <h2 class="text-gray-800 text-xl font-bold">
+            Executive & Finance Lead
+          </h2>
+          <h2 class="text-gray-800">Electronics & Electrical Engg.</h2>
+          <div class="flex justify-center items-center space-x-4">
+            <a
+              href="https://www.linkedin.com/in/chaithanya-s-l-49241122a"
+              target="_blank"
+            >
+              <img src="portfolionew/link3.jpg" alt="" class="h-5 rounded-0" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/chaithanya-s-l-49241122a"
+              target="_blank"
+              class="text-blue-600 hover:underline"
+            >
+              Chaithanya S L
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-blue-400 rounded-2xl m-24 flex flex-col"
+        style="box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.5)"
+      >
+        <div class="items-center">
+          <img
+            src="portfolionew/Hemanthnew.jpg"
+            alt=""
+            class="object-fit-cover w-full h-full rounded-t-2xl"
+          />
+        </div>
+        <div class="bg-black text-white text-center p-4 font-bold">
+          <h1 class="text-2xl">Hemanth S</h1>
+        </div>
+        <div
+          class="bg-gray-300 text-center p-4 rounded-b-xl flex-grow min-h-[100px]"
+        >
+          <h2 class="text-gray-800 text-xl font-bold">
+            Planning, Digital & Design Lead
+          </h2>
+          <h2 class="text-gray-800 text-xl font-bold">
+            Startup & Research Lead
+          </h2>
+          <h2 class="text-gray-800">Electronics and Instrumentation Engg.</h2>
+          <div class="flex justify-center items-center space-x-4">
+            <a
+              href="https://www.linkedin.com/in/hemanth-s-kumar-2489701bb"
+              target="_blank"
+            >
+              <img src="portfolionew/link3.jpg" alt="" class="h-5 rounded-0" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/hemanth-s-kumar-2489701bb"
+              target="_blank"
+              class="text-blue-600 hover:underline"
+            >
+              Hemanth S
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-blue-400 rounded-2xl m-24 flex flex-col"
+        style="box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.5)"
+      >
+        <div class="items-center">
+          <img
+            src="portfolionew/Darshannew.JPG"
+            alt=""
+            class="object-fit-cover w-full h-full rounded-t-2xl"
+          />
+        </div>
+        <div class="bg-black text-white text-center p-4 font-bold">
+          <h1 class="text-2xl">Darshan H D</h1>
+        </div>
+        <div
+          class="bg-gray-300 text-center p-4 rounded-b-xl flex-grow min-h-[100px]"
+        >
+          <h2 class="text-gray-800 text-xl font-bold">Planning Lead</h2>
+          <h2 class="text-gray-800 text-xl font-bold">Marketing & UBA Lead</h2>
+          <h2 class="text-gray-800">Electronics and Instrumentation Engg.</h2>
+          <div class="flex justify-center items-center space-x-4">
+            <a
+              href="https://www.linkedin.com/in/darshan-h-d-315455315"
+              target="_blank"
+            >
+              <img src="portfolionew/link3.jpg" alt="" class="h-5 rounded-0" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/darshan-h-d-315455315"
+              target="_blank"
+              class="text-blue-600 hover:underline"
+            >
+              Darshan H D
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-blue-400 rounded-2xl m-24 flex flex-col"
+        style="box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.5)"
+      >
+        <div class="items-center">
+          <img
+            src="portfolionew/Arjunnew.jpg"
+            alt=""
+            class="object-fit-cover w-full h-full rounded-t-2xl"
+          />
+        </div>
+        <div class="bg-black text-white text-center p-4 font-bold">
+          <h1 class="text-2xl">Arjun H</h1>
+        </div>
+
+        <div
+          class="bg-gray-300 text-center p-4 rounded-b-xl flex-grow min-h-[100px]"
+        >
+          <h2 class="text-gray-800 text-xl font-bold">
+            Budget and Creative Lead
+          </h2>
+          <h2 class="text-gray-800 text-xl font-bold">Marketing & UBA Lead</h2>
+          <h2 class="text-gray-800">Civil Engg.</h2>
+
+          <div class="flex justify-center items-center space-x-4">
+            <a
+              href="https://www.linkedin.com/in/arjun-h-123456"
+              target="_blank"
+            >
+              <img
+                src="portfolionew/link3.jpg"
+                alt="LinkedIn"
+                class="h-5 rounded-0"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/arjun-h-123456"
+              target="_blank"
+              class="text-blue-600 hover:underline"
+            >
+              Arjun H
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-blue-400 rounded-2xl m-24 flex flex-col"
+        style="box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.5)"
+      >
+        <div class="items-center">
+          <img
+            src="portfolionew/Tejaswininew.JPG"
+            alt=""
+            class="object-fit-cover w-full h-full rounded-t-2xl"
+          />
+        </div>
+        <div class="bg-black text-white text-center p-4 font-bold">
+          <h1 class="text-2xl">Tejaswini A S</h1>
+        </div>
+        <div
+          class="bg-gray-300 text-center p-4 rounded-b-xl flex-grow min-h-[100px]"
+        >
+          <h2 class="text-gray-800 text-xl font-bold">
+            Budget and Creative Lead
+          </h2>
+          <h2 class="text-gray-800">Information Science Engg.</h2>
+          <div class="flex justify-center items-center space-x-4">
+            <a
+              href="https://www.linkedin.com/in/tejaswini-a-s-3603a8229"
+              target="_blank"
+            >
+              <img src="portfolionew/link3.jpg" alt="" class="h-5 rounded-0" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/tejaswini-a-s-3603a8229"
+              target="_blank"
+              class="text-blue-600 hover:underline"
+            >
+              Tejaswini A S
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-blue-400 rounded-2xl m-24 flex flex-col"
+        style="box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.5)"
+      >
+        <div class="items-center">
+          <img
+            src="portfolionew/Pratheeknew.jpg"
+            alt=""
+            class="object-fit-cover w-full h-full rounded-t-2xl"
+          />
+        </div>
+        <div class="bg-black text-white text-center p-4 font-bold">
+          <h1 class="text-2xl">H G Pratheek Gowda</h1>
+        </div>
+        <div
+          class="bg-gray-300 text-center p-4 rounded-b-xl flex-grow min-h-[100px]"
+        >
+          <h2 class="text-gray-800 text-xl font-bold">Technical Lead</h2>
+          <h2 class="text-gray-800">Computer Science Engg.</h2>
+          <div class="flex justify-center items-center space-x-4">
+            <a
+              href="https://www.linkedin.com/in/pratheek-gowda"
+              target="_blank"
+            >
+              <img src="portfolionew/link3.jpg" alt="" class="h-5 rounded-0" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/pratheek-gowda"
+              target="_blank"
+              class="text-blue-600 hover:underline"
+            >
+              H G Pratheek Gowda
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-blue-400 rounded-2xl m-24 flex flex-col"
+        style="box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.5)"
+      >
+        <div class="items-center">
+          <img
+            src="portfolionew/ThejaswiniMDnew.jpg"
+            alt=""
+            class="object-fit-cover w-full h-full rounded-t-2xl"
+          />
+        </div>
+        <div class="bg-black text-white text-center p-4 font-bold">
+          <h1 class="text-2xl">Thejaswini M D</h1>
+        </div>
+        <div
+          class="bg-gray-300 text-center p-4 rounded-b-xl flex-grow min-h-[100px]"
+        >
+          <h2 class="text-gray-800 text-xl font-bold">Technical Lead</h2>
+          <h2 class="text-gray-800">Computer Science Engg.</h2>
+          <div class="flex justify-center items-center space-x-4">
+            <a
+              href="https://www.linkedin.com/in/thejaswini-md-7959151b6"
+              target="_blank"
+            >
+              <img src="portfolionew/link3.jpg" alt="" class="h-5 rounded-0" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/thejaswini-md-7959151b6"
+              target="_blank"
+              class="text-blue-600 hover:underline"
+            >
+              Thejaswini M D
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-blue-400 rounded-2xl m-24 flex flex-col"
+        style="box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.5)"
+      >
+        <div class="items-center">
+          <img
+            src="portfolionew/Prajwalnew.jpg"
+            alt=""
+            class="object-fit-cover w-full h-full rounded-t-2xl"
+          />
+        </div>
+        <div class="bg-black text-white text-center p-4 font-bold">
+          <h1 class="text-2xl">Prajwal Kumbar H M</h1>
+        </div>
+        <div
+          class="bg-gray-300 text-center p-4 rounded-b-xl flex-grow min-h-[100px]"
+        >
+          <h2 class="text-gray-800 text-xl font-bold">Digital Lead</h2>
+          <h2 class="text-gray-800">Electronics & Communication Engg.</h2>
+          <div class="flex justify-center items-center space-x-4">
+            <a
+              href="https://www.linkedin.com/in/prajwal-kumbar-h-m-4041b0268"
+              target="_blank"
+            >
+              <img src="portfolionew/link3.jpg" alt="" class="h-5 rounded-0" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/prajwal-kumbar-h-m-4041b0268"
+              target="_blank"
+              class="text-blue-600 hover:underline"
+            >
+              Prajwal Kumbar H M
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-blue-400 rounded-2xl m-24 flex flex-col"
+        style="box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.5)"
+      >
+        <div class="items-center">
+          <img
+            src="portfolionew/Rumannew.jpg"
+            alt=""
+            class="object-fit-cover w-full h-full rounded-t-2xl"
+          />
+        </div>
+        <div class="bg-black text-white text-center p-4 font-bold">
+          <h1 class="text-2xl">Rumaan Sharief N</h1>
+        </div>
+        <div
+          class="bg-gray-300 text-center p-4 rounded-b-xl flex-grow min-h-[100px]"
+        >
+          <h2 class="text-gray-800 text-xl font-bold">Editorial Lead</h2>
+          <h2 class="text-gray-800 text-xl font-bold">
+            Startup & Research Lead
+          </h2>
+          <h2 class="text-gray-800">Civil Engg.</h2>
+          <div class="flex justify-center items-center space-x-4">
+            <a
+              href="https://www.linkedin.com/in/rumaan-sharief-n-70423b229"
+              target="_blank"
+            >
+              <img src="portfolionew/link3.jpg" alt="" class="h-5 rounded-0" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/rumaan-sharief-n-70423b229"
+              target="_blank"
+              class="text-blue-600 hover:underline"
+            >
+              Rumaan Sharief N
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-blue-400 rounded-2xl m-24 flex flex-col"
+        style="box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.5)"
+      >
+        <div class="items-center">
+          <img
+            src="portfolionew/Harshininew.jpg"
+            alt=""
+            class="object-fit-cover w-full h-full rounded-t-2xl"
+          />
+        </div>
+        <div class="bg-black text-white text-center p-4 font-bold">
+          <h1 class="text-2xl">Harshini N D</h1>
+        </div>
+        <div
+          class="bg-gray-300 text-center p-4 rounded-b-xl flex-grow min-h-[100px]"
+        >
+          <h2 class="text-gray-800 text-xl font-bold">Editorial Lead</h2>
+          <h2 class="text-gray-800">Computer Science Engg.</h2>
+          <div class="flex justify-center items-center space-x-4">
+            <a
+              href="https://www.linkedin.com/in/harshini-n-d-a6040b22a"
+              target="_blank"
+            >
+              <img src="portfolionew/link3.jpg" alt="" class="h-5 rounded-0" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/harshini-n-d-a6040b22a"
+              target="_blank"
+              class="text-blue-600 hover:underline"
+            >
+              Harshini N D
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-blue-400 rounded-2xl m-24 flex flex-col"
+        style="box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.5)"
+      >
+        <div class="items-center">
+          <img
+            src="portfolionew/SinchanaMGnew.jpg"
+            alt=""
+            class="object-fit-cover w-full h-full rounded-t-2xl"
+          />
+        </div>
+        <div class="bg-black text-white text-center p-4 font-bold">
+          <h1 class="text-2xl">Sinchana M G</h1>
+        </div>
+        <div
+          class="bg-gray-300 text-center p-4 rounded-b-xl flex-grow min-h-[100px]"
+        >
+          <h2 class="text-gray-800 text-xl font-bold">Editorial Lead</h2>
+          <h2 class="text-gray-800 text-xl font-bold">
+            Social Media & Broadcast Lead
+          </h2>
+          <h2 class="text-gray-800">Electronics & Communication Engg.</h2>
+          <div class="flex justify-center items-center space-x-4">
+            <a
+              href="https://www.linkedin.com/in/sinchana-m-g-56ba00229"
+              target="_blank"
+            >
+              <img src="portfolionew/link3.jpg" alt="" class="h-5 rounded-0" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/sinchana-m-g-56ba00229"
+              target="_blank"
+              class="text-blue-600 hover:underline"
+            >
+              Sinchana M G
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-blue-400 rounded-2xl m-24 flex flex-col"
+        style="box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.5)"
+      >
+        <div class="items-center">
+          <img
+            src="portfolionew/Ayeshanew.jpg"
+            alt=""
+            class="object-fit-cover w-full h-full rounded-t-2xl"
+          />
+        </div>
+        <div class="bg-black text-white text-center p-4 font-bold">
+          <h1 class="text-2xl">Ayesha Zameer</h1>
+        </div>
+        <div
+          class="bg-gray-300 text-center p-4 rounded-b-xl flex-grow min-h-[100px]"
+        >
+          <h2 class="text-gray-800 text-xl font-bold">Database Lead</h2>
+          <h2 class="text-gray-800">Electronics & Electrical Engg.</h2>
+          <div class="flex justify-center items-center space-x-4">
+            <a
+              href="https://www.linkedin.com/in/ayesha-zameer-ayesha-7603b8229?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+              target="_blank"
+            >
+              <img src="portfolionew/link3.jpg" alt="" class="h-5 rounded-0" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/ayesha-zameer-ayesha-7603b8229?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+              target="_blank"
+              class="text-blue-600 hover:underline"
+            >
+              Ayesha Zameer
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="border-t-7 border-black my-8 mx-auto w-full max-w-4xl" />
+    <div>
+      <h2
+        class="md:text-4xl lg:text-4xl text-center text-black-600 p-10 underline"
+      >
+        SUB-LEADS
+      </h2>
+    </div>
+    <div class="grid gap-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 p-3">
+        <div
+      class="bg-blue-400 rounded-2xl m-24 flex flex-col"
+      style="box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.5)"
+    >
+      <div class="items-center">
+        <img
+          src="portfolionew/adi.JPG"
+          alt=""
+          class="object-fit-cover w-full h-full rounded-t-2xl"
+        />
+      </div>
+      <div class="bg-black text-white text-center p-4 font-bold">
+        <h1 class="text-2xl">Adithya M</h1>
+      </div>
+      <div
+        class="bg-gray-300 text-center p-4 rounded-b-xl flex-grow min-h-[100px]"
+      >
+        <h2 class="text-gray-800 text-xl font-bold"></h2>
+        <h2 class="text-gray-800">Information Science Engg.</h2>
+        <div class="flex justify-center items-center space-x-4">
+          <a
+            href="https://www.linkedin.com/in/aditya-m-5200b0242?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+          >
+            <img src="portfolionew/link3.jpg" alt="" class="h-5 rounded-0" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/aditya-m-5200b0242?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+            class="text-blue-600 hover:underline"
+          >
+            Adithya M
+          </a>
+        </div>
+      </div>
+      
+    </div>
+    
+    <div
+      class="bg-blue-400 rounded-2xl m-24 flex flex-col"
+      style="box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.5)"
+    >
+      <div class="items-center">
+        <img
+          src="portfolionew/amith.jpg"
+          alt=""
+          class="object-fit-cover w-full h-full rounded-t-2xl"
+        />
+      </div>
+      <div class="bg-black text-white text-center p-4 font-bold">
+        <h1 class="text-2xl">Amith Subodh</h1>
+      </div>
+      <div
+        class="bg-gray-300 text-center p-4 rounded-b-xl flex-grow min-h-[100px]"
+      >
+        <h2 class="text-gray-800 text-xl font-bold"></h2>
+        <h2 class="text-gray-800">Computer Science Engg.</h2>
+        <div class="flex justify-center items-center space-x-4">
+          <a
+            href="https://www.linkedin.com/in/amith-subodh-1a7b7a267?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+            target="_blank"
+          >
+            <img src="portfolionew/link3.jpg" alt="" class="h-5 rounded-0" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/amith-subodh-1a7b7a267?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+            target="_blank"
+            class="text-blue-600 hover:underline"
+          >
+            Amith Subodh
+          </a>
+        </div>
+      </div>
+</div>
+
+    <div
+      class="bg-blue-400 rounded-2xl m-24 flex flex-col"
+      style="box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.5)"
+    >
+      <div class="items-center">
+        <img
+          src="portfolionew/aviksha.jpg"
+          alt=""
+          class="object-fit-cover w-full h-full rounded-t-2xl"
+        />
+      </div>
+      <div class="bg-black text-white text-center p-4 font-bold">
+        <h1 class="text-2xl">Aviksha Kavya Gowda</h1>
+      </div>
+      <div
+        class="bg-gray-300 text-center p-4 rounded-b-xl flex-grow min-h-[100px]"
+      >
+        <h2 class="text-gray-800 text-xl font-bold"></h2>
+        <h2 class="text-gray-800">Information Science Engg.</h2>
+        <div class="flex justify-center items-center space-x-4">
+          <a
+            href="https://www.linkedin.com/in/aviksha-kavya-gowda-34189625a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+          >
+            <img src="portfolionew/link3.jpg" alt="" class="h-5 rounded-0" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/aviksha-kavya-gowda-34189625a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+            class="text-blue-600 hover:underline"
+          >
+            Aviksha Kavya Gowda
+          </a>
+        </div>
+      </div>
+</div>
+<div
+      class="bg-blue-400 rounded-2xl m-24 flex flex-col"
+      style="box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.5)"
+    >
+      <div class="items-center">
+        <img
+          src="portfolionew/chinmayee.jpg"
+          alt=""
+          class="object-fit-cover w-full h-full rounded-t-2xl"
+        />
+      </div>
+      <div class="bg-black text-white text-center p-4 font-bold">
+        <h1 class="text-2xl">Chinmayee Chougale</h1>
+      </div>
+      <div
+        class="bg-gray-300 text-center p-4 rounded-b-xl flex-grow min-h-[100px]"
+      >
+        <h2 class="text-gray-800 text-xl font-bold"></h2>
+        <h2 class="text-gray-800">Information Science Engg.</h2>
+        <div class="flex justify-center items-center space-x-4">
+          <a
+            href="https://www.linkedin.com/in/chinmayee-chougale-7a611b268?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+          >
+            <img src="portfolionew/link3.jpg" alt="" class="h-5 rounded-0" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/chinmayee-chougale-7a611b268?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+            class="text-blue-600 hover:underline"
+          >
+            Chinmayee Chougale
+          </a>
+        </div>
+      </div>
+</div>
+
+<div
+      class="bg-blue-400 rounded-2xl m-24 flex flex-col"
+      style="box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.5)"
+    >
+      <div class="items-center">
+        <img
+          src="portfolionew/kushi.jpg"
+          alt=""
+          class="object-fit-cover w-full h-full rounded-t-2xl"
+        />
+      </div>
+      <div class="bg-black text-white text-center p-4 font-bold">
+        <h1 class="text-2xl">Kushi Gurumurthy</h1>
+      </div>
+      <div
+        class="bg-gray-300 text-center p-4 rounded-b-xl flex-grow min-h-[100px]"
+      >
+        <h2 class="text-gray-800 text-xl font-bold"></h2>
+        <h2 class="text-gray-800">Electronics and Communication Engg.</h2>
+        <div class="flex justify-center items-center space-x-4">
+          <a
+            href="https://www.linkedin.com/in/kushi-gurumurthy-259431301?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+          >
+            <img src="portfolionew/link3.jpg" alt="" class="h-5 rounded-0" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/kushi-gurumurthy-259431301?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+            class="text-blue-600 hover:underline"
+          >
+            Kushi Gurumurthy
+          </a>
+        </div>
+      </div>
+</div>
+
+<div
+      class="bg-blue-400 rounded-2xl m-24 flex flex-col"
+      style="box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.5)"
+    >
+      <div class="items-center">
+        <img
+          src="portfolionew/nithin.jpg"
+          alt=""
+          class="object-fit-cover w-full h-full rounded-t-2xl"
+        />
+      </div>
+      <div class="bg-black text-white text-center p-4 font-bold">
+        <h1 class="text-2xl">Nithin Gowda M T</h1>
+      </div>
+      <div
+        class="bg-gray-300 text-center p-4 rounded-b-xl flex-grow min-h-[100px]"
+      >
+        <h2 class="text-gray-800 text-xl font-bold"></h2>
+        <h2 class="text-gray-800">Computer Science and Business Systems Engg.</h2>
+        <div class="flex justify-center items-center space-x-4">
+          <a
+            href="https://www.linkedin.com/in/nithin-gowda-m-t-a1a992267?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+          >
+            <img src="portfolionew/link3.jpg" alt="" class="h-5 rounded-0" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/nithin-gowda-m-t-a1a992267?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+            class="text-blue-600 hover:underline"
+          >
+            Nithin Gowda M T
+          </a>
+        </div>
+      </div>
+</div>
+
+<div
+      class="bg-blue-400 rounded-2xl m-24 flex flex-col"
+      style="box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.5)"
+    >
+      <div class="items-center">
+        <img
+          src="portfolionew/pragna.jpg"
+          alt=""
+          class="object-fit-cover w-full h-full rounded-t-2xl"
+        />
+      </div>
+      <div class="bg-black text-white text-center p-4 font-bold">
+        <h1 class="text-2xl">Pragna C P</h1>
+      </div>
+      <div
+        class="bg-gray-300 text-center p-4 rounded-b-xl flex-grow min-h-[100px]"
+      >
+        <h2 class="text-gray-800 text-xl font-bold"></h2>
+        <h2 class="text-gray-800">Computer Science Engg.</h2>
+        <div class="flex justify-center items-center space-x-4">
+          <a
+            href="https://www.linkedin.com/in/pragna-c-p-743a95267?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+          >
+            <img src="portfolionew/link3.jpg" alt="" class="h-5 rounded-0" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/pragna-c-p-743a95267?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+            class="text-blue-600 hover:underline"
+          >
+            Pragna C P
+          </a>
+        </div>
+      </div>
+</div>
+
+<div
+  class="bg-blue-400 rounded-2xl m-24 flex flex-col"
+  style="box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.5)"
+>
+  <div class="items-center">
+    <img
+      src="portfolionew/rifa.jpg"
+      alt="Profile Image"
+      class="object-fit-cover w-full h-full rounded-t-2xl"
+    />
+  </div>
+  <div class="bg-black text-white text-center p-4 font-bold">
+    <h1 class="text-2xl">Rifa Mariyam</h1>
+  </div>
+  <div
+    class="bg-gray-300 text-center p-4 rounded-b-xl flex-grow min-h-[100px]"
+  >
+    <h2 class="text-gray-800 font-bold text-xl"></h2>
+    <h2 class="text-gray-800">Electrical and Electronics Engg.</h2>
+    <div class="flex justify-center items-center space-x-4">
+      <a href="https://www.linkedin.com/in/rifa-mariyam-664a47259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+        <img src="portfolionew/link3.jpg" alt="LinkedIn Icon" class="h-5" />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/rifa-mariyam-664a47259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+        target="_blank"
+        class="text-blue-600 hover:underline"
+      >
+        Rifa Mariyam
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<div
+      class="bg-blue-400 rounded-2xl m-24 flex flex-col"
+      style="box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.5)"
+    >
+      <div class="items-center">
+        <img
+          src="portfolionew/shravani.jpg"
+          alt=""
+          class="object-fit-cover w-full h-full rounded-t-2xl"
+        />
+      </div>
+      <div class="bg-black text-white text-center p-4 font-bold">
+        <h1 class="text-2xl">Shravani G</h1>
+      </div>
+      <div
+        class="bg-gray-300 text-center p-4 rounded-b-xl flex-grow min-h-[100px]"
+      >
+        <h2 class="text-gray-800 text-xl font-bold"></h2>
+        <h2 class="text-gray-800">Computer Science Engg.</h2>
+        <div class="flex justify-center items-center space-x-4">
+          <a
+            href="https://www.linkedin.com/in/shravanig08?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+          >
+            <img src="portfolionew/link3.jpg" alt="" class="h-5 rounded-0" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/shravanig08?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+            class="text-blue-600 hover:underline"
+          >
+            Shravani G
+          </a>
+        </div>
+      </div>
+</div>
+
+
+
+
+<div
+      class="bg-blue-400 rounded-2xl m-24 flex flex-col"
+      style="box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.5)"
+    >
+      <div class="items-center">
+        <img
+          src="portfolionew/tejas.jpg"
+          alt=""
+          class="object-fit-cover w-full h-full rounded-t-2xl"
+        />
+      </div>
+      <div class="bg-black text-white text-center p-4 font-bold">
+        <h1 class="text-2xl">Tejas Yogesh</h1>
+      </div>
+      <div
+        class="bg-gray-300 text-center p-4 rounded-b-xl flex-grow min-h-[100px]"
+      >
+        <h2 class="text-gray-800 text-xl font-bold"></h2>
+        <h2 class="text-gray-800">Computer Science Engg.</h2>
+        <div class="flex justify-center items-center space-x-4">
+          <a
+            href="https://www.linkedin.com/in/tejas-yogesh-5410351ab?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+          >
+            <img src="portfolionew/link3.jpg" alt="" class="h-5 rounded-0" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/tejas-yogesh-5410351ab?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+            class="text-blue-600 hover:underline"
+          >
+            Tejas Yogesh
+          </a>
+        </div>
+      </div>
+</div>
+
+<div
+      class="bg-blue-400 rounded-2xl m-24 flex flex-col"
+      style="box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.5)"
+    >
+      <div class="items-center">
+        <img
+          src="portfolionew/veerandra.jpg"
+          alt=""
+          class="object-fit-cover w-full h-full rounded-t-2xl"
+        />
+      </div>
+      <div class="bg-black text-white text-center p-4 font-bold">
+        <h1 class="text-2xl">Veerendra G Adoor</h1>
+      </div>
+      <div
+        class="bg-gray-300 text-center p-4 rounded-b-xl flex-grow min-h-[100px]"
+      >
+        <h2 class="text-gray-800 text-xl font-bold"></h2>
+        <h2 class="text-gray-800">Computer Science Engg.</h2>
+        <div class="flex justify-center items-center space-x-4">
+          <a
+            href="https://www.linkedin.com/in/veerendra-g-adoor-3133b2306?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+          >
+            <img src="portfolionew/link3.jpg" alt="" class="h-5 rounded-0" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/veerendra-g-adoor-3133b2306?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+            class="text-blue-600 hover:underline"
+          >
+            Veerendra G Adoor
+          </a>
+        </div>
+      </div>
+    </div>
+
+<div
+      class="bg-blue-400 rounded-2xl m-24 flex flex-col"
+      style="box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.5)"
+    >
+      <div class="items-center">
+        <img
+          src="portfolionew/yallappa.jpg"
+          alt=""
+          class="object-fit-cover w-full h-full rounded-t-2xl"
+        />
+      </div>
+      <div class="bg-black text-white text-center p-4 font-bold">
+        <h1 class="text-2xl">Yallappagouda Patil</h1>
+      </div>
+      <div
+        class="bg-gray-300 text-center p-4 rounded-b-xl flex-grow min-h-[100px]"
+      >
+        <h2 class="text-gray-800 text-xl font-bold"></h2>
+        <h2 class="text-gray-800">Information Science Engg.</h2>
+        <div class="flex justify-center items-center space-x-4">
+          <a
+            href="https://www.linkedin.com/in/yallappagouda-patil-1b1a99267?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+          >
+            <img src="portfolionew/link3.jpg" alt="" class="h-5 rounded-0" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/yallappagouda-patil-1b1a99267?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+            class="text-blue-600 hover:underline"
+          >
+            Yallappagouda Patil
+          </a>
+        </div>
+      </div>
+</div>
+
+
+
+    
+  </body>
+</html>

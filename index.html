@@ -55,64 +55,121 @@
         }
     </style>
 </head>
-
 <body>
     <div class="ssheader c-hero">
-        <h2 class="h-txt">
-            MALNAD ENCLAVE FOR RESEARCH, INNOVATION, INCUBATION, STARTUPS AND
-            ENTREPRENEURSHIP
+        <!-- Interchanged text sizes and added more spacing -->
+        <h2 class="h-txt text-2xl">
+            MALNAD ENCLAVE FOR RESEARCH, INNOVATION, INCUBATION, STARTUPS AND ENTREPRENEURSHIP
         </h2>
-        <h4 class="h-txt2">Malnad College of Engineering,Hassan</h4>
+        <h4 class="h-txt2 text-3xl mt-4">Malnad College of Engineering, Hassan</h4>
     </div>
 
-    <div class="snav-bar">
-        <!--logo-->
-
+    <div class="snav-bar sticky top-0 z-50">
         <!-- Navbar -->
-        <div class=" w-full bg-black h-[12vh] flex items-center justify-between z-50">
+        <div class="w-full bg-black h-[13vh] flex items-center justify-between px-6 z-50">
             <a href="http://www.meriise.org/" class="cursor-pointer">
-                <img src="images/meriise-logo new.png" alt="Logo" class="h-[7.5rem] mx-3 flex">
+                <img src="images/meriise-logo new.png" alt="Logo" class="h-[9rem] w-auto">
             </a>
-            <div class="space-y-2 mx-4 mt-4 lg:hidden" onclick="openNavigation()">
+
+            <!-- Hamburger Menu for small screens -->
+            <div id="hamburger-menu" class="space-y-2 mx-4 mt-4 lg:hidden cursor-pointer">
                 <span class="block h-0.5 w-8" style="background-color: #01adfc;"></span>
                 <span class="block h-0.5 w-8" style="background-color: #01adfc;"></span>
                 <span class="block h-0.5 w-8" style="background-color: #01adfc;"></span>
             </div>
-        </div>
 
+            <!-- Mobile Navigation Menu -->
+            <div id="mobile-nav" class="hidden lg:hidden flex-col bg-black text-xl font-bold text-[#01adfc] space-y-4 p-4 absolute top-[13vh] left-0 w-full z-50">
+                <ul>
+                    <li><a href="index.html" class="cursor-pointer">Home</a></li>
+                    <li><a href="aboutmeriise.html" class="cursor-pointer">About Us</a></li>
+                    <li><a href="faculty.html" class="cursor-pointer">Faculty</a></li>
+                    <li><a href="team.html" class="cursor-pointer">Student Members</a></li>
+                    <li><a href="iic.html" class="cursor-pointer">MHRD-IIC</a></li>
+                    <li><a href="nain.html" class="cursor-pointer">Nain</a></li>
+                    <li><a href="uba.html" class="cursor-pointer">UBA</a></li>
+                    <li><a href="infrastructure.html" class="cursor-pointer">Infrastructure</a></li>
+                    <li><a href="startups.html" class="cursor-pointer">Startup</a></li>
+                    <li><a href="collab.html" class="cursor-pointer">Collaborations</a></li>
+                    <li><a href="Nisp.html" class="cursor-pointer">MCE-NISP Policy</a></li>
+                    <li><a href="documents.html" class="cursor-pointer">Docs</a></li>
+                    
+                    <!-- Pragyatha Dropdown in Mobile -->
+                    <li class="relative">
+                        <button id="pragyatha-mobile-btn" class="cursor-pointer flex items-center">
+                            Pragyatha <span class="ml-1">&#9660;</span>
+                        </button>
+                        <ul id="pragyatha-mobile-dropdown" class="hidden bg-white text-[#01adfc] p-2 font-bold rounded space-y-2 mt-2 w-auto min-w-[min-content]">
+                            <li><a href="pragyatha23.html" class="cursor-pointer">Pragyatha-23</a></li>
+                            <li><a href="Pragyatha.html" class="cursor-pointer">Pragyatha-21</a></li>
+                            <li><a href="prag.html" class="cursor-pointer">Pragyatha-19</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
 
-        <!-- Navigation Menu -->
-        <div class="hidden fixed top-[12vh] right-0 lg:block z-50 " id="nav">
-            <ul class="sm:px-10 min-[320px]:px-10 bg-black h-[100vh] w-[60vw] flex flex-col justify-start text-md font-bold lg:bg-transparent lg:flex-row lg:items-center lg:h-[12vh] lg:justify-evenly lg:w-[90vw] lg:mt-1 overflow-y-hidden"
-                style="color: #01adfc;">
-                <li><a href="index.html" class="cursor-pointer">Home</a></li>
-                <li><a href="aboutmeriise.html" class="cursor-pointer">About Us</a></li>
-                <li><a href="faculty.html" class="cursor-pointer">Faculty</a></li>
-                <li><a href="team.html" class="cursor-pointer">Student Members</a></li>
-                <li><a href="iic.html" class="cursor-pointer">MHRD-IIC</a></li>
-                <li><a href="nain.html" class="cursor-pointer">Nain</a></li>
-                <li><a href="uba.html" class="cursor-pointer">UBA</a></li>
-                <li><a href="infrastructure.html" class="cursor-pointer">Infrastructure</a></li>
-                <li><a href="startups.html" class="cursor-pointer">Startup</a></li>
-                <li><a href="collab.html" class="cursor-pointer">Collaborations</a></li>
-                <li><a href="Nisp.html" class="cursor-pointer">MCE-NISP Policy</a></li>
-                <li><a href="documents.html" class="cursor-pointer">Docs</a></li>
-
-                <li>
-                    <button class="min-[320px]:px-0 cursor-pointer rounded-xl px-2" id="pragyatha-btn"
-                        style="color: inherit;">Pragyatha</button>
-                    <ul class="sm:w-[10vw] hidden bg-white text-blue w-[15vw] p-4 flex flex-col justify-start text-md font-bold absolute right-0 mt-2 rounded-xl min-[320px]:mx-[30px] min-[320px]:w-[50vw]"
-                        id="pragyatha-dropdown">
-                        <li><a href="pragyatha23.html" class="cursor-pointer">Pragyatha-23</a></li>
-                        <li><a href="Pragyatha.html" class="cursor-pointer">Pragyatha-21</a></li>
-                        <li><a href="prag.html" class="cursor-pointer">Pragyatha-19</a></li>
+            <!-- Desktop Navigation Menu -->
+            <div class="hidden lg:flex flex-row justify-center items-center w-full text-xl font-bold whitespace-nowrap" style="color: #01adfc;">
+                <ul class="flex flex-row space-x-8 items-center">
+                    <li><a href="index.html" class="cursor-pointer">Home</a></li>
+                    <li><a href="aboutmeriise.html" class="cursor-pointer">About Us</a></li>
+                    <li><a href="faculty.html" class="cursor-pointer">Faculty</a></li>
+                    <li><a href="Portfolio updated.html" class="cursor-pointer">Team Members</a></li>
+                    <li><a href="iic.html" class="cursor-pointer">MHRD-IIC</a></li>
+                    <li><a href="nain.html" class="cursor-pointer">Nain</a></li>
+                    <li><a href="uba.html" class="cursor-pointer">UBA</a></li>
+                    <li><a href="infrastructure.html" class="cursor-pointer">Infrastructure</a></li>
+                    <li><a href="startups.html" class="cursor-pointer">Startup</a></li>
+                    <li><a href="collab.html" class="cursor-pointer">Collaborations</a></li>
+                    <li><a href="Nisp.html" class="cursor-pointer">MCE-NISP Policy</a></li>
+                    <li><a href="documents.html" class="cursor-pointer">Docs</a></li>
+                    <!-- Pragyatha Dropdown -->
+                    <ul class="relative group flex items-center">
+                        <li class="relative group">
+                            <button id="pragyatha-btn" class="cursor-pointer rounded-xl px-2 flex items-center" style="color: inherit;">
+                                Pragyatha <span class="ml-1">&#9660;</span>
+                            </button>
+                            <ul id="pragyatha-dropdown" class="hidden group-hover:flex flex-col bg-white text-[#01adfc] p-4 font-bold absolute mt-2 right-0 rounded-xl space-y-2 min-[320px]:w-[50vw] w-auto"
+                                style="min-width: 10rem;">
+                                <li><a href="pragyatha23.html" class="cursor-pointer">Pragyatha-23</a></li>
+                                <li><a href="Pragyatha.html" class="cursor-pointer">Pragyatha-21</a></li>
+                                <li><a href="prag.html" class="cursor-pointer">Pragyatha-19</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                </li>
-            </ul>
+                </ul>
+            </div>
         </div>
-
-
     </div>
+
+    <!-- Script for mobile menu and Pragyatha dropdown -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Toggle mobile menu
+            const hamburgerMenu = document.getElementById('hamburger-menu');
+            const mobileNav = document.getElementById('mobile-nav');
+
+            hamburgerMenu.addEventListener('click', function() {
+                // Toggle the visibility of the mobile navigation menu
+                mobileNav.classList.toggle('hidden');
+            });
+
+            // Toggle Pragyatha dropdown in mobile
+            const pragyathaMobileBtn = document.getElementById('pragyatha-mobile-btn');
+            const pragyathaMobileDropdown = document.getElementById('pragyatha-mobile-dropdown');
+
+            pragyathaMobileBtn.addEventListener('click', function() {
+                // Toggle the visibility of the Pragyatha dropdown
+                pragyathaMobileDropdown.classList.toggle('hidden');
+            });
+        });
+    </script>
+</body>
+
+
+    
+
+
 
 
     <section class="banner full">
