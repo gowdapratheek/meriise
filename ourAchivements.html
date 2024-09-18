@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/teamstyles.css" />
+    <!-- <link rel="stylesheet" href="assets/css/style.css" /> -->
+  </head>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+    header {
+      font-family: "Inria Sans", system-ui;
+      font-weight: 400;
+      font-size: 10px;
+      font-style: normal;
+    }
+
+    /* Add a CSS rule to increase the image size */
+    .image-size {
+      width: 700px;
+      /* adjust the width as needed */
+      /* height: 400px; adjust the height as needed */
+      transform: scale(2.5);
+    }
+  </style>
+  
+
+  <!-- <body>
+    <header class="bg-black text-blue-400">
+      <nav
+        class="flex justify-between items-center w-screen mx-auto text-sm h-20"
+      >
+         3 div's are there 
+         1st div's are for logo 
+        <div>
+          <img src="meriise-logo.png" alt="" class="w-32" />
+        </div>
+
+        Another div's is for lists 
+        <div
+          class="navlinks flex justify-end duration-500 md:static absolute md:min-h-fit min-h-[70vh] top-[-100%] md:w-[85vw] left-12 w-[90%] bg-black flex items-center px-10 m-2"
+        >
+          <ul
+            class="flex md:flex-row flex-col md:items-center md:gap-[2vw] gap-2"
+          >
+            <li>
+              <a href="#" class="hover:text-blue-600">Home</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-blue-600">AboutUs</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-blue-600">Faculty</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-blue-600">Team Meriise</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-blue-600">MHRD-IIC</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-blue-600">Nain</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-blue-600">UBA</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-blue-600">Infrastructure</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-blue-600">Start-Up</a>
+            </li>
+
+            <li>
+              <a href="#" class="hover:text-blue-600">Achievements</a>
+            </li>
+            <div class="flex">
+              <li class="relative" onclick="toggleFunction()" id="click">
+                <a href="#" class="hover:text-blue-600">Pragyatha</a>
+                <ion-icon
+                  name="caret-down-outline"
+                  class="px-4"
+                  id="icons"
+                ></ion-icon>
+              </li>
+              <li
+                class="absolute bg-black text-white p-4 rounded-sm mt-8 hidden rounded-xl text-md w-[130px]"
+                id="box"
+                onclick="dropdown()"
+              >
+                <div>Pragyatha 23</div>
+                <div>Pragyatha 21</div>
+                <div>Pragyatha 19</div>
+              </li>
+            </div>
+          </ul>
+        </div>
+
+        Another div's is for button 
+        <div class="flex items-center gap-8">
+           <button class="bg-white text-black p-4">Sign in</button> 
+          <ion-icon
+            name="menu"
+            class="text-4xl md:hidden"
+            id="menu"
+            onclick="clickFunction(this)"
+          ></ion-icon>
+        </div>
+      </nav> -->
+    </header>
+
+    <div>
+      <h1 class="text-4xl bg-blue-300 text-center py-10 text-2xl md:text-4xl">
+        OUR ACHIEVEMENTS
+      </h1>
+    </div>
+
+    <div class="bg-gray-200 m-16 sm:p-5 md:p-5">
+      <p class="text-4xl text-center py-10">Eminent Engineer Award 2024</p>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2"
+      >
+        <div class="p-10 sm:p-10 md:p-20 lg:p-20 md:order-2 order-1">
+          <img src="images/geethamam.jpg" alt="" />
+        </div>
+        <div
+          class="leading-loose text-3xl md:order-1 order-2 float-left mr-4 mb-4 mx-12 mt-48"
+        >
+          Dr. Geetha Kiran A, CEO, ME-RIISE FOUNDATION, has been honored with
+          the Eminent Engineer Award! by Institution of Engineers, Karnataka
+          State Chapter, Bengaluru. Her outstanding leadership and relentless
+          pursuit of innovation continue to uplift the engineering community. A
+          true inspiration, her contributions pave the way for future engineers
+          and leaders.
+        </div>
+      </div>
+
+      <!-- float-left mr-4 mb-4 -->
+      <hr class="border-t-2 border-gray-400 my-4" />
+
+      <p class="text-4xl text-center py-10">Robosoccer Event 2024</p>
+
+      <div
+        class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2"
+      >
+        <div
+          class="leading-loose justify-content: normal text-3xl p-4 order-last md:order-last float-left mr-4 mb-4 mx-12 mt-48"
+        >
+          Dr. Geetha Kiran A, CEO, ME-RIISE FOUNDATION, has been honored with
+          the Eminent Engineer Award! by Institution of Engineers, Karnataka
+          State Chapter, Bengaluru. Her outstanding leadership and relentless
+          pursuit of innovation continue to uplift the engineering community. A
+          true inspiration, her contributions pave the way for future engineers
+          and leaders.
+        </div>
+
+        <div class="p-10 sm:p-10 md:p-20 lg:p-20 order-first md:order-first">
+          <img src="images/geethamam.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- sm:p-4 md:p-32 lg:p-32 -->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      const menu = document.getElementById("menu");
+      const navlinks = document.querySelector(".navlinks");
+      const clickEvent = document.getElementById("click");
+      const box = document.getElementById("box");
+      function clickFunction(e) {
+        e.name = e.name === "menu" ? "close" : "menu";
+        navlinks.classList.toggle("top-[10%]");
+      }
+      function toggleFunction() {
+        box.classList.toggle("hidden");
+        if (box.classList.contains("hidden")) {
+          icons.setAttribute("name", "caret-down-outline");
+        } else {
+          icons.setAttribute("name", "caret-up-outline");
+        }
+      }
+    </script>
+    <!-- Footer
+    <footer id="footer">
+      <div class="container">
+        <ul class="icons">
+          <li>
+            <a
+              href="#"
+              class="icon fa-twitter"
+              style="color: rgb(51, 183, 235); text-decoration: none"
+              ><span class="label">Twitter</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/mce.startup.club"
+              class="icon fa-facebook"
+              style="color: rgb(43, 43, 247); text-decoration: none"
+              ><span class="label">Facebook</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/me_riise/"
+              class="icon fa-instagram"
+              style="color: rgb(250, 43, 112); text-decoration: none"
+              ><span class="label">Instagram</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="mailto:meriisehsn@gmail.com"
+              class="icon fa-envelope"
+              style="color: rgb(228, 54, 11); text-decoration: none"
+              ><span class="label">Email</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="copyright">© ME-RIISE. All rights reserved.</div>
+    </footer>
+  </body>
+</html> -->
+  </body>
+</html>
