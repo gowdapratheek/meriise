@@ -19,6 +19,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/newcss.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="assets/js/newjs.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 
     <style>
@@ -42,6 +44,39 @@
             width: 100%;
         }
 
+        @media only screen and (min-width: 200px) and (max-width: 480px) {
+            #board {
+                margin-left: 2px;
+            }
+        }
+
+        @media only screen and (min-width: 480px) and (max-width: 639px) {
+            #board {
+                margin-left: 2px;
+            }
+        }
+
+        @media only screen and (min-width: 980px) and (max-width: 1024px) {
+            #board {
+                margin-left: 2px;
+            }
+        }
+
+        #list {
+            font-size: 11px;
+        }
+
+        @media only screen and (min-width: 1024px) and (max-width: 1180px) {
+            #list {
+                font-size: 7px;
+                 
+            }
+        }
+   
+
+     
+
+
 
         @keyframes blink {
             0% {
@@ -52,10 +87,9 @@
                 opacity: 2;
                 color: red;
             }
+
+
         }
-
-
-     
     </style>
 </head>
 
@@ -68,11 +102,11 @@
         <h4 class="h-txt2">Malnad College of Engineering,Hassan</h4>
     </div>
 
-    <!-- <div class="snav-bar"> -->
-    <!--logo-->
+    <div class="snav-bar">
+        <!--logo-->
 
-    <!-- Navbar -->
-    <!-- <div class=" w-full bg-black h-[12vh] flex items-center justify-between z-50">
+        <!-- Navbar -->
+        <!-- <div class=" w-full bg-black h-[12vh] flex items-center justify-between z-50">
             <a href="http://www.meriise.org/" class="cursor-pointer">
                 <img src="images/meriise-logo new.png" alt="Logo" class="h-[7.5rem] mx-3 flex">
             </a>
@@ -84,8 +118,8 @@
         </div> -->
 
 
-    <!-- Navigation Menu -->
-    <!-- <div class="hidden fixed top-[12vh] right-0 lg:block z-50 " id="nav">
+        <!-- Navigation Menu -->
+        <!-- <div class="hidden fixed top-[12vh] right-0 lg:block z-50 " id="nav">
             <ul class="sm:px-10 min-[320px]:px-10 bg-black h-[100vh] w-[60vw] flex flex-col justify-start text-md font-bold lg:bg-transparent lg:flex-row lg:items-center lg:h-[12vh] lg:justify-evenly lg:w-[90vw] lg:mt-1 overflow-y-hidden"
                 style="color: #01adfc;">
                 <li><a href="index.html" class="cursor-pointer">Home</a></li>
@@ -113,24 +147,24 @@
                 </li>
             </ul>
         </div> -->
- 
 
-    <!-- </div> -->
-    <div class="snav-bar">
-        <header class="bg-black text-blue-400">
+
+        <!-- </div> -->
+
+        <!-- <header class="bg-black text-blue-400">
             <nav class="flex justify-between items-center w-[95vw] mx-auto text-sm font-bold h-20 sm:h-24">
-                <!-- 3 div's are there -->
-                <!-- 1st div's are for logo -->
-                <div class="px-4 md:px-16">
+              3 div's are there -->
+        <!-- 1st div's are for logo -->
+        <!-- <div class="px-4 md:px-16">
                     <img src="images/meriise-logo new.png" alt="" class="w-42 h-24 ml-1 md:ml-10">
-                </div>
+                </div> -->
 
-        
-                <!-- Another div's is for lists -->
-                <div class="navlinks flex justify-between duration-500 md:static absolute md:min-h-fit min-h-[80vh] 
+
+        <!-- Another div's is for lists -->
+        <!-- <div class="navlinks flex justify-between duration-500 md:static absolute md:min-h-fit min-h-[80vh] 
                      top-[-800px] md:w-[70vw] left-[155px] w-[90%] bg-black flex items-center">
                     <ul class="flex md:flex-row flex-col md:items-center md:gap-[8vw] lg:gap-[2vw] gap-6 px-4 mr-10">
-                        
+
                         <li>
                             <a href="index.html" class="hover:text-blue-600">Home</a>
                         </li>
@@ -165,9 +199,9 @@
 
                         <li>
                             <a href="#" class="hover:text-blue-600">Achievements</a>
-                        </li>
+                        </li> -->
 
-                        <!-- <li>
+        <!-- <li>
                             <a href="startups.html" class="hover:text-blue-600">Collaborations</a>
                         </li>
 
@@ -175,12 +209,12 @@
                             <a href="startups.html" class="hover:text-blue-600">Documents</a>
                         </li>  -->
 
-                        <!-- <li>
+        <!-- <li>
                             <a href="startups.html" class="hover:text-blue-600">MCE-NISP Policy</a>
                         </li> -->
 
 
-                        <li>
+        <!-- <li>
                             <a href="https://meriise-events.vercel.app/" class="hover:text-blue-600">Events</a>
                         </li>
                         <div class="flex">
@@ -198,20 +232,75 @@
                             </li>
                         </div>
                     </ul>
-                </div>
+                </div> -->
 
-                <!-- Another div's is for button -->
-                <!-- <div class="flex items-center gap-8">
+        <!-- Another div's is for button -->
+        <!-- <div class="flex items-center gap-8">
                     <ion-icon name="menu-outline" id="menu" onclick="clickFunction(this)">Hello</ion-icon>
                 </div> -->
 
-                <div class="flex gap-4 mx-4">
+        <!-- <div class="flex gap-4 mx-4">
                     <ion-icon name="menu" class="text-4xl lg:hidden" id="menu12"
                         onclick="clickFunction(this)"></ion-icon>
                 </div>
             </nav>
-        </header>
+        </header> -->
+
+        <nav class="bg-black lg:flex lg:items-center lg:justify-between">
+            <div class="flex items-center justify-between">
+                <img src="images/meriiseNewLogo.png" alt="" class="h-20" id="logo">
+
+                <div>
+                    <ion-icon name="menu" onclick="clickFunction(this)"
+                        class="text-4xl text-blue-400 block lg:hidden"></ion-icon>
+                </div>
+
+            </div>
+
+            <!-- <ion-icon name="menu" id="menu" onclick="clickFunction(this)"
+        class="text-4xl block lg:hidden h-24"></ion-icon> -->
+
+
+            <div class="hidden lg:block" id="elements">
+                <ul class="text-blue-400 font-bold bg-black px-4 py-4 lg:flex lg:justify-between lg:items-center w-48 md:w-42 lg:w-full float-right md:float-right h-screen md:h-screen lg:h-auto z-50"
+                    id="list">
+                    <li class="mx-2"><a href="index.html">Home</a></li>
+                    <li class="mx-2"><a href="aboutmeriise.html">About us</a></li>
+                    <li class="mx-2"><a href="faculty.html">Faculty</a></li>
+                    <li class="mx-2"><a href="team.html">Team MERIISE</a></li>
+                    <li class="mx-2"><a href="iic.html">MHRD-IIC</a></li>
+                    <li class="mx-2"><a href="nain.html">Nain</a></li>
+                    <li class="mx-2"><a href="uba.html">UBA</a></li>
+                    <li class="mx-2"><a href="infrastructure.html">Infrastructure</a></li>
+                    <li class="mx-2"><a href="startups.html">Start ups</a></li>
+                    <li class="mx-2"><a href="https://meriise-events.vercel.app/">Events</a></li>
+                    <li class="mx-2"><a href="https://www.mcehassan.ac.in/">MCE</a></li>
+                    <li class="mx-2"><a href="documents.html">Documents</a></li>
+                    <li class="mx-2"><a href="collab.html">Collaborations</a></li>
+                    <li class="mx-2"><a href="Nisp.html">MCE NISP Policy</a></li>
+                    <li class="mx-2"><a href="ourAchievements.html">Achievements</a></li>
+
+                    <div class="flex ml-2">
+                        <li class="relative" onclick="toggleFunction()" id="click">
+                            <a href="#" class="hover:text-blue-600">Pragyatha</a>
+                            <ion-icon name="caret-down-outline" class="px-1" id="icons"></ion-icon>
+
+                        </li>
+                        <li class="absolute p-2 rounded-sm mt-8 hidden rounded-xl text-md w-[130px] bg-white text-blue-600"
+                            id="box" onclick="dropdown()">
+                            <div><a href="pragyatha23.html">Pragyatha 23</a></div>
+                            <div><a href="pragyatha22.html">Pragyatha 22</a></div>
+                            <div><a href="prag.html">Pragyatha 19</a></div>
+
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+
     </div>
+
+
 
 
     <section class="banner full">
@@ -319,20 +408,22 @@
 
 
     <br />
+    <br />
+    <br />
     <header class="majo"></header>
 
-    <section id="one" class="wrapper style2">
+    <!-- <section id="one" class="wrapper style2">
         <div class="inner">
 
 
 
             <section class="specia">
-                <h1 class="sub-head" style="text-align: center">
-                    <!--India Startup Day - 1st October-->
-                </h1>
+                <h1 class="sub-head" style="text-align: center"> -->
+    <!--India Startup Day - 1st October-->
+    <!-- </h1>
 
-                <ul class="action">
-                    <!-- <div class="main">
+                <ul class="action"> -->
+    <!-- <div class="main">
                             
                                
                                 
@@ -341,7 +432,7 @@
                                          </center>
                              -->
 
-                    <!--
+    <!--
                                <marquee class="marq"
                                              bgcolor=#51E1ED
                                              direction="left"
@@ -350,21 +441,21 @@
                                            <b><font color="black" size="5px" weight="bold">Weekly Challenge  <u><blink class="blink">Click Here..! </blink></u></font></b></a>
                                 </marquee>
                                -->
-                    <div class="event-list" style="text-align: center;">
+    <div class="event-list" style="text-align: center;">
 
 
-                        <!-- <ul><li><a href="http://www.meriise.org/wc.html" style="background-color:white"><b><font color="black" size="5px" weight="bold">Weekly Challenge  <u><blink class="blink">Click Here..! </blink></u></font></b></a></li>
+        <!-- <ul><li><a href="http://www.meriise.org/wc.html" style="background-color:white"><b><font color="black" size="5px" weight="bold">Weekly Challenge  <u><blink class="blink">Click Here..! </blink></u></font></b></a></li>
                         
                         <li><a href="http://www.meriise.org/robo.html" style="background-color:white">
                                            <b><font color="black" size="5px" weight="bold">RoboTechX - Soccer Bots Challenge <u><blink class="blink">Know More..!</blink></u></font></b></a></li></ul>
                          
                         <li><a href="http://meriise.org/teamUpcoming.html" style="background-color:white">
                                            <b><font color="black" size="5px" weight="bold">Upcoming Events (23/08/2023 - 25/08/2023)<u><blink class="blink">Know More..!</blink></u></font></b></a></li></ul> -->
-                    </div>
-                    <!--<marquee behavior="scroll" direction="left" width="200%" height="60%" scrollamount="10"><a href="pragyatha22.html" class="button alt" style="width:50%; background-color:purple;"><b><font color="white" size="5px"><u>Click here..! &nbsp &nbsp &nbsp Pragyatha 22 Portal</u></font></b></a></marquee>-->
-                    <!-- <p style="text-align-last:center; text-size:50px">   -->
+    </div>
+    <!--<marquee behavior="scroll" direction="left" width="200%" height="60%" scrollamount="10"><a href="pragyatha22.html" class="button alt" style="width:50%; background-color:purple;"><b><font color="white" size="5px"><u>Click here..! &nbsp &nbsp &nbsp Pragyatha 22 Portal</u></font></b></a></marquee>-->
+    <!-- <p style="text-align-last:center; text-size:50px">   -->
 
-                    <!--<a href="pragyatha22.html" class="button alt" style="width:40%; background-color:#1c68d0;"><b><font color="white" size="5px">Pragyatha 22 Portal</font></b></a>
+    <!--<a href="pragyatha22.html" class="button alt" style="width:40%; background-color:#1c68d0;"><b><font color="white" size="5px">Pragyatha 22 Portal</font></b></a>
                               <a href="https://forms.gle/VTsPGP3u8UjFowRM6" class="button alt" style="width:50%; background-color:#83E9EE; font-weight: bold;">FEEDBACK FORM</a> 
                             </p>
                         </ul>
@@ -379,9 +470,9 @@
                             </p>
                         </ul>
                       -->
-            </section>
+    <!-- </section>
         </div>
-    </section>
+    </section> -->
 
 
 
@@ -397,23 +488,97 @@
         </div>
     </section>
 
-    <section id="two" class="wrappe style2">
-        <header class="majo">
-            <br /><br /><br />
-            <center>
 
-            </center>
-        </header>
-        <center>
-            <div class="carrd">
-                <div class="containerr">
 
-                    <div class="row  pb-3 text-center pt-2 " style="border-bottom: 1px solid grey;">
+    <div class="ml-24 sm:ml-4 md:ml-2 lg:ml-10 xl:ml-12" id="board">
+
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 bg-gray-200 rounded-2xl w-[90vw] m-20 ml-4 pl-4 border-2 border-solid border-gray-500 mb-10 px-4"
+            id="board bg-blue-400">
+
+            <div class="bg-gray-200 py-10 mx-auto">
+                <img src="images/bod/ah.jpeg" alt="" class="h-[65%] rounded-2xl border-2 border-solid border-gray-500">
+                <h2 class="text-3xl text-center mx-auto mt-5">Sri. Ashok Haranahalli</h2>
+                <p class="text-center text-2xl"> CHAIRMAN </p>
+                <p class="text-center"> ME-RIISE FOUNDATION</p>
+            </div>
+
+
+            <div class="bg-gray-200 py-10 mx-auto">
+                <img src="images/bod/gk.jpeg" alt="" class="h-[65%] rounded-2xl border-2 border-solid border-gray-500">
+                <h2 class="text-3xl text-center mx-auto mt-5">Dr.A.Geetha Kiran</h2>
+                <p class="text-center text-2xl">CEO</p>
+                <p class="text-center">ME-RIISE FOUNDATION</p>
+            </div>
+
+
+            <div class="bg-gray-200 py-10 mx-auto">
+                <img src="images/bod/sri .jpg" alt=""
+                    class="h-[65%] rounded-2xl border-2 border-solid border-gray-500">
+                <h2 class="text-3xl text-center mx-auto mt-5">Sri. S G Sridhar</h2>
+                <p class="text-center text-2xl">DIRECTOR</p>
+                <p class="text-center">ME-RIISE FOUNDATION</p>
+            </div>
+
+
+            <div class="bg-gray-200 py-10 mx-auto">
+                <img src="images/bod/ar.png" alt="" class="h-[65%] rounded-2xl border-2 border-solid border-gray-500">
+                <h2 class="text-3xl text-center mx-auto mt-5">Sri. Ananth Ravi</h2>
+                <p class="text-center text-2xl">DIRECTOR</p>
+                <p class="text-center">ME-RIISE FOUNDATION</p>
+            </div>
+
+
+
+            <div class="bg-gray-200 py-10 mx-auto">
+                <img src="images/bod/pradeep.jpeg" alt=""
+                    class="h-[65%] rounded-2xl border-2 border-solid border-gray-500">
+                <h2 class="text-3xl text-center mx-auto mt-5">Dr. S Pradeep</h2>
+                <p class="text-center text-2xl">DIRECTOR</p>
+                <p class="text-center">ME-RIISE FOUNDATION</p>
+            </div>
+
+
+
+
+            <div class="bg-gray-200 py-10 mx-auto">
+                <img src="images/bod/kss.jpeg" alt="" class="h-[65%] rounded-2xl border-2 border-solid border-gray-500">
+                <h2 class="text-3xl text-center mx-auto mt-5">Mr. Krishnaswamy Subbarao</h2>
+                <p class="text-center text-2xl">ADVISOR</p>
+                <p class="text-center">ME-RIISE FOUNDATION</p>
+            </div>
+
+
+
+            <div class="bg-gray-200 py-10 mx-auto">
+                <img src="images/bod/kiran.jpeg" alt=""
+                    class="h-[65%] rounded-2xl border-2 border-solid border-gray-500">
+                <h2 class="text-3xl text-center mx-auto mt-5">SMr. Kiran H A</h2>
+                <p class="text-center text-2xl">ADVISOR</p>
+                <p class="text-center">ME-RIISE FOUNDATION</p>
+            </div>
+            <div class="bg-gray-200 py-10 mx-auto">
+                <img src="images/bod/profile_1-311645.jpg" alt=""
+                    class="h-[62%] rounded-2xl border-2 border-solid border-gray-500">
+                <h2 class="text-3xl text-center mx-auto mt-5">DR. A J Krishnaiah</h2>
+                <p class="text-center text-2xl">PRINCIPAL</p>
+                <p class="text-center">ME-RIISE FOUNDATION</p>
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- <div class="row  pb-3 text-center pt-2 " style="border-bottom: 1px solid grey;">
                         <div class="col-md-6 text-center">
                             <img src="images/bod/ah.jpeg" alt="explore" class="img-fluid  w-50"
                                 style="border: 1px solid black;">
-                        </div>
-                        <div class="col-md-6 pt-2 ">
+                        </div> -->
+    <!-- <div class="col-md-6 pt-2 ">
                             <h2 style="margin-left: 10px;">Sri. Ashok Haranahalli</h2>
                             <p style="margin-left: -20px;font-size: 13px;"></p>
                             <h4>Chairman, ME-RIISE FOUNDATION</h4>
@@ -421,10 +586,10 @@
                             <p style="margin-left: -10px;">
                             </p>
 
-                        </div>
-                    </div>
+                        </div> -->
+    <!-- </div> -->
 
-                    <div class="row  pb-3 text-center pt-2 " style="border-bottom: 1px solid grey;">
+    <!-- <div class="row  pb-3 text-center pt-2 " style="border-bottom: 1px solid grey;">
                         <div class="col-md-6 text-center">
                             <img src="images/bod/gk.jpeg" alt="explore" class="img-fluid   w-50"
                                 style="border: 1px solid black;">
@@ -440,8 +605,8 @@
                         </div>
 
 
-                    </div>
-                    <div class="row  pb-3 text-center pt-2 " style="border-bottom: 1px solid grey;">
+                    </div> -->
+    <!-- <div class="row  pb-3 text-center pt-2 " style="border-bottom: 1px solid grey;">
                         <div class="col-md-6 text-center">
                             <img src="images/bod/sri .jpg" alt="explore" class="img-fluid   w-50"
                                 style="border: 1px solid black;">
@@ -456,8 +621,8 @@
 
                         </div>
 
-                    </div>
-
+                    </div> -->
+    <!-- 
                     <div class="row  pb-3 text-center pt-2 " style="border-bottom: 1px solid grey;">
                         <div class="col-md-6 text-center">
                             <img src="images/bod/ar.png" alt="explore" class="img-fluid   w-50"
@@ -473,10 +638,10 @@
 
                         </div>
 
-                    </div>
+                    </div> -->
 
 
-
+    <!-- 
                     <div class="row  pb-3 text-center pt-2 " style="border-bottom: 1px solid grey;">
                         <div class="col-md-6 text-center">
                             <img src="https://www.mcehassan.ac.in/assets/departments/ME/faculty/profile_96-011459.jpg"
@@ -492,9 +657,9 @@
 
                         </div>
 
-                    </div>
+                    </div> -->
 
-                    <div class="row  pb-3 text-center pt-2 " style="border-bottom: 1px solid grey;">
+    <!-- <div class="row  pb-3 text-center pt-2 " style="border-bottom: 1px solid grey;">
                         <div class="col-md-6 text-center">
                             <img src="images/bod/kss.jpeg" alt="explore" class="img-fluid   w-50"
                                 style="border: 1px solid black;">
@@ -509,9 +674,9 @@
 
                         </div>
 
-                    </div>
+                    </div> -->
 
-                    <div class="row  pb-3 text-center pt-2 " style="border-bottom: 1px solid grey;">
+    <!-- <div class="row  pb-3 text-center pt-2 " style="border-bottom: 1px solid grey;">
                         <div class="col-md-6 text-center">
                             <img src="images/bod/shridhar.jpeg" alt="explore" class="img-fluid   w-50"
                                 style="border: 1px solid black;">
@@ -526,9 +691,9 @@
 
                         </div>
 
-                    </div>
+                    </div> -->
 
-                    <div class="row  pb-3 text-center pt-2 " style="border-bottom: 1px solid grey;">
+    <!-- <div class="row  pb-3 text-center pt-2 " style="border-bottom: 1px solid grey;">
                         <div class="col-md-6 text-center">
                             <img src="https://www.mcehassan.ac.in/assets/departments/CV/faculty/profile_1-311645.jpg"
                                 alt="explore" class="img-fluid   w-50" style="border: 1px solid black;">
@@ -543,9 +708,9 @@
 
                         </div>
 
-                    </div>
+                    </div> -->
 
-                    <!--
+    <!--
                         <div class="row  pb-3 text-center pt-2 " style="border-bottom: 1px solid grey;">
                             <div class="col-md-6 text-center">
                                 <img src="assets/Achalnew.jpg" alt="explore" class="img-fluid   w-50"  style="border: 1px solid black;">
@@ -562,10 +727,6 @@
                         
                         </div>-->
 
-                </div>
-            </div>
-        </center>
-    </section>
 
 
     <!-- Two -->
@@ -587,7 +748,7 @@
 						<p class="special">Nam vel ante sit amet libero scelerisque facilisis eleifend vitae urna</p>
 						<h2>Morbi maximus justo</h2>
 					</header>-->
-            <div class="gallery">
+            <!-- <div class="gallery">
                 <div>
                     <div class="image fit">
                         <a href="#"><img src="images/meriiseFront.JPG" alt="" /></a>
@@ -598,7 +759,7 @@
                         <a href="#"><img src="images/mce_gate.jpg" alt="" /></a>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -697,13 +858,13 @@
                         entrepreneurship.
                     </p>
                 </div>
-                <div class="gallery">
+                <!-- <div class="gallery">
                     <div class="img-wrap">
                         <div class="image fit">
                             <a href="#"><img src="images/c1.jpg" alt="" /></a>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </center>
     </section>
@@ -731,7 +892,7 @@
                         initiatives of ICT Academy <br />
                     </p>
                 </div>
-                <div class="gallery">
+                <!-- <div class="gallery">
                     <div class="img-wrap">
                         <div class="image fit">
                             <a href="#"><img src="images/c2.jpg" alt="" /></a>
@@ -747,7 +908,7 @@
                             <a href="#"><img src="images/c4.jpg" alt="" /></a>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </center>
     </section>
@@ -758,9 +919,9 @@
                 <div class="sub-head">Unnat Bharat Abhiyan</div>
                 <div class="gallery">
                     <div class="img-wrap">
-                        <div class="image fit">
+                        <!-- <div class="image fit">
                             <a href="#"><img src="images/unnat bharat.jfif" alt="" height:25% /></a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
@@ -774,7 +935,7 @@
                         villages.
                     </p>
                 </div>
-                <div class="gallery">
+                <!-- <div class="gallery">
                     <div class="img-wrap">
                         <div class="image fit">
                             <a href="#"><img src="images/UBA.png" alt="" /></a>
@@ -786,7 +947,7 @@
                             <a href="#"><img style="max-width: 400px; height: 300px" src="images/c7.jpg" alt="" /></a>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </center>
     </section>
@@ -841,13 +1002,13 @@
                 <div class="sub-head">MoU with Atal Incubation Centre</div>
 
 
-                <div class="gallery">
+                <!-- <div class="gallery">
                     <div class="img-wrap">
                         <div class="image fit">
                             <a href="#"><img src="images/mou.jfif" alt="" height:25% /></a>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="containerr">
                     <p style="padding-left: 10px; padding-right: 10px">
@@ -858,13 +1019,13 @@
                         institutes and various other activities.
                     </p>
                 </div>
-                <div class="gallery">
+                <!-- <div class="gallery">
                     <div class="img-wrap">
                         <div class="image fit">
                             <a href="#"><img src="images/c8.jpg" alt="" /></a>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </center>
     </section>
@@ -1049,19 +1210,37 @@
     <script src="assets/js/skel.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 
     <script>
-        const menu = document.getElementById('menu12');
-        const navlinks = document.querySelector('.navlinks');
-        const clickEvent = document.getElementById('click');
-        const box = document.getElementById('box');
+        // const menu = document.getElementById('menu12');
+        // const navlinks = document.querySelector('.navlinks');
+        // const clickEvent = document.getElementById('click');
+        // const box = document.getElementById('box');
+        // function clickFunction(e) {
+        //     e.name = e.name === 'menu' ? 'close' : 'menu';
+        //     navlinks.classList.toggle('top-[12%]')
+        // }
+        // function toggleFunction() {
+
+        //     box.classList.toggle('hidden');
+        //     if (box.classList.contains('hidden')) {
+        //         icons.setAttribute('name', 'caret-down-outline');
+        //     } else {
+        //         icons.setAttribute('name', 'caret-up-outline');
+        //     }
+        // }
+
         function clickFunction(e) {
-            e.name = e.name === 'menu' ? 'close' : 'menu';
-            navlinks.classList.toggle('top-[12%]')
+            let list = document.getElementById('elements')
+            list.classList.toggle('hidden')
+            let iconName = e.getAttribute('name');
+            e.setAttribute('name', iconName === 'menu' ? 'close' : 'menu');
         }
-        function toggleFunction() {
+
+          function toggleFunction() {
 
             box.classList.toggle('hidden');
             if (box.classList.contains('hidden')) {
@@ -1081,8 +1260,7 @@
 			<script src="assets/js/from/skel-layers.min.js"></script>
 			<script src="assets/js/from/init.js"></script>-->
 
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 
 </body>
 
