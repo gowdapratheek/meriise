@@ -5,42 +5,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="assets/css/teamstyles.css" />
-    <!-- <link rel="stylesheet" href="assets/css/style.css" /> -->
+    <link rel="stylesheet" href="assets/css/main.css" />
   </head>
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+    crossorigin="anonymous"
+  />
 
+  <!-- fontawesome cdn -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"
+    integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg=="
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- custom css -->
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" href="assets/css/newcss.css" />
   <style>
-    @import url("https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+        .vision:hover {
+          background: linear-gradient(
+            to right,
+            rgb(129, 216, 228),
+            rgb(154, 70, 223)
+          );
+        }
 
-    header {
-      font-family: "Inria Sans", system-ui;
-      font-weight: 400;
-      font-size: 10px;
-      font-style: normal;
-    }
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 
-    /* Add a CSS rule to increase the image size */
-    .image-size {
-      width: 700px;
-      /* adjust the width as needed */
-      /* height: 400px; adjust the height as needed */
-      transform: scale(2.5);
-    }
+      header {
+        font-family: "Inria Sans", system-ui;
+        font-weight: 400;
+        font-size: 10px;
+        font-style: normal;
+      }
+
+      /* Add a CSS rule to increase the image size */
+      .image-size {
+        width: 700px;
+        /* adjust the width as needed */
+        /* height: 400px; adjust the height as needed */
+        transform: scale(2.5);
+      }
   </style>
-  
 
-  <!-- <body>
-    <header class="bg-black text-blue-400">
+  <body>
+    <div class="snav-bar" style="background-color: black">
+      <div class="logo">
+        <a href="index.html">
+          <img class="mr-logo mt-1 h-28" src="images/me-riiseLogoUpdated.png" />
+        </a>
+      </div>
+
+      <div class="nav-link">
+        <ul class="nvl">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="faculty.html">Faculty</a></li>
+          <li><a href="team.html">Student Members</a></li>
+          <li><a href="startups.html">Start-Ups</a></li>
+
+          <div class="dropdown" style="display: inline-block">
+            <button class="dropbtn" id="dropbtn" onclick="handleMoreBtn()">
+              More
+              <i class="fa fa-caret-down" style="color: rgb(65, 142, 243)"></i>
+            </button>
+
+            <div class="dropdown-content" id="dropdown-content">
+              <a href="http://www.mcehassan.ac.in"
+                >Malnad College of Engineering</a
+              >
+              <a href="events.html">Successful Events</a>
+              <a href="prag.html">PRAGYATHA - 19</a>
+              <!-- <a href="alumni.html">Alumni</a> -->
+              <a href="documents.html">Documents</a>
+            </div>
+          </div>
+        </ul>
+      </div>
+
+      <div class="smenu-btn">
+        <button
+          onclick="openNav()"
+          style="background-color: black; outline: none"
+        >
+          <i
+            class="fa fa-bars"
+            style="color: rgb(65, 142, 243)"
+            aria-hidden="true"
+          ></i>
+        </button>
+      </div>
+    </div>
+    <div id="myNav" class="overlay" style="margin-top: 70px">
+      <a
+        href="javascript:void(0)"
+        class="closebtn"
+        style="font-size: 15px"
+        onclick="closeNav()"
+        ><i class="fa fa-times"></i
+      ></a>
+      <div class="overlay-content">
+        <a href="index.html">Home</a>
+        <a href="faculty.html">Faculty</a>
+        <a href="team.html">Student Members</a>
+        <a href="startups.html">Start-Ups</a>
+        <a href="http://www.mcehassan.ac.in">Malnad College of Engineering</a>
+        <a href="events.html">Successful Events</a>
+        <a href="prag.html">PRAGYATHA - 19</a>
+        <!-- <a href="alumni.html">Alumni</a> -->
+        <a href="documents.html">Documents</a>
+      </div>
+    </div>
+
+    <!-- <header class="bg-black text-blue-400">
       <nav
         class="flex justify-between items-center w-screen mx-auto text-sm h-20"
       >
-         3 div's are there 
-         1st div's are for logo 
+     
         <div>
           <img src="meriise-logo.png" alt="" class="w-32" />
         </div>
 
-        Another div's is for lists 
+      
         <div
           class="navlinks flex justify-end duration-500 md:static absolute md:min-h-fit min-h-[70vh] top-[-100%] md:w-[85vw] left-12 w-[90%] bg-black flex items-center px-10 m-2"
         >
@@ -98,37 +187,40 @@
               </li>
             </div>
           </ul>
-        </div>
+        </div> -->
 
-        Another div's is for button 
+    <!--         
         <div class="flex items-center gap-8">
-           <button class="bg-white text-black p-4">Sign in</button> 
-          <ion-icon
+          
             name="menu"
             class="text-4xl md:hidden"
             id="menu"
             onclick="clickFunction(this)"
           ></ion-icon>
         </div>
-      </nav> -->
-    </header>
+      </nav> 
+    </header> -->
 
     <div>
-      <h1 class="text-4xl bg-blue-300 text-center py-10 text-2xl md:text-4xl">
-        OUR ACHIEVEMENTS
+      <h1
+        class="text-4xl bg-blue-300 text-center py-10 text-xl md:text-4xl font-bold text-black"
+      >
+        OUR ACHIEVEMENTS!
       </h1>
     </div>
 
     <div class="bg-gray-200 m-16 sm:p-5 md:p-5">
-      <p class="text-4xl text-center py-10">Eminent Engineer Award 2024</p>
+      <p class="text-4xl text-center py-10 font-bold">
+        Eminent Engineer Award 2024
+      </p>
       <div
         class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2"
       >
         <div class="p-10 sm:p-10 md:p-20 lg:p-20 md:order-2 order-1">
-          <img src="images/geethamam.jpg" alt="" />
+          <img src="ourAchivementsImages/6.jpg" alt="" />
         </div>
         <div
-          class="leading-loose text-3xl md:order-1 order-2 float-left mr-4 mb-4 mx-12 mt-48"
+          class="leading-loose text-lg md:order-1 order-2 float-left mr-4 mb-4 mx-12 mt-48 font-bold"
         >
           Dr. Geetha Kiran A, CEO, ME-RIISE FOUNDATION, has been honored with
           the Eminent Engineer Award! by Institution of Engineers, Karnataka
@@ -142,28 +234,370 @@
       <!-- float-left mr-4 mb-4 -->
       <hr class="border-t-2 border-gray-400 my-4" />
 
-      <p class="text-4xl text-center py-10">Robosoccer Event 2024</p>
+      <p class="text-4xl text-center py-10 font-bold">
+        ME-RIISE FOUNDATION signed an MoU with SUPRMENTR
+      </p>
 
       <div
         class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2"
       >
         <div
-          class="leading-loose justify-content: normal text-3xl p-4 order-last md:order-last float-left mr-4 mb-4 mx-12 mt-48"
+          class="leading-loose text-lg p-4 order-last md:order-last float-left mr-4 mb-4 mx-12 mt-48 font-bold"
         >
-          Dr. Geetha Kiran A, CEO, ME-RIISE FOUNDATION, has been honored with
-          the Eminent Engineer Award! by Institution of Engineers, Karnataka
-          State Chapter, Bengaluru. Her outstanding leadership and relentless
-          pursuit of innovation continue to uplift the engineering community. A
-          true inspiration, her contributions pave the way for future engineers
-          and leaders.
+          ME-RIISE FOUNDATION signed an MoU with SUPRMENTR, a Peer to Peer
+          Career Mentorship Platform that helps students network with industry
+          mentors, upskill, learn and prepare for Interviews.
+        </div>
+        <div class="p-10 sm:p-10 md:p-20 lg:p-20 md:order-2 order-1">
+          <img src="ourAchivementsImages/12.jpg" alt="" />
+        </div>
+      </div>
+
+      <hr class="border-t-2 border-gray-400 my-4" />
+      <p class="text-4xl text-center py-10 font-bold">
+        Empowering Youth through Community Centric Educationt
+      </p>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2"
+      >
+        <div class="p-10 sm:p-10 md:p-20 lg:p-20 md:order-2 order-1">
+          <img src="ourAchivementsImages/15.jpg" alt="" />
+        </div>
+        <div
+          class="leading-loose text-lg md:order-1 order-2 float-left mr-4 mb-4 mx-12 mt-48 font-bold"
+        >
+          We’re excited to announce that our event, "Empowering Youth through
+          Community Centric Education," has been highlighted in local newspapers
+          including Ecchara Vani, Hassan Mitra, Hassan Vani, Jana Hitha, and
+          Hoysala Patha.This coverage underscores the positive impact of our
+          efforts in fostering self-employment and innovation among the youth.
+        </div>
+      </div>
+
+      <!-- <hr class="border-t-2 border-gray-400 my-4" />
+
+      <p class="text-4xl text-center py-10">
+        India's Best Engineering Institutions
+      </p>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2"
+      >
+        <div
+          class="text-lg p-4 order-last md:order-last float-left mr-4 mb-4 mx-12 mt-48"
+        >
+          Malnad College of Engineering has been recognized in the latest
+          edition of Careers360’s annual assessment 'India's Best Engineering
+          Institutions' 2024 issue. Our institution has been rated ‘AAA’ making
+          it one of the best engineering institutes in the country in 2024.
+          Institutions are evaluated and rated based on a comprehensive
+          assessment of their academic performance, faculty quality,
+          infrastructure, research output and student satisfaction.
+        </div>
+      </div>
+      <div class="p-10 sm:p-10 md:p-20 lg:p-20 order-first md:order-first">
+        <img src="ourAchivementsImages/10.jpg" alt="" />
+      </div> -->
+
+      <hr class="border-t-2 border-gray-400 my-4" />
+      <p class="text-4xl text-center py-10 font-bold">
+        India's Best Engineering Institutions
+      </p>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2"
+      >
+        <div
+          class="leading-loose text-lg p-4 order-last md:order-last float-left mr-4 mb-4 mx-12 mt-48 font-bold"
+        >
+          Malnad College of Engineering has been recognized in the latest
+          edition of Careers360’s annual assessment 'India's Best Engineering
+          Institutions' 2024 issue. Our institution has been rated ‘AAA’ making
+          it one of the best engineering institutes in the country in 2024.
+          Institutions are evaluated and rated based on a comprehensive
+          assessment of their academic performance, faculty quality,
+          infrastructure, research output and student satisfaction.
+        </div>
+        <div class="p-10 sm:p-10 md:p-20 lg:p-20 md:order-2 order-1">
+          <img src="ourAchivementsImages/10.jpg" alt="" />
+        </div>
+      </div>
+
+      <hr class="border-t-2 border-gray-400 my-4" />
+      <p class="text-4xl text-center py-10 font-bold">
+        The institute has been rated 4 stars out of 5 over the last 2 years
+      </p>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2"
+      >
+        <div class="p-10 sm:p-10 md:p-20 lg:p-20 md:order-2 order-1">
+          <img src="ourAchivementsImages/13.jpg" alt="" />
+        </div>
+        <div
+          class="leading-loose text-lg md:order-1 order-2 float-left mr-4 mb-4 mx-12 mt-48 font-bold"
+        >
+          The Institution Innovation Council of Malnad College of Engineering
+          has consistently performed well, earning a 4-star rating for the past
+          two years and ranking in the 101-150 band in the NIRF Innovation
+          Category 2022. As a result, the institute has been selected as a
+          Mentor Institute under the Ministry of Education's Mentor-Mentee
+          Scheme 2023, guiding five other institutions: Bangalore Institute of
+          Technology, Channabasaveshwara Institute of Technology, Lal Bahadur
+          Shastri College of Engineering, and the Maharaja Institutes of
+          Technology (Mysore and Thandavapura). Key activities include
+          orientation sessions, design thinking workshops, quarterly progress
+          reviews, and feedback visits.
+        </div>
+      </div>
+
+      <hr class="border-t-2 border-gray-400 my-4" />
+
+      <p class="text-4xl text-center py-10 font-bold">
+        Mentor in the Ministry of Education's Mentor-Mentee scheme 2023
+      </p>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2"
+      >
+        <div
+          class="leading-loose text-lg p-4 order-last md:order-last float-left mr-4 mb-4 mx-12 mt-48 font-bold"
+        >
+          Excited to announce that Malnad College of Engineering has been chosen
+          as a Mentor in the Ministry of Education's Mentor-Mentee scheme 2023!
+          This feat has been achieved by consistently maintaining 4 star rating
+          in IIC and getting placed in the rank band of 101-150 in NIRF
+          INNOVATION. With the support of Dr. Geetha Kiran A, President, IIC &
+          CEO, ME-RIISE FOUNDATION, we look forward to nurturing innovation and
+          fostering a dynamic ecosystem across 5 institutes. Let's embark on
+          this journey of innovation together
         </div>
 
         <div class="p-10 sm:p-10 md:p-20 lg:p-20 order-first md:order-first">
-          <img src="images/geethamam.jpg" alt="" />
+          <img src="ourAchivementsImages/7.jpg" alt="" />
+        </div>
+      </div>
+      <hr class="border-t-2 border-gray-400 my-4" />
+      <p class="text-4xl text-center py-10 font-bold">
+        MCE ALUMNI MEET at Washington D C
+      </p>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2"
+      >
+        <div class="p-10 sm:p-10 md:p-20 lg:p-20 md:order-2 order-1">
+          <img src="ourAchivementsImages/11.jpg" alt="" />
+        </div>
+        <div
+          class="leading-loose text-lg md:order-1 order-2 float-left mr-4 mb-4 mx-12 mt-48 font-bold"
+        >
+          ME-RIISE Foundation radiated its influence across borders, promoting
+          it's events and etching an impact at MILANA 23, the MCE ALUMNI MEET at
+          Washington D C. On this occasion, distinguished alumni Krishnaswamy
+          and Dr.Geetha Kiran A,CEO, MERIISE Foundation shared their visionary
+          approach towards revolutionizing MCE. Presenting their unwavering
+          commitment to build a brighter future for MCE,the eminent
+          representatives ignited a spark of transformative journey towards the
+          new era of Malnad.
+        </div>
+      </div>
+
+      <hr class="border-t-2 border-gray-400 my-4" />
+      <p class="text-4xl text-center py-10 font-bold">BOTMEN 2023</p>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2"
+      >
+        <div
+          class="leading-loose text-lg p-4 order-last md:order-last float-left mr-4 mb-4 mx-12 mt-48 font-bold"
+        >
+          Lights, camera, and our BOTMEN are here.. !Step into the captivating
+          world of cutting-edge technology, where science fiction becomes
+          reality, as MERIISE Foundation proudly conducted its most electrifying
+          event of the year - "BOTMEN 2023"! . At MERIISE, we believe in
+          nurturing the future leaders of technology, and BOTMEN is a testament
+          to our commitment to innovation, creativity, and hands-on learning. We
+          believe in the brilliant minds that are shaping the world of tomorrow,
+          one robot at a time.
+        </div>
+        <div class="p-10 sm:p-10 md:p-20 lg:p-20 order-first md:order-first">
+          <img src="ourAchivementsImages/9.jpg" alt="" />
+        </div>
+      </div>
+
+      <hr class="border-t-2 border-gray-400 my-4" />
+      <p class="text-4xl text-center py-10 font-bold">
+        Hassan District Small Scale Industries Association (HADSSIA)
+        collaborates with the ME-RIISE Foundation
+      </p>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2"
+      >
+        <div class="p-10 sm:p-10 md:p-20 lg:p-20 md:order-2 order-1">
+          <img src="ourAchivementsImages/2.jpg" alt="" />
+        </div>
+        <div
+          class="leading-loose text-lg md:order-1 order-2 float-left mr-4 mb-4 mx-12 mt-48 font-bold"
+        >
+          Breaking Barriers, Building Futures - Hassan District Small Scale
+          Industries Association (HADSSIA) collaborates with the ME-RIISE
+          Foundation to launch a transformative skill development initiative.
+          Dr. Geetha Kiran A, CEO of ME-RIISE Foundation, receives the offer
+          letter from Dr JR Bangera ,National MSME Board Member Govt Of India🇮🇳,
+          alongside HA KIRAN, Director FKCCI and President HADSSIA,Shashidar
+          Shetty ,President KASSIA, and esteemed delegates of MSME during the
+          inauguration of the Skill Development Center on 23rd March 2024.
+          Together, they pave the path for undergraduate students to unlock
+          opportunities in employment and entrepreneurship, shaping a brighter,
+          more empowered future.
+        </div>
+      </div>
+
+      <hr class="border-t-2 border-gray-400 my-4" />
+      <p class="text-4xl text-center py-10 font-bold">
+        visit to 'Elecnovo' electric vehicle manufacturing unit in Bangalore
+      </p>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2"
+      >
+        <div
+          class="leading-loose text-lg p-4 order-last md:order-last float-left mr-4 mb-4 mx-12 mt-48 font-bold"
+        >
+          News published in today's 'Janamitra' newspaper about our students
+          visit to 'Elecnovo' electric vehicle manufacturing unit in Bangalore
+        </div>
+        <div class="p-10 sm:p-10 md:p-20 lg:p-20 order-first md:order-first">
+          <img src="ourAchivementsImages/14.jpg" alt="" />
+        </div>
+      </div>
+
+      <hr class="border-t-2 border-gray-400 my-4" />
+      <p class="text-4xl text-center py-10 font-bold">UBA journey</p>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2"
+      >
+        <div class="p-10 sm:p-10 md:p-20 lg:p-20 md:order-2 order-1">
+          <img src="ourAchivementsImages/4.jpg" alt="" />
+        </div>
+        <div
+          class="leading-loose text-lg md:order-1 order-2 float-left mr-4 mb-4 mx-12 mt-48 font-bold"
+        >
+          Celebrating the spotlight!Our UBA journey took center stage in the
+          prestigious pages of Janamitra newspaper on Feb 19, 2024. A heartfelt
+          appreciation to the phenomenal team, collaborators, and volunteers who
+          transformed aspirations into captivating headlines.
+        </div>
+      </div>
+
+      <!-- <hr class="border-t-2 border-gray-400 my-4" />
+      <p class="text-4xl text-center py-10">
+        Entrepreneurship Awarness Programme(EAP)
+      </p>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2"
+      >
+        <div
+          class="text-lg p-4 order-last md:order-last float-left mr-4 mb-4 mx-12 mt-48"
+        >
+          Excited to announce that Malnad College of Engineering has been
+          conducted with (EAP)Entrepreneurship Awarness Programme.
+        </div>
+        <div class="p-10 sm:p-10 md:p-20 lg:p-20 order-first md:order-first">
+          <img src="" alt="" />
+        </div>
+      </div> -->
+
+      <hr class="border-t-2 border-gray-400 my-4" />
+      <p class="text-4xl text-center py-10 font-bold">Fueling the Future</p>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2"
+      >
+        <div class="p-10 sm:p-10 md:p-20 lg:p-20 md:order-2 order-1">
+          <img src="ourAchivementsImages/8.jpg" alt="" />
+        </div>
+        <div
+          class="leading-loose text-lg md:order-1 order-2 float-left mr-4 mb-4 mx-12 mt-48 font-bold"
+        >
+          "Fueling the Future" transpired as a beacon of inspiration, amplifying
+          the zeal in determined young enthusiasts. This marked the beginning of
+          a new chapter in the journey of these young visionaries towards
+          entrepreneurship.
+        </div>
+      </div>
+
+      <hr class="border-t-2 border-gray-400 my-4" />
+      <p class="text-4xl text-center py-10 font-bold">
+        Empowering Young Innovators
+      </p>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2"
+      >
+        <div
+          class="text-lg p-4 order-last md:order-last float-left mr-4 mb-4 mx-12 mt-48 font-bold"
+        >
+          Empowering Young Innovators A Day of Design Thinking Exploration
+        </div>
+        <div class="p-10 sm:p-10 md:p-20 lg:p-20 order-first md:order-first">
+          <img src="ourAchivementsImages/5.jpg" alt="" />
+        </div>
+      </div>
+
+      <hr class="border-t-2 border-gray-400 my-4" />
+      <p class="text-4xl text-center py-10 font-bold">
+        Fueling Future Innovators!
+      </p>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2"
+      >
+        <div class="p-10 sm:p-10 md:p-20 lg:p-20 md:order-2 order-1">
+          <img src="ourAchivementsImages/3.jpg" alt="" />
+        </div>
+        <div
+          class="leading-loose text-lg md:order-1 order-2 float-left mr-4 mb-4 mx-12 mt-48 font-bold"
+        >
+          "Breaking Boundaries Fueling Future Innovators! Malnad College of
+          Engineering Soars to NIRF Innovation Rankings, Claiming a Spot in the
+          Top rank-band of 101-150! "This incredible feat reflects the tireless
+          efforts, visionary leadership, and relentless pursuit of excellence by
+          the entire Malnad College of Engineering community . With a steadfast
+          focus on innovation, the college has cultivated an environment that
+          nurtures bright minds, encourages groundbreaking research, and fosters
+          interdisciplinary collaboration. This commitment has had a resounding
+          impact at a national level, as MCE has emerged as an innovator's
+          beacon.
         </div>
       </div>
     </div>
-    <!-- sm:p-4 md:p-32 lg:p-32 -->
+
+    <!-- <hr class="border-t-2 border-gray-400 my-4" />
+
+    <p class="text-2xl text-center py-10">Robosoccer</p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+      <div
+        class="text-lg p-4 order-last md:order-last float-left mr-4 mb-4 mx-12 mt-48"
+      >
+        Dr. Geetha Kiran A, CEO, ME-RIISE FOUNDATION, has been honored with the
+        Eminent Engineer Award! by Institution of Engineers, Karnataka State
+        Chapter, Bengaluru. Her outstanding leadership and relentless pursuit of
+        innovation continue to uplift the engineering community. A true
+        inspiration, her contributions pave the way for future engineers and
+        leaders.
+      </div>
+
+      <div class="p-10 sm:p-10 md:p-20 lg:p-20 order-first md:order-first">
+        <img src="WhatsApp Image 2024-09-16 at 16.22.22_80d371f4.jpg" alt="" />
+      </div>
+    </div>
+    <hr class="border-t-2 border-gray-400 my-4" />
+    <p class="text-2xl text-center py-10">Event</p>
+    <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+      <div class="p-10 sm:p-10 md:p-20 lg:p-20 md:order-2 order-1">
+        <img src="WhatsApp Image 2024-09-15 at 19.54.46_63e7efba.jpg" alt="" />
+      </div>
+      <div class="text-lg md:order-1 order-2 float-left mr-4 mb-4 mx-12 mt-48">
+        Dr. Geetha Kiran A, CEO, ME-RIISE FOUNDATION, has been honored with the
+        Eminent Engineer Award! by Institution of Engineers, Karnataka State
+        Chapter, Bengaluru. Her outstanding leadership and relentless pursuit of
+        innovation continue to uplift the engineering community. A true
+        inspiration, her contributions pave the way for future engineers and
+        leaders.
+      </div>
+    </div>-->
 
     <script
       type="module"
@@ -191,47 +625,35 @@
         }
       }
     </script>
-    <!-- Footer
-    <footer id="footer">
-      <div class="container">
-        <ul class="icons">
-          <li>
-            <a
-              href="#"
-              class="icon fa-twitter"
-              style="color: rgb(51, 183, 235); text-decoration: none"
-              ><span class="label">Twitter</span></a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.facebook.com/mce.startup.club"
-              class="icon fa-facebook"
-              style="color: rgb(43, 43, 247); text-decoration: none"
-              ><span class="label">Facebook</span></a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.instagram.com/me_riise/"
-              class="icon fa-instagram"
-              style="color: rgb(250, 43, 112); text-decoration: none"
-              ><span class="label">Instagram</span></a
-            >
-          </li>
-          <li>
-            <a
-              href="mailto:meriisehsn@gmail.com"
-              class="icon fa-envelope"
-              style="color: rgb(228, 54, 11); text-decoration: none"
-              ><span class="label">Email</span></a
-            >
-          </li>
-        </ul>
-      </div>
-      <div class="copyright">© ME-RIISE. All rights reserved.</div>
-    </footer>
-  </body>
-</html> -->
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!--<script src="assets/js/from/jquery.min.js"></script>
+				<script src="assets/js/from/skel.min.js"></script>
+				<script src="assets/js/from/skel-layers.min.js"></script>
+				<script src="assets/js/from/init.js"></script>-->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- custom script -->
+    <script src="js/script.js"></script>
   </body>
 </html>
