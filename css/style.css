@@ -3344,7 +3344,7 @@ q {
 			
 .wrapper.style2 p,h5,h4,li
 {
-	font-size: 16px;
+	/* font-size: 16px; */
 	padding-left: 30px;
 }
 .wrapper.style2 h2
