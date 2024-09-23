@@ -2,244 +2,380 @@
 
 
 
-	<html>
-		<head>
-			<title>ME-RIISE</title>
-			<meta charset="utf-8" />
-			<meta name="viewport" content="width=device-width, initial-scale=1" />
-			<link rel="stylesheet" href="assets/css/main.css" />
-			<!-- from the other one 
+<html>
+
+<head>
+	<title>ME-RIISE</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<!-- from the other one 
 			<link rel="stylesheet" href="assets/css/from/skel.css" />-->
-			<!--<link rel="stylesheet" href="assets/css/from/style.css" />-->
-			<!--<link rel="stylesheet" href="assets/css/from/style-xlarge.css" />--> 
-			<meta charset="UTF-8">
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
-		
-			
-			<!-- bootstrap 4 css -->
-			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-		
-			<!-- fontawesome cdn -->
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" crossorigin="anonymous"></script>
-
-			
-			<link rel="stylesheet" type="text/css" href="css/style.css">
-			<link rel="stylesheet" href="assets/css/newcss.css">
-	
-		</head>
-		<body data-gr-c-s-loaded="true" class="vsc-initialized" style="user-select: auto">
+	<!--<link rel="stylesheet" href="assets/css/from/style.css" />-->
+	<!--<link rel="stylesheet" href="assets/css/from/style-xlarge.css" />-->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-			<div class="snav-bar" style="background-color: black;"> 
-			  <div class="logo">
-				<a href="index.html">
-				  <img class="mr-logo mt-1 " src="img/logo.png" />
-				</a>
-			  </div>
-			
-			  <div class="nav-link">
-				<ul class="nvl">
-				  <li><a href="index.html">Home</a></li>
-				  <li><a href="faculty.html">Faculty</a></li>
-				  <li><a href="team.html">Student Members</a></li>
-				  <li><a href="startups.html">Start-Ups</a></li>
-			
-				  <div class="dropdown" style="display: inline-block;">
-					<button
-					  class="dropbtn"   
-					  id="dropbtn"
-					  onclick="handleMoreBtn()"
-					  
-					>
-				More
-					  <i class="fa fa-caret-down" style="color: rgb(65, 142, 243);" ></i>
+
+	<!-- bootstrap 4 css -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	<!-- fontawesome cdn -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"
+		integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg=="
+		crossorigin="anonymous"></script>
+
+	<script src="https://cdn.tailwindcss.com"></script>
+
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="assets/css/newcss.css">
+
+</head>
+<style>
+	@media only screen and (min-width: 200px) and (max-width: 480px) {
+		#board {
+			margin-left: 2px;
+		}
+	}
+
+	@media only screen and (min-width: 480px) and (max-width: 639px) {
+		#board {
+			margin-left: 2px;
+		}
+	}
+
+	@media only screen and (min-width: 980px) and (max-width: 1024px) {
+		#board {
+			margin-left: 2px;
+		}
+	}
+
+	#list {
+		font-size: 11px;
+	}
+
+	@media only screen and (min-width: 1024px) and (max-width: 1180px) {
+		#list {
+			font-size: 7px;
+
+		}
+	}
+</style>
+
+<body data-gr-c-s-loaded="true" class="vsc-initialized" style="user-select: auto">
+
+
+	<div class="snav-bar" style="background-color: black;">
+		<!-- <div class="logo">
+			<a href="index.html">
+				<img class="mr-logo mt-1 " src="img/logo.png" />
+			</a>
+		</div>
+
+		<div class="nav-link">
+			<ul class="nvl">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="faculty.html">Faculty</a></li>
+				<li><a href="team.html">Student Members</a></li>
+				<li><a href="startups.html">Start-Ups</a></li>
+
+				<div class="dropdown" style="display: inline-block;">
+					<button class="dropbtn" id="dropbtn" onclick="handleMoreBtn()">
+						More
+						<i class="fa fa-caret-down" style="color: rgb(65, 142, 243);"></i>
 					</button>
-			
+
 					<div class="dropdown-content" id="dropdown-content">
-					  <a href="http://www.mcehassan.ac.in">Malnad College of Engineering</a
-					  >
-					  <a href="events.html">Successful Events</a>
-					  <a href="prag.html">PRAGYATHA - 19</a>
-					  <!-- <a href="alumni.html">Alumni</a> -->
-					  <a href="Nisp.html">NISP-policy</a>
-			
+						<a href="http://www.mcehassan.ac.in">Malnad College of Engineering</a>
+						<a href="events.html">Successful Events</a>
+						<a href="prag.html">PRAGYATHA - 19</a>
+					 <a href="alumni.html">Alumni</a> 
+						<a href="Nisp.html">NISP-policy</a>
+
 					</div>
-				  </div>
-				</ul>
-			  </div>
-			
-			  <div class="smenu-btn ">
-				<button onclick="openNav()" style="background-color: black;outline: none;">
-				  <i class="fa fa-bars " style="color: rgb(65, 142, 243);" aria-hidden="true"></i>
-				</button>
-			  </div>
+				</div>
+			</ul>
+		</div>
+
+		<div class="smenu-btn ">
+			<button onclick="openNav()" style="background-color: black;outline: none;">
+				<i class="fa fa-bars " style="color: rgb(65, 142, 243);" aria-hidden="true"></i>
+			</button>
+		</div>
+	</div>
+	<div id="myNav" class="overlay" style="margin-top: 70px;">
+		<a href="javascript:void(0)" class="closebtn" style="font-size: 15px;" onclick="closeNav()"><i
+				class="fa fa-times"></i></a>
+		<div class="overlay-content">
+			<a href="index.html">Home</a>
+			<a href="faculty.html">Faculty</a>
+			<a href="team.html">Student Members</a>
+			<a href="startups.html">Start-Ups</a>
+			<a href="http://www.mcehassan.ac.in">Malnad College of Engineering</a>
+			<a href="events.html">Successful Events</a>
+			<a href="prag.html">PRAGYATHA - 19</a>
+			 <a href="alumni.html">Alumni</a>
+			<a href="Nisp.html">NISP-policy</a>
+		</div>  -->
+
+
+
+
+		<nav class="bg-black lg:flex lg:items-center lg:justify-between">
+			<div class="flex items-center justify-between">
+				<a href="index.html"><img src="images/meriiseNewLogo.png" alt="" class="h-20" id="logo"></a>
+
+				<div>
+					<ion-icon name="menu" onclick="clickFunction(this)"
+						class="text-4xl text-blue-400 block lg:hidden"></ion-icon>
+				</div>
+
 			</div>
-			<div id="myNav" class="overlay" style="margin-top: 70px;">
-			  <a href="javascript:void(0)" class="closebtn" style="font-size: 15px;" onclick="closeNav()"
-				><i class="fa fa-times"></i
-			  ></a>
-			  <div class="overlay-content" >
-				<a href="index.html" >Home</a>
-				<a href="faculty.html" >Faculty</a>
-				<a href="team.html" >Student Members</a>
-				<a href="startups.html">Start-Ups</a>
-				<a href="http://www.mcehassan.ac.in">Malnad College of Engineering</a
-				>
-				<a href="events.html" >Successful Events</a>
-				<a href="prag.html">PRAGYATHA - 19</a>
-				<!-- <a href="alumni.html">Alumni</a> -->
-				<a href="Nisp.html"
-				>NISP-policy</a>
-			  </div>
-			</div> 
-			
-			
 
-			
-			<!-- One -->
-				<section id="One" class="wrapper style3">
-					<div class="inner">
-						<header class="align-center mt-5">
-							<h2>Collaborations</h2>
-							<p>Achivements & Milestones</p>
-						</header>
+			<!-- <ion-icon name="menu" id="menu" onclick="clickFunction(this)"
+        class="text-4xl block lg:hidden h-24"></ion-icon> -->
+
+
+			<div class="hidden lg:block" id="elements">
+				<ul class="text-blue-400 font-bold bg-black px-4 py-4 lg:flex lg:justify-between lg:items-center w-48 md:w-42 lg:w-full float-right md:float-right h-screen md:h-screen lg:h-auto z-50"
+					id="list">
+					<li class="mx-2"><a href="index.html">Home</a></li>
+					<li class="mx-2"><a href="aboutmeriise.html">About us</a></li>
+					<li class="mx-2"><a href="faculty.html">Faculty</a></li>
+					<li class="mx-2"><a href="team.html">Team MERIISE</a></li>
+					<li class="mx-2"><a href="iic.html">MHRD-IIC</a></li>
+					<li class="mx-2"><a href="nain.html">Nain</a></li>
+					<li class="mx-2"><a href="uba.html">UBA</a></li>
+					<li class="mx-2"><a href="infrastructure.html">Infrastructure</a></li>
+					<li class="mx-2"><a href="startups.html">Start ups</a></li>
+					<li class="mx-2"><a href="https://meriise-events.vercel.app/">Events</a></li>
+					<li class="mx-2"><a href="https://www.mcehassan.ac.in/">MCE</a></li>
+					<li class="mx-2"><a href="documents.html">Documents</a></li>
+					<li class="mx-2"><a href="collab.html">Collaborations</a></li>
+					<li class="mx-2"><a href="Nisp.html">MCE NISP Policy</a></li>
+					<li class="mx-2"><a href="ourAchievements.html">Achievements</a></li>
+
+					<div class="flex ml-2">
+						<li class="relative" onclick="toggleFunction()" id="click">
+							<a href="#" class="hover:text-blue-600">Pragyatha</a>
+							<ion-icon name="caret-down-outline" class="px-1" id="icons"></ion-icon>
+
+						</li>
+						<li class="absolute p-2 rounded-sm mt-8 hidden rounded-xl text-md w-[130px] bg-white text-blue-600"
+							id="box" onclick="dropdown()">
+							<div><a href="pragyatha23.html">Pragyatha 23</a></div>
+							<div><a href="pragyatha22.html">Pragyatha 22</a></div>
+							<div><a href="prag.html">Pragyatha 19</a></div>
+
+						</li>
 					</div>
-				</section>
-	
-			<!-- Two -->
-				<section id="two" class="wrapper style2">
-					<div class="inner p-1">
-						<div class="box ">
-							<div class="content ">
-<!--Content-->
+				</ul>
+			</div>
+		</nav>
 
-								<header class="align-center" style="margin-bottom: -20px;">
-									<h2><b >MHRD-IIC</b></h2>			
-								</header>
-								<div class="gallery">
-									<div class="img-wrap">
-										<div class="image fit">
-											<a href="#"
-												><img src="images/iic-collab.jpg" alt=""
-											/></a>
-										</div>
-									</div>
-								</div>
-								
-									
-										<p style="padding-left: 30px;padding-right: 10px">Ministry of Education (MoE), Govt. of India has established ‘ MoE’s Innovation Cell (MIC)’ to systematically foster the culture of innovation amongst all Higher Education Institutions(HEIs). The primary mandate of MIC is to encourage, inspire, and nurture young students by supporting them to work with new ideas and transform them int prototypes while they are informative years. MIC has envisioned encouraging the creation of ‘Institution’s Innovation Council (IICs)’ across selected HEIs. A network of these IICs will be established to promote innovation in the Institution through multitudinous modes leading to an innovation promotion eco-system in the campuses. In collaboration with ME-RIISE (Malnad Enclave for Research, Innovation, Incubation, Start-ups, and Entrepreneurship ) Institution Innovation Cell has been established in the college with the vision of fostering innovation and support students to enrich their spirit of entrepreneurship.</p>
-										
-										<a href="index.html">Know More</a>
-										
-								</div>
-								<br>
-								<div class="content ">
-<!--Content-->
 
-								<header class="align-center" style="margin-bottom: -20px;">
-									<h2><b >NAIN</b></h2>			
-								</header>
-								<div class="gallery">
-									<div class="img-wrap">
-										<div class="image fit">
-											<a href="#"
-												><img src="images/nain-collab.jpg" alt=""
-											/></a>
-										</div>
-									</div>
-								</div>
-								
-									
-										<p style="padding-left: 30px;padding-right: 10px">ME-RIISE is associated with New Age Innovation Network and is working towards bringing up incubation centers that will encourage students, researchers, scholars, and alumni to share their ideas, nurture, and bring out technical solutions to problems that are local-centric.
-											Entrepreneurship development and mentoring are one of the ten initiatives of KIG 2020 for creating new opportunities and jobs. One of the tasks under this head is to build ‘ KARNATAKA NEW AGE INNOVATION NETWORK.’ The main objective of the NAIN Scheme is to encourage students, research scholars, and alumni to share their ideas to solve the chosen problems which are local-centric and to validate, refine, and nurture the ideas. Incubation Center shall provide an eco-system to convert the ideas in proof of concept and upgrade them to a level of commercial value. After successful incubation, encourage and lead the teams towards setting up a business enterprise</p>
-										
-										<a href="index.html">Know More</a>
-										
-								</div>
-								<br>
-								<div class="content ">
-<!--Content-->
 
-								<header class="align-center" style="margin-bottom: -20px;">
-									<h2><b >UBA</b></h2>			
-								</header>
-								<div class="gallery">
-									<div class="img-wrap">
-										<div class="image fit">
-											<a href="#"
-												><img src="images/uba-collab.jpg" alt=""
-											/></a>
-										</div>
-									</div>
-								</div>
-								
-									
-										<p style="padding-left: 30px;padding-right: 10px">The conceptualization of Unnat Bharat Abhiyan started with the initiative of a group of dedicated faculty members of the Indian Institute of Technology (IIT) Delhi working for a long in the area of rural development and appropriate technology. The concept was nurtured through wide consultation with the representatives of a number of technical institutions, Rural Technology Action Group (RuTAG) coordinators, voluntary organizations, and government agencies, actively involved in rural development work, during a National workshop held at IIT Delhi in September 2014.
-											In Collaboration with ME-RIISE, UBA has adopted 5 villages and works on improvement and awareness.</p>
-										
-										<a href="index.html">Know More</a>
-										
-								</div>
-								<br>
+	</div>
 
-								
 
-								</div>
+
+
+	<!-- One -->
+	<section id="One" class="wrapper style3">
+		<div class="inner">
+			<header class="align-center mt-5">
+				<h2>Collaborations</h2>
+				<p>Achivements & Milestones</p>
+			</header>
+		</div>
+	</section>
+
+	<!-- Two -->
+	<section id="two" class="wrapper style2">
+		<div class="inner p-1">
+			<div class="box ">
+				<div class="content ">
+					<!--Content-->
+
+					<header class="align-center" style="margin-bottom: -20px;">
+						<h2><b>MHRD-IIC</b></h2>
+					</header>
+					<div class="gallery">
+						<div class="img-wrap">
+							<div class="image fit">
+								<a href="#"><img src="images/iic-collab.jpg" alt="" /></a>
 							</div>
-						
-				</section>
-	
-			<!-- Footer -->
-				<footer id="footer">
-					<div class="container">
-						<ul class="icons">
-							<a href="#" class=" p-2" style="color: rgb(51, 183, 235);text-decoration: none;">
-								<i class="fab fa-twitter fa-2x"></i>
-							  </a>
-							  <a href="https://www.facebook.com/me_riise/" class="p-2 " style="color: rgb(43, 43, 247);text-decoration: none;">
-								<i class="fab fa-facebook fa-2x"></i>
-							  </a>
-							  <a href="https://www.instagram.com/me_riise/" class=" p-2" style="color: rgb(250, 43, 112);;text-decoration:none">
-								<i class="fab fa-instagram fa-2x"></i>
-							  </a>
-							  <a href="mailto:meriisehsn@gmail.com" class=" p-2" style="color: rgb(228, 54, 11);text-decoration:none">
-								<i class="fa fa-envelope fa-2x"></i>
-							  </a>
-						</ul>
+						</div>
 					</div>
-					<div class="copyright">
-						© ME-RIISE. All rights reserved.
+
+
+					<p style="padding-left: 30px;padding-right: 10px">Ministry of Education (MoE), Govt. of India has
+						established ‘ MoE’s Innovation Cell (MIC)’ to systematically foster the culture of innovation
+						amongst all Higher Education Institutions(HEIs). The primary mandate of MIC is to encourage,
+						inspire, and nurture young students by supporting them to work with new ideas and transform them
+						int prototypes while they are informative years. MIC has envisioned encouraging the creation of
+						‘Institution’s Innovation Council (IICs)’ across selected HEIs. A network of these IICs will be
+						established to promote innovation in the Institution through multitudinous modes leading to an
+						innovation promotion eco-system in the campuses. In collaboration with ME-RIISE (Malnad Enclave
+						for Research, Innovation, Incubation, Start-ups, and Entrepreneurship ) Institution Innovation
+						Cell has been established in the college with the vision of fostering innovation and support
+						students to enrich their spirit of entrepreneurship.</p>
+
+					<a href="index.html">Know More</a>
+
+				</div>
+				<br>
+				<div class="content ">
+					<!--Content-->
+
+					<header class="align-center" style="margin-bottom: -20px;">
+						<h2><b>NAIN</b></h2>
+					</header>
+					<div class="gallery">
+						<div class="img-wrap">
+							<div class="image fit">
+								<a href="#"><img src="images/nain-collab.jpg" alt="" /></a>
+							</div>
+						</div>
 					</div>
-				</footer>
-	
-		
-	
-		
-	</body>
-	
-			<!-- Scripts -->
-				<script src="assets/js/jquery.min.js"></script>
-				<script src="assets/js/jquery.scrollex.min.js"></script>
-				<script src="assets/js/skel.min.js"></script>
-				<script src="assets/js/util.js"></script>
-				<script src="assets/js/main.js"></script>
-				<!--<script src="assets/js/from/jquery.min.js"></script>
+
+
+					<p style="padding-left: 30px;padding-right: 10px">ME-RIISE is associated with New Age Innovation
+						Network and is working towards bringing up incubation centers that will encourage students,
+						researchers, scholars, and alumni to share their ideas, nurture, and bring out technical
+						solutions to problems that are local-centric.
+						Entrepreneurship development and mentoring are one of the ten initiatives of KIG 2020 for
+						creating new opportunities and jobs. One of the tasks under this head is to build ‘ KARNATAKA
+						NEW AGE INNOVATION NETWORK.’ The main objective of the NAIN Scheme is to encourage students,
+						research scholars, and alumni to share their ideas to solve the chosen problems which are
+						local-centric and to validate, refine, and nurture the ideas. Incubation Center shall provide an
+						eco-system to convert the ideas in proof of concept and upgrade them to a level of commercial
+						value. After successful incubation, encourage and lead the teams towards setting up a business
+						enterprise</p>
+
+					<a href="index.html">Know More</a>
+
+				</div>
+				<br>
+				<div class="content ">
+					<!--Content-->
+
+					<header class="align-center" style="margin-bottom: -20px;">
+						<h2><b>UBA</b></h2>
+					</header>
+					<div class="gallery">
+						<div class="img-wrap">
+							<div class="image fit">
+								<a href="#"><img src="images/uba-collab.jpg" alt="" /></a>
+							</div>
+						</div>
+					</div>
+
+
+					<p style="padding-left: 30px;padding-right: 10px">The conceptualization of Unnat Bharat Abhiyan
+						started with the initiative of a group of dedicated faculty members of the Indian Institute of
+						Technology (IIT) Delhi working for a long in the area of rural development and appropriate
+						technology. The concept was nurtured through wide consultation with the representatives of a
+						number of technical institutions, Rural Technology Action Group (RuTAG) coordinators, voluntary
+						organizations, and government agencies, actively involved in rural development work, during a
+						National workshop held at IIT Delhi in September 2014.
+						In Collaboration with ME-RIISE, UBA has adopted 5 villages and works on improvement and
+						awareness.</p>
+
+					<a href="index.html">Know More</a>
+
+				</div>
+				<br>
+
+
+
+			</div>
+		</div>
+
+	</section>
+
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="container">
+			<ul class="icons">
+				<a href="#" class=" p-2" style="color: rgb(51, 183, 235);text-decoration: none;">
+					<i class="fab fa-twitter fa-2x"></i>
+				</a>
+				<a href="https://www.facebook.com/me_riise/" class="p-2 "
+					style="color: rgb(43, 43, 247);text-decoration: none;">
+					<i class="fab fa-facebook fa-2x"></i>
+				</a>
+				<a href="https://www.instagram.com/me_riise/" class=" p-2"
+					style="color: rgb(250, 43, 112);;text-decoration:none">
+					<i class="fab fa-instagram fa-2x"></i>
+				</a>
+				<a href="mailto:meriisehsn@gmail.com" class=" p-2" style="color: rgb(228, 54, 11);text-decoration:none">
+					<i class="fa fa-envelope fa-2x"></i>
+				</a>
+			</ul>
+		</div>
+		<div class="copyright">
+			© ME-RIISE. All rights reserved.
+		</div>
+	</footer>
+
+
+
+
+</body>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+<!--<script src="assets/js/from/jquery.min.js"></script>
 				<script src="assets/js/from/skel.min.js"></script>
 				<script src="assets/js/from/skel-layers.min.js"></script>
-				<script src="assets/js/from/init.js"></script>-->	
-				<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+				<script src="assets/js/from/init.js"></script>-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+	integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+	crossorigin="anonymous"></script>
 
-				<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-			  
-				<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-			  
-				 <!-- custom script -->
-    <script src="js/script.js"></script>
-				  
-			  
-		</body>
-	</html>
-	
- 
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+	integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+	crossorigin="anonymous"></script>
 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+	integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+	crossorigin="anonymous"></script>
+
+<!-- custom script -->
+<script src="js/script.js"></script>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+
+	function clickFunction(e) {
+		let list = document.getElementById('elements')
+		list.classList.toggle('hidden')
+		let iconName = e.getAttribute('name');
+		e.setAttribute('name', iconName === 'menu' ? 'close' : 'menu');
+	}
+
+	function toggleFunction() {
+
+		box.classList.toggle('hidden');
+		if (box.classList.contains('hidden')) {
+			icons.setAttribute('name', 'caret-down-outline');
+		} else {
+			icons.setAttribute('name', 'caret-up-outline');
+		}
+	}
+
+</script>
+
+
+</body>
+
+</html>

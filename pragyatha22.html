@@ -1,66 +1,65 @@
 <!DOCTYPE HTML>
 
 <html>
-	<head>
-		<title>PRAGYATHA-22</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/newcss.css">
-		<script defer src='assets/js/newjs.js'></script>
-		<!-- from the other one 
+
+<head>
+	<title>PRAGYATHA-22</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/newcss.css">
+	<script defer src='assets/js/newjs.js'></script>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<!-- from the other one 
 		<link rel="stylesheet" href="assets/css/from/skel.css" />-->
-		<!--<link rel="stylesheet" href="assets/css/from/style.css" />-->
-		<!--<link rel="stylesheet" href="assets/css/from/style-xlarge.css" />--> 
-		<style>
+	<!--<link rel="stylesheet" href="assets/css/from/style.css" />-->
+	<!--<link rel="stylesheet" href="assets/css/from/style-xlarge.css" />-->
+	<style>
+		.flip-card {
+			background-color: transparent;
 
+			padding-left: 5px;
 
+			padding-right: 5px;
+			width: 100%;
+			height: 500px;
+			perspective: 1000px;
+		}
 
-.flip-card {
-  background-color: transparent;
+		.flip-card-inner {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			text-align: center;
 
-  padding-left: 5px;
+			transition: transform 0.6s;
+			transform-style: preserve-3d;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		}
 
-  padding-right: 5px;
-  width: 100%;
-  height: 500px;
-  perspective: 1000px;
-}
+		.flip-card:hover .flip-card-inner {
+			transform: rotateY(180deg);
+		}
 
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
+		.flip-card-front,
+		.flip-card-back {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			backface-visibility: hidden;
+		}
 
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
+		.flip-card-front {
+			background-color: #bbb;
+			color: black;
+		}
 
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
+		.flip-card-back {
+			background-color: #ff6600ff;
+			color: white;
 
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
-}
-
-.flip-card-back {
-  background-color: #ff6600ff;
-  color: white;
-
-  transform: rotateY(180deg);
-}
-
+			transform: rotateY(180deg);
+		}
 
 
 
@@ -71,140 +70,170 @@
 
 
 
-.carrd {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.2s;
-  width: 55%;
-  
-  
-  
-}
 
-
-.button {
-    background-color: #BA55D3;
-    border: none;
-    color: #BA55D3;
-    padding: 3px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-
-.button:active {
-    background: purple;
-}
-	
-.button:focus {
-    background: purple;
-}
+		.carrd {
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			transition: 0.2s;
+			width: 55%;
 
 
 
+		}
 
-.carrd:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
 
-.containerr {
-  padding: 2px 16px;
-  padding-bottom: 20px;
-  
+		.button {
+			background-color: #BA55D3;
+			border: none;
+			color: #BA55D3;
+			padding: 3px 10px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 14px;
+			margin: 4px 2px;
+			cursor: pointer;
+		}
 
-}
-@media screen and (max-width: 600px) {
-  .carrd {
-    width: 95%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
+		.button:active {
+			background: purple;
+		}
+
+		.button:focus {
+			background: purple;
+		}
 
 
 
 
+		.carrd:hover {
+			box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+		}
 
-* {
-  box-sizing: border-box;
-}
+		.containerr {
+			padding: 2px 16px;
+			padding-bottom: 20px;
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
 
-/* Float four columns side by side */
-.column {
-  float: center;
-  width: 33%;
-  padding: 0 10px;
-}
+		}
 
-/* Remove extra left and right margins, due to padding */
-.row {margin: 0 10px;}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive columns */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
-
-/* Style the counter cards */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  text-align: center;
-
-  background-color: #f1f1f1;
-
-}
-
-.blink {
-  animation: blink 1.5s infinite;
-}
-
-@keyframes blink {
-  0% {
-    opacity: 5;
-  }
-  100% {
-    opacity: 2;
-    color: pink;
-  }
-}
+		@media screen and (max-width: 600px) {
+			.carrd {
+				width: 95%;
+				display: block;
+				margin-bottom: 20px;
+			}
+		}
 
 
 
 
-</style>
+
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		/* Float four columns side by side */
+		.column {
+			float: center;
+			width: 33%;
+			padding: 0 10px;
+		}
+
+		/* Remove extra left and right margins, due to padding */
+		.row {
+			margin: 0 10px;
+		}
+
+		/* Clear floats after the columns */
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		/* Responsive columns */
+		@media screen and (max-width: 600px) {
+			.column {
+				width: 100%;
+				display: block;
+				margin-bottom: 20px;
+			}
+		}
+
+		/* Style the counter cards */
+		.card {
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			padding: 16px;
+			text-align: center;
+
+			background-color: #f1f1f1;
+
+		}
+
+		.blink {
+			animation: blink 1.5s infinite;
+		}
+
+		@keyframes blink {
+			0% {
+				opacity: 5;
+			}
+
+			100% {
+				opacity: 2;
+				color: pink;
+			}
+		}
+
+		@media only screen and (min-width: 200px) and (max-width: 480px) {
+			#board {
+				margin-left: 2px;
+			}
+		}
+
+		@media only screen and (min-width: 480px) and (max-width: 639px) {
+			#board {
+				margin-left: 2px;
+			}
+		}
+
+		@media only screen and (min-width: 980px) and (max-width: 1024px) {
+			#board {
+				margin-left: 2px;
+			}
+		}
+
+		#list {
+			font-size: 11px;
+		}
+
+		@media only screen and (min-width: 1024px) and (max-width: 1180px) {
+			#list {
+				font-size: 7px;
+
+			}
+		}
+	</style>
 
 
-	</head>
+</head>
 
-	<body >
-
-
-
-
-		<!-- Header -->
-		<!--<h4 style="text-align: center; padding-bottom: 0px;  "><b>MALNAD COLLEGE OF ENGINEERING, HASSAN</b> </h4>-->
+<body>
 
 
 
-		<div class="snav-bar">
-			<div class="logo">
+
+	<!-- Header -->
+	<!--<h4 style="text-align: center; padding-bottom: 0px;  "><b>MALNAD COLLEGE OF ENGINEERING, HASSAN</b> </h4>-->
+
+
+
+	<div class="snav-bar">
+		<!-- <div class="logo">
 				<a href="index.html">
 					<img class="mr-logo" src="images/rect78.png" />
 				</a>
@@ -253,22 +282,78 @@ body {
                             <a href="Nisp.html">NISP-policy</a>
 
 			
+			</div> -->
+
+
+
+
+		<nav class="bg-black lg:flex lg:items-center lg:justify-between">
+			<div class="flex items-center justify-between">
+				<a href="index.html"><img src="images/meriiseNewLogo.png" alt="" class="h-20" id="logo"></a>
+
+				<div>
+					<ion-icon name="menu" onclick="clickFunction(this)"
+						class="text-4xl text-blue-400 block lg:hidden"></ion-icon>
+				</div>
+
 			</div>
-		</div>
+
+			<!-- <ion-icon name="menu" id="menu" onclick="clickFunction(this)"
+class="text-4xl block lg:hidden h-24"></ion-icon> -->
 
 
-			
+			<div class="hidden lg:block" id="elements">
+				<ul class="text-blue-400 font-bold bg-black px-4 py-4 lg:flex lg:justify-between lg:items-center w-48 md:w-42 lg:w-full float-right md:float-right h-screen md:h-screen lg:h-auto z-50"
+					id="list">
+					<li class="mx-2"><a href="index.html">Home</a></li>
+					<li class="mx-2"><a href="aboutmeriise.html">About us</a></li>
+					<li class="mx-2"><a href="faculty.html">Faculty</a></li>
+					<li class="mx-2"><a href="team.html">Team MERIISE</a></li>
+					<li class="mx-2"><a href="iic.html">MHRD-IIC</a></li>
+					<li class="mx-2"><a href="nain.html">Nain</a></li>
+					<li class="mx-2"><a href="uba.html">UBA</a></li>
+					<li class="mx-2"><a href="infrastructure.html">Infrastructure</a></li>
+					<li class="mx-2"><a href="startups.html">Start ups</a></li>
+					<li class="mx-2"><a href="https://meriise-events.vercel.app/">Events</a></li>
+					<li class="mx-2"><a href="https://www.mcehassan.ac.in/">MCE</a></li>
+					<li class="mx-2"><a href="documents.html">Documents</a></li>
+					<li class="mx-2"><a href="collab.html">Collaborations</a></li>
+					<li class="mx-2"><a href="Nisp.html">MCE NISP Policy</a></li>
+					<li class="mx-2"><a href="ourAchievements.html">Achievements</a></li>
 
-			
-			
-		<!-- Banner -->
+					<div class="flex ml-2">
+						<li class="relative" onclick="toggleFunction()" id="click">
+							<a href="#" class="hover:text-blue-600">Pragyatha</a>
+							<ion-icon name="caret-down-outline" class="px-1" id="icons"></ion-icon>
+
+						</li>
+						<li class="absolute p-2 rounded-sm mt-8 hidden rounded-xl text-md w-[130px] bg-white text-blue-600"
+							id="box" onclick="dropdown()">
+							<div><a href="pragyatha23.html">Pragyatha 23</a></div>
+							<div><a href="pragyatha22.html">Pragyatha 22</a></div>
+							<div><a href="prag.html">Pragyatha 19</a></div>
+
+						</li>
+					</div>
+				</ul>
+			</div>
+		</nav>
+
+	</div>
 
 
 
 
 
-			<section class="banner full">
-				<!--<article>
+
+	<!-- Banner -->
+
+
+
+
+
+	<section class="banner full">
+		<!--<article>
 					<img src="images/prag_bg1.png" alt="" />
 					<div class="inner">
 
@@ -286,87 +371,93 @@ body {
 					</div>
 				</article>
 				-->
-						
-				<article>
-					<img src="images/2ndbg.png"  alt="" />
-					<div class="inner">
-						<header>
-							
-							<h2 style="font-family: Inversionz Unboxed;color: #ff6600ff " >PRAGYATHA - 22</h2>
-							<h4>powered by</h4>
-							<h3>ME-RIISE</h3>
 
-						</header>
-					</div>
-				</article>
-				<article>
-					<img src="images/slide04.jpg"  alt="" />
-					<div class="inner">
-						<header>
-							<h2><a href="#"> MCE</h2>
-							<p> Malnad college of engineering</a>
-						</header>
-					</div>
-				</article>
-				<article>
-					<img src="images/slide04.jpg"  alt="" />
-					<div class="inner">
-						<header>
-							<h2><a href="http://www.mcehassan.ac.in"> MCE</h2>
-							<p><b><a href="http://www.mcehassan.ac.in"> Malnad college of engineering</a></b></p>
-						</header>
-					</div>
-				</article>
-				<article>
-					<img src="images/slide04.jpg"  alt="" />
-					<div class="inner">
-						<header>
-							<h2><a href="http://www.mcehassan.ac.in"> MCE</h2>
-							<p><b><a href="http://www.mcehassan.ac.in"> Malnad college of engineering</a></b></p>
-						</header>
-					</div>
-				</article>
-				<article>
-					<img src="images/slide07.jpg"  alt="" />
-					<div class="inner">
-						<header>
-							<h2><a href="http://www.mcehassan.ac.in"> MCE</h2>
-							<p><b><a href="http://www.mcehassan.ac.in"> Malnad college of engineering</a></b></p>
-						</header>
-					</div>
-				</article>
-			</section>
+		<article>
+			<img src="images/2ndbg.png" alt="" />
+			<div class="inner">
+				<header>
 
+					<h2 style="font-family: Inversionz Unboxed;color: #ff6600ff ">PRAGYATHA - 22</h2>
+					<h4>powered by</h4>
+					<h3>ME-RIISE</h3>
 
-
-
-
-
-
-
-
-
-
-
-
-			<!-- from code     -->
-			<section id="two" class="wrappe style2">
-				<header class="majo">
-					<br><br><br>
-					<center><!--<h2 style="font-family: Inversionz Unboxed" >PRAGYATHA</h2>-->
-						<div class="carrd">
-							<img src="images/font1.png" style="width: 100%">
-							<!--<a href="http://www.meriise.org/pragOPR.html" class="button alt" background-color: "blue">REGISTER</a>-->
-							<a href="http://www.meriise.org/pragOPR.html" class="button"><font color="white" size="3px"><blink class="blink">REGISTER NOW</blink></font></a>
-						</div><br><br>
-					<h2 style=" text-align-last: center; font-weight:bold; color:black; font-size:40px">EVENT LIST</h2>
-				<h3 style=" text-align-last: center; font-weight:bold;  font-size:26px"><a href="prag-rule.html"><u>Click Here For RuleBook</u></a></h3></center> 
-					
 				</header>
+			</div>
+		</article>
+		<article>
+			<img src="images/slide04.jpg" alt="" />
+			<div class="inner">
+				<header>
+					<h2><a href="#"> MCE</h2>
+					<p> Malnad college of engineering</a>
+				</header>
+			</div>
+		</article>
+		<article>
+			<img src="images/slide04.jpg" alt="" />
+			<div class="inner">
+				<header>
+					<h2><a href="http://www.mcehassan.ac.in"> MCE</h2>
+					<p><b><a href="http://www.mcehassan.ac.in"> Malnad college of engineering</a></b></p>
+				</header>
+			</div>
+		</article>
+		<article>
+			<img src="images/slide04.jpg" alt="" />
+			<div class="inner">
+				<header>
+					<h2><a href="http://www.mcehassan.ac.in"> MCE</h2>
+					<p><b><a href="http://www.mcehassan.ac.in"> Malnad college of engineering</a></b></p>
+				</header>
+			</div>
+		</article>
+		<article>
+			<img src="images/slide07.jpg" alt="" />
+			<div class="inner">
+				<header>
+					<h2><a href="http://www.mcehassan.ac.in"> MCE</h2>
+					<p><b><a href="http://www.mcehassan.ac.in"> Malnad college of engineering</a></b></p>
+				</header>
+			</div>
+		</article>
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- from code     -->
+	<section id="two" class="wrappe style2">
+		<header class="majo">
+			<br><br><br>
+			<center><!--<h2 style="font-family: Inversionz Unboxed" >PRAGYATHA</h2>-->
+				<div class="carrd">
+					<img src="images/font1.png" style="width: 100%">
+					<!--<a href="http://www.meriise.org/pragOPR.html" class="button alt" background-color: "blue">REGISTER</a>-->
+					<a href="http://www.meriise.org/pragOPR.html" class="button">
+						<font color="white" size="3px">
+							<blink class="blink">REGISTER NOW</blink>
+						</font>
+					</a>
+				</div><br><br>
+				<h2 style=" text-align-last: center; font-weight:bold; color:black; font-size:40px">EVENT LIST</h2>
+				<h3 style=" text-align-last: center; font-weight:bold;  font-size:26px"><a
+						href="prag-rule.html"><u>Click Here For RuleBook</u></a></h3>
+			</center>
+
+		</header>
 
 		<!-- One -->
-			<section id="one" class="wrapper style2">
-				<!--<div class="inner">
+		<section id="one" class="wrapper style2">
+			<!--<div class="inner">
 				    	<section class="specia">
 						     <h3 style=" text-align-last: center; font-weight:bold; font-size:30px">ENTRORPHOSIS</h3>
 								<a href="https://forms.gle/ctxnU1yGvvKbMWGZ7" class="image fit"><img src="images/modele.png" alt="" /></a>
@@ -384,104 +475,117 @@ Get ready to sell your brain to the highest bidder!!<br>
 									<p style="text-align-last: center;"><a href="https://forms.gle/ctxnU1yGvvKbMWGZ7" class="button alt">REGISTER</a></p>
 								</ul>
 							</section>-->
-					<div class="grid-style">
-					    
-					    <section class="specia">
-						     <h3 style=" text-align-last: center;font-weight:bold; font-size:30px">Entrorphosis</h3>
-							<a href="" class="image fit"><size width="5px" height="25px"><img src="img/Pragyatha22/entrorphosis.jpg" alt="" /></size></a>
-				
-								<p style="padding-left: 10px; padding-right: 10px">Entrorphosis is the flagship event of Pragyatha.
-								This Event aims at awakening the entrepreneurial mindset and testing your ability and 
-								readiness to adopt, develop, organize and run the ideological business.</p>
-								
-							</section>
+			<div class="grid-style">
+
+				<section class="specia">
+					<h3 style=" text-align-last: center;font-weight:bold; font-size:30px">Entrorphosis</h3>
+					<a href="" class="image fit">
+						<size width="5px" height="25px"><img src="img/Pragyatha22/entrorphosis.jpg" alt="" /></size>
+					</a>
+
+					<p style="padding-left: 10px; padding-right: 10px">Entrorphosis is the flagship event of Pragyatha.
+						This Event aims at awakening the entrepreneurial mindset and testing your ability and
+						readiness to adopt, develop, organize and run the ideological business.</p>
+
+				</section>
 
 
-						<section class="specia">
-						     <h3 style=" text-align-last: center;font-weight:bold; font-size:30px">UI/UX Hackathon</h3>
-								<a href="" class="image fit"><img src="img/Pragyatha22/uiux.jpg" alt="" /></a>
-							
-								<p style="padding-left: 10px; padding-right: 10px">User interface design is a craft in which designers focus 
-								on creating an interactive user experience.
-                        It is an opportunity where you can unveil your designing skills and have a great experience
-</p>
-								
-							</section>
+				<section class="specia">
+					<h3 style=" text-align-last: center;font-weight:bold; font-size:30px">UI/UX Hackathon</h3>
+					<a href="" class="image fit"><img src="img/Pragyatha22/uiux.jpg" alt="" /></a>
 
-						<section class="specia">
-						    <h3 style=" text-align-last: center;font-weight:bold; font-size:30px">HACK IT</h3>
-								<a href="" class="image fit"><img src="img/Pragyatha22/Software HACKATHON (1).jpg" alt="" /></a>
-								
-								<p style="padding-left: 10px; padding-right: 10px">The participants will be given problem statements in the software domain.
-Here the participants are tested for their time management, problem-solving ability, and efficiency in this 24 hour race to secure the highest rank.</p>
-								
-							</section>
+					<p style="padding-left: 10px; padding-right: 10px">User interface design is a craft in which
+						designers focus
+						on creating an interactive user experience.
+						It is an opportunity where you can unveil your designing skills and have a great experience
+					</p>
 
+				</section>
 
+				<section class="specia">
+					<h3 style=" text-align-last: center;font-weight:bold; font-size:30px">HACK IT</h3>
+					<a href="" class="image fit"><img src="img/Pragyatha22/Software HACKATHON (1).jpg" alt="" /></a>
 
-						<section class="specia">
-						    <h3 style=" text-align-last: center;font-weight:bold; font-size:30px">Blockchain Workshop</h3>
-						    <br/>
-								<a href="" class="image fit"><img src="img/Pragyatha22/blockchain poster.jpg" alt="" /></a>
-								<br/>
-								<p style="padding-left: 10px; padding-right: 10px"> Two-day hands-on workshop on blockchain development by experts will be conducted 
-								to ignite interest regarding blockchain and educate the participants. </p>
-								
-							</section>
-						<section class="specia">
-						    <h3 style=" text-align-last: center;font-weight:bold; font-size:30px">&nbsp &nbsp &nbsp Cyber Forensic and Ethical Hacking Workshop</h3>
-								<a href="" class="image fit"><img src="img/Pragyatha22/cyber security (1).jpg" alt="" /></a>
-								
-								<p style="padding-left: 10px; padding-right: 10px">With the enhancement in technology,the need for cyber security and ethical hacking is increasing .
-								A hands on experience from the scratch to upskill them as cyber forsenic investigators.</p>
-								
-							</section>
+					<p style="padding-left: 10px; padding-right: 10px">The participants will be given problem statements
+						in the software domain.
+						Here the participants are tested for their time management, problem-solving ability, and
+						efficiency in this 24 hour race to secure the highest rank.</p>
+
+				</section>
 
 
 
+				<section class="specia">
+					<h3 style=" text-align-last: center;font-weight:bold; font-size:30px">Blockchain Workshop</h3>
+					<br />
+					<a href="" class="image fit"><img src="img/Pragyatha22/blockchain poster.jpg" alt="" /></a>
+					<br />
+					<p style="padding-left: 10px; padding-right: 10px"> Two-day hands-on workshop on blockchain
+						development by experts will be conducted
+						to ignite interest regarding blockchain and educate the participants. </p>
+
+				</section>
+				<section class="specia">
+					<h3 style=" text-align-last: center;font-weight:bold; font-size:30px">&nbsp &nbsp &nbsp Cyber
+						Forensic and Ethical Hacking Workshop</h3>
+					<a href="" class="image fit"><img src="img/Pragyatha22/cyber security (1).jpg" alt="" /></a>
+
+					<p style="padding-left: 10px; padding-right: 10px">With the enhancement in technology,the need for
+						cyber security and ethical hacking is increasing .
+						A hands on experience from the scratch to upskill them as cyber forsenic investigators.</p>
+
+				</section>
 
 
-						<section class="specia">
-						    <h3 style=" text-align-last: center;font-weight:bold; font-size:30px">Shark Tank</h3>
-						    <br/>
-								<a href="" class="image fit"><img src="img/Pragyatha22/shark tank.jpg" alt="" /></a>
-							<br/>
-								<p style="padding-left: 10px; padding-right: 10px">Shark tank provides you with a platform in 
-								which participants can pitch their ideas and 
-								convince the jury to fund their enterprise to transform their ideas into reality</p>
-								
-							</section>
-							
-							<section class="specia">
-						    <h3 style=" text-align-last: center;font-weight:bold; font-size:30px">Trade Show</h3>
-								<a href="" class="image fit"><img src="img/Pragyatha22/trade show.jpg" alt="" /></a>
-								
-								<p style="padding-left: 10px; padding-right: 10px">It's an initiative that aims at broadening entrepreneurial insight among youths. 
-								This platform provides you the opportunity to witness the authentic stories of different phases of building a successful enterprise.</p>
-								
-							</section>	
-							
-						<section class="specia">
-						    <h3 style=" text-align-last: center;font-weight:bold; font-size:30px">Adspize</h3>
-								<a href="" class="image fit"><img src="img/Pragyatha22/adspize.jpg" alt="" /></a>
-								
-								<p style="padding-left: 10px; padding-right: 10px">The Adspize is an inter-branch   strife where creativity meets madness.  Adspize 
-								is a platform that brings out individual and collective talent of captivating the crowd in students. The Ads should contain the
-								essentials of advertisement like clarity, provoking in nature, creativity, appeal, and simplicity.</p>
-								
-							</section>	
-						
-							
-						<!--	<section class="specia">-->
-						     
-						<!--	</section>-->
 
-						<!--<section class="specia">-->
-						  
-						<!--	</section>-->
 
-							
-						<!--<div>
+
+				<section class="specia">
+					<h3 style=" text-align-last: center;font-weight:bold; font-size:30px">Shark Tank</h3>
+					<br />
+					<a href="" class="image fit"><img src="img/Pragyatha22/shark tank.jpg" alt="" /></a>
+					<br />
+					<p style="padding-left: 10px; padding-right: 10px">Shark tank provides you with a platform in
+						which participants can pitch their ideas and
+						convince the jury to fund their enterprise to transform their ideas into reality</p>
+
+				</section>
+
+				<section class="specia">
+					<h3 style=" text-align-last: center;font-weight:bold; font-size:30px">Trade Show</h3>
+					<a href="" class="image fit"><img src="img/Pragyatha22/trade show.jpg" alt="" /></a>
+
+					<p style="padding-left: 10px; padding-right: 10px">It's an initiative that aims at broadening
+						entrepreneurial insight among youths.
+						This platform provides you the opportunity to witness the authentic stories of different phases
+						of building a successful enterprise.</p>
+
+				</section>
+
+				<section class="specia">
+					<h3 style=" text-align-last: center;font-weight:bold; font-size:30px">Adspize</h3>
+					<a href="" class="image fit"><img src="img/Pragyatha22/adspize.jpg" alt="" /></a>
+
+					<p style="padding-left: 10px; padding-right: 10px">The Adspize is an inter-branch strife where
+						creativity meets madness. Adspize
+						is a platform that brings out individual and collective talent of captivating the crowd in
+						students. The Ads should contain the
+						essentials of advertisement like clarity, provoking in nature, creativity, appeal, and
+						simplicity.</p>
+
+				</section>
+
+
+				<!--	<section class="specia">-->
+
+				<!--	</section>-->
+
+				<!--<section class="specia">-->
+
+				<!--	</section>-->
+
+
+				<!--<div>
 							<div class="box">
 								<div class="image fit">
 									<img src="images/NAIN.png" alt="" />
@@ -519,77 +623,94 @@ Here the participants are tested for their time management, problem-solving abil
 								</div>
 							</div>
 						</div>-->
- 
- 
-					</div>
-					
-					
-				</div>
-				
-						
-			</section>
-			
-				</section><br><br>
-				<center><h3 ><b>For more information contact: <br>
-							Achal: 9110615254<br>
-							
-							</b></h3></center>
-				
-					
-<br><hr><br>
-		<!-- Two -->
-			
 
-		<!-- Footer -->
-			<footer id="footer">
-            <div class="container">
-                <ul class="icons">
-                    <li>
-                        <a href="#" class="icon fa-twitter"
-                        style="color: rgb(51, 183, 235);text-decoration: none;"
-                            ><span class="label">Twitter</span></a
-                        >
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/mce.startup.club" class="icon fa-facebook"
-                        style="color: rgb(43, 43, 247);text-decoration: none;"
-                            ><span class="label">Facebook</span></a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="https://www.instagram.com/me_riise/"
-                            class="icon fa-instagram"
-                            style="color: rgb(250, 43, 112);;text-decoration:none"
-                            ><span class="label">Instagram</span></a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="mailto:meriisehsn@gmail.com"
-                            class="icon fa-envelope"
-                            style="color: rgb(228, 54, 11);text-decoration:none"
-                            ><span class="label">Email</span></a
-                        >
-                    </li>
-                </ul>
-            </div>
-            <div class="copyright">&copy; Developers Community. All rights reserved</div>
-        </footer>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<!--<script src="assets/js/from/jquery.min.js"></script>
+			</div>
+
+
+			</div>
+
+
+		</section>
+
+	</section><br><br>
+	<center>
+		<h3><b>For more information contact: <br>
+				Achal: 9110615254<br>
+
+			</b></h3>
+	</center>
+
+
+	<br>
+	<hr><br>
+	<!-- Two -->
+
+
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="container">
+			<ul class="icons">
+				<li>
+					<a href="#" class="icon fa-twitter" style="color: rgb(51, 183, 235);text-decoration: none;"><span
+							class="label">Twitter</span></a>
+				</li>
+				<li>
+					<a href="https://www.facebook.com/mce.startup.club" class="icon fa-facebook"
+						style="color: rgb(43, 43, 247);text-decoration: none;"><span class="label">Facebook</span></a>
+				</li>
+				<li>
+					<a href="https://www.instagram.com/me_riise/" class="icon fa-instagram"
+						style="color: rgb(250, 43, 112);;text-decoration:none"><span class="label">Instagram</span></a>
+				</li>
+				<li>
+					<a href="mailto:meriisehsn@gmail.com" class="icon fa-envelope"
+						style="color: rgb(228, 54, 11);text-decoration:none"><span class="label">Email</span></a>
+				</li>
+			</ul>
+		</div>
+		<div class="copyright">&copy; Developers Community. All rights reserved</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<!--<script src="assets/js/from/jquery.min.js"></script>
 			<script src="assets/js/from/skel.min.js"></script>
 			<script src="assets/js/from/skel-layers.min.js"></script>
-			<script src="assets/js/from/init.js"></script>-->	
-			 <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-       
-     
+			<script src="assets/js/from/init.js"></script>-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-	</body>
+<script>	
+	function clickFunction(e) {
+		let list = document.getElementById('elements')
+		list.classList.toggle('hidden')
+		let iconName = e.getAttribute('name');
+		e.setAttribute('name', iconName === 'menu' ? 'close' : 'menu');
+	}
+
+	  function toggleFunction() {
+
+		box.classList.toggle('hidden');
+		if (box.classList.contains('hidden')) {
+			icons.setAttribute('name', 'caret-down-outline');
+		} else {
+			icons.setAttribute('name', 'caret-up-outline');
+		}
+	}
+</script>
+
+
+
+
+
+
+</body>
+
 </html>

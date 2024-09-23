@@ -1,80 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"
-      integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg=="
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="assets/css/teamstyles.css" />
-    <link rel="stylesheet" href="assets/css/newcss.css" />
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
-    <script defer src="js/script.js"></script>
-    <style type="text/css">
-      .icon {
-        text-decoration: none;
-        border-bottom: none;
-        position: relative;
-      }
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
 
-      .image {
-        width: 272px;
-        height: 350px;
-      }
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"
+    integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg=="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/css/teamstyles.css" />
+  <link rel="stylesheet" href="assets/css/newcss.css" />
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+  <script defer src="js/script.js"></script>
+          
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style type="text/css">
+    .icon {
+      text-decoration: none;
+      border-bottom: none;
+      position: relative;
+    }
 
-      .icon:before {
-        -moz-osx-font-smoothing: grayscale;
-        -webkit-font-smoothing: antialiased;
-        font-family: FontAwesome;
-        font-style: normal;
-        font-weight: normal;
-        text-transform: none !important;
-      }
+    .image {
+      width: 272px;
+      height: 350px;
+    }
 
-      .icon > .label {
-        display: none;
-      }
-      ul.icons {
-        cursor: default;
-        list-style: none;
-        padding-left: 0;
-      }
+    .icon:before {
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+      text-transform: none !important;
+    }
 
-      ul.icons li {
-        display: inline-block;
-        padding: 0 1rem 0 0;
-      }
+    .icon>.label {
+      display: none;
+    }
 
-      ul.icons li:last-child {
-        padding-right: 0;
-      }
+    ul.icons {
+      cursor: default;
+      list-style: none;
+      padding-left: 0;
+    }
 
-      ul.icons li .icon:before {
-        font-size: 2rem;
-      }
-    </style>
+    ul.icons li {
+      display: inline-block;
+      padding: 0 1rem 0 0;
+    }
 
-    <title>Team MERIISE</title>
-  </head>
+    ul.icons li:last-child {
+      padding-right: 0;
+    }
 
-  <body>
-    <div class="snav-bar" style="background-color: black; margin-top: -105px">
-      <div class="logo">
+    ul.icons li .icon:before {
+      font-size: 2rem;
+    }
+
+    @media only screen and (min-width: 200px) and (max-width: 480px) {
+            #board {
+                margin-left: 2px;
+            }
+        }
+
+        @media only screen and (min-width: 480px) and (max-width: 639px) {
+            #board {
+                margin-left: 2px;
+            }
+        }
+
+        @media only screen and (min-width: 980px) and (max-width: 1024px) {
+            #board {
+                margin-left: 2px;
+            }
+        }
+
+        #list {
+            font-size: 11px;
+        }
+
+        @media only screen and (min-width: 1024px) and (max-width: 1180px) {
+            #list {
+                font-size: 7px;
+                 
+            }
+        } 
+
+  </style>
+
+  <title>Team MERIISE</title>
+</head>
+
+<body>
+  <div class="snav-bar" style="background-color: black; margin-top: -105px">
+
+    
+
+
+  <nav class="bg-black lg:flex lg:items-center lg:justify-between">
+    <div class="flex items-center justify-between">
+        <a href="index.html"><img src="images/meriiseNewLogo.png" alt="" class="h-20" id="logo"></a>
+
+        <div>
+            <ion-icon name="menu" onclick="clickFunction(this)"
+                class="text-4xl text-blue-400 block lg:hidden"></ion-icon>
+        </div>
+
+    </div>
+
+    <!-- <ion-icon name="menu" id="menu" onclick="clickFunction(this)"
+class="text-4xl block lg:hidden h-24"></ion-icon> -->
+
+
+    <div class="hidden lg:block" id="elements">
+        <ul class="text-blue-400 font-bold bg-black px-4 py-4 lg:flex lg:justify-between lg:items-center w-48 md:w-42 lg:w-full float-right md:float-right h-screen md:h-screen lg:h-auto z-50"
+            id="list">
+            <li class="mx-2"><a href="index.html">Home</a></li>
+            <li class="mx-2"><a href="aboutmeriise.html">About us</a></li>
+            <li class="mx-2"><a href="faculty.html">Faculty</a></li>
+            <li class="mx-2"><a href="team.html">Team MERIISE</a></li>
+            <li class="mx-2"><a href="iic.html">MHRD-IIC</a></li>
+            <li class="mx-2"><a href="nain.html">Nain</a></li>
+            <li class="mx-2"><a href="uba.html">UBA</a></li>
+            <li class="mx-2"><a href="infrastructure.html">Infrastructure</a></li>
+            <li class="mx-2"><a href="startups.html">Start ups</a></li>
+            <li class="mx-2"><a href="https://meriise-events.vercel.app/">Events</a></li>
+            <li class="mx-2"><a href="https://www.mcehassan.ac.in/">MCE</a></li>
+            <li class="mx-2"><a href="documents.html">Documents</a></li>
+            <li class="mx-2"><a href="collab.html">Collaborations</a></li>
+            <li class="mx-2"><a href="Nisp.html">MCE NISP Policy</a></li>
+            <li class="mx-2"><a href="ourAchievements.html">Achievements</a></li>
+
+            <div class="flex ml-2">
+                <li class="relative" onclick="toggleFunction()" id="click">
+                    <a href="#" class="hover:text-blue-600">Pragyatha</a>
+                    <ion-icon name="caret-down-outline" class="px-1" id="icons"></ion-icon>
+
+                </li>
+                <li class="absolute p-2 rounded-sm mt-8 hidden rounded-xl text-md w-[130px] bg-white text-blue-600"
+                    id="box" onclick="dropdown()">
+                    <div><a href="pragyatha23.html">Pragyatha 23</a></div>
+                    <div><a href="pragyatha22.html">Pragyatha 22</a></div>
+                    <div><a href="prag.html">Pragyatha 19</a></div>
+
+                </li>
+            </div>
+        </ul>
+    </div>
+</nav>
+
+
+    <!-- <div class="logo">
         <a href="index.html">
           <img class="mr-logo mt-1" src="img/logo.png" />
         </a>
@@ -131,154 +213,154 @@
         <a href="prag.html">PRAGYATHA - 19</a>
 
         <a href="documents.html">Documents</a>
-      </div>
-    </div>
-    <div class="newwarp">
-      <h1>Office Bearers</h1>
-      <!-- <h2>Meet The Heart Of Our Team!</h2>  -->
-      <div class="container">
-        <!--<div class="row clearfix">-->
+      </div> -->
+  </div>
+  <div class="newwarp">
+    <h1>Office Bearers</h1>
+    <!-- <h2>Meet The Heart Of Our Team!</h2>  -->
+    <div class="container">
+      <!--<div class="row clearfix">-->
 
-        <div class="container-fluid std">
-          <div class="line"></div>
-          <div>
-            <!--<h6>1111Final year student members</h6>-->
-            <h6>Final Year Student Members</h6>
-          </div>
-          <div class="line"></div>
+      <div class="container-fluid std">
+        <div class="line"></div>
+        <div>
+          <!--<h6>1111Final year student members</h6>-->
+          <h6>Final Year Student Members</h6>
         </div>
-        <div class="row clearfix">
-          <!-- team block-1 -->
-          <!--  <div class="team-block col-sm-12 col-lg-4 col-md-6">-->
-          <!--    <div-->
-          <!--      class="inner-box wow fadeInLeft"-->
-          <!--      data-wow-delay="0ms"-->
-          <!--      data-wow-duration="1500ms"-->
-          <!--    >-->
-          <!--      <div class="image">-->
-          <!--        <a href="#"></a>-->
-          <!--        <img src="assets/Nikilesh B R.jpeg" class="image" />-->
-          <!--      </div>-->
-          <!--      <div class="lower-content">-->
-          <!--        <h3>-->
-          <!--          <a href="#">B R Nikilesh</a>-->
-          <!--        </h3>-->
-          <!--        <div class="designation">President & Executive Lead</div>-->
-          <!--        <div class="branch">CSE</div>-->
-          <!--      </div>-->
-          <!--    </div>-->
-          <!--  </div>-->
+        <div class="line"></div>
+      </div>
+      <div class="row clearfix">
+        <!-- team block-1 -->
+        <!--  <div class="team-block col-sm-12 col-lg-4 col-md-6">-->
+        <!--    <div-->
+        <!--      class="inner-box wow fadeInLeft"-->
+        <!--      data-wow-delay="0ms"-->
+        <!--      data-wow-duration="1500ms"-->
+        <!--    >-->
+        <!--      <div class="image">-->
+        <!--        <a href="#"></a>-->
+        <!--        <img src="assets/Nikilesh B R.jpeg" class="image" />-->
+        <!--      </div>-->
+        <!--      <div class="lower-content">-->
+        <!--        <h3>-->
+        <!--          <a href="#">B R Nikilesh</a>-->
+        <!--        </h3>-->
+        <!--        <div class="designation">President & Executive Lead</div>-->
+        <!--        <div class="branch">CSE</div>-->
+        <!--      </div>-->
+        <!--    </div>-->
+        <!--  </div>-->
 
-          <!-- team block2 -->
-          <!--  <div class="team-block col-sm-12 col-lg-4 col-md-6">-->
-          <!--    <div-->
-          <!--      class="inner-box wow fadeInLeft"-->
-          <!--      data-wow-delay="0ms"-->
-          <!--      data-wow-duration="150ms"-->
-          <!--    >-->
-          <!--      <div class="image">-->
-          <!--        <a href="#"></a>-->
-          <!--        <img src="assets/chandana.jpg" class="image" />-->
-          <!--      </div>-->
-          <!--      <div class="lower-content">-->
-          <!--        <h3>-->
-          <!--          <a href="#">Chandana T S</a>-->
-          <!--        </h3>-->
-          <!--        <div class="designation">General Secretary and Budget Lead</div>-->
-          <!--        <div class="branch">CSE</div>-->
-          <!--      </div>-->
-          <!--    </div>-->
-          <!--  </div>-->
+        <!-- team block2 -->
+        <!--  <div class="team-block col-sm-12 col-lg-4 col-md-6">-->
+        <!--    <div-->
+        <!--      class="inner-box wow fadeInLeft"-->
+        <!--      data-wow-delay="0ms"-->
+        <!--      data-wow-duration="150ms"-->
+        <!--    >-->
+        <!--      <div class="image">-->
+        <!--        <a href="#"></a>-->
+        <!--        <img src="assets/chandana.jpg" class="image" />-->
+        <!--      </div>-->
+        <!--      <div class="lower-content">-->
+        <!--        <h3>-->
+        <!--          <a href="#">Chandana T S</a>-->
+        <!--        </h3>-->
+        <!--        <div class="designation">General Secretary and Budget Lead</div>-->
+        <!--        <div class="branch">CSE</div>-->
+        <!--      </div>-->
+        <!--    </div>-->
+        <!--  </div>-->
 
-          <!-- team block3 -->
+        <!-- team block3 -->
 
-          <!--  <div class="team-block col-sm-12 col-lg-4 col-md-6">-->
-          <!--    <div-->
-          <!--      class="inner-box wow fadeInLeft"-->
-          <!--      data-wow-delay="0ms"-->
-          <!--      data-wow-duration="150ms"-->
-          <!--    >-->
-          <!--      <div class="image">-->
-          <!--        <a href="#"></a>-->
-          <!--        <img src="assets/Yashaswini M S.jpg" class="image" />-->
-          <!--      </div>-->
-          <!--      <div class="lower-content">-->
-          <!--        <h3>-->
-          <!--          <a href="#">Yashaswini M S</a>-->
-          <!--        </h3>-->
-          <!--        <div class="designation">Secretary and Planning lead</div>-->
-          <!--        <div class="branch">ECE</div>-->
-          <!--      </div>-->
-          <!--    </div>-->
-          <!--  </div>-->
+        <!--  <div class="team-block col-sm-12 col-lg-4 col-md-6">-->
+        <!--    <div-->
+        <!--      class="inner-box wow fadeInLeft"-->
+        <!--      data-wow-delay="0ms"-->
+        <!--      data-wow-duration="150ms"-->
+        <!--    >-->
+        <!--      <div class="image">-->
+        <!--        <a href="#"></a>-->
+        <!--        <img src="assets/Yashaswini M S.jpg" class="image" />-->
+        <!--      </div>-->
+        <!--      <div class="lower-content">-->
+        <!--        <h3>-->
+        <!--          <a href="#">Yashaswini M S</a>-->
+        <!--        </h3>-->
+        <!--        <div class="designation">Secretary and Planning lead</div>-->
+        <!--        <div class="branch">ECE</div>-->
+        <!--      </div>-->
+        <!--    </div>-->
+        <!--  </div>-->
 
-          <!-- team block5   -->
+        <!-- team block5   -->
 
-          <!--  <div class="team-block col-sm-12 col-lg-4 col-md-6">-->
-          <!--    <div-->
-          <!--      class="inner-box wow fadeInLeft"-->
-          <!--      data-wow-delay="0ms"-->
-          <!--      data-wow-duration="150ms"-->
-          <!--    >-->
-          <!--      <div class="image">-->
-          <!--        <a href="#"></a>-->
-          <!--        <img src="assets/Suhan S.jpg" class="image" />-->
-          <!--      </div>-->
-          <!--      <div class="lower-content">-->
-          <!--        <h3>-->
-          <!--          <a href="#">Suhan S</a>-->
-          <!--        </h3>-->
-          <!--        <div class="designation">Design Lead</div>-->
-          <!--        <div class="branch">AUE</div>-->
-          <!--      </div>-->
-          <!--    </div>-->
-          <!--  </div>-->
+        <!--  <div class="team-block col-sm-12 col-lg-4 col-md-6">-->
+        <!--    <div-->
+        <!--      class="inner-box wow fadeInLeft"-->
+        <!--      data-wow-delay="0ms"-->
+        <!--      data-wow-duration="150ms"-->
+        <!--    >-->
+        <!--      <div class="image">-->
+        <!--        <a href="#"></a>-->
+        <!--        <img src="assets/Suhan S.jpg" class="image" />-->
+        <!--      </div>-->
+        <!--      <div class="lower-content">-->
+        <!--        <h3>-->
+        <!--          <a href="#">Suhan S</a>-->
+        <!--        </h3>-->
+        <!--        <div class="designation">Design Lead</div>-->
+        <!--        <div class="branch">AUE</div>-->
+        <!--      </div>-->
+        <!--    </div>-->
+        <!--  </div>-->
 
-          <!-- team block4   -->
+        <!-- team block4   -->
 
-          <!--  <div class="team-block col-sm-12 col-lg-4 col-md-6">-->
-          <!--    <div-->
-          <!--      class="inner-box wow fadeInLeft"-->
-          <!--      data-wow-delay="0ms"-->
-          <!--      data-wow-duration="150ms"-->
-          <!--    >-->
-          <!--      <div class="image">-->
-          <!--        <a href="#"></a>-->
-          <!--        <img src="assets/Sudarshan M G.jpeg" class="image" />-->
-          <!--      </div>-->
-          <!--      <div class="lower-content">-->
-          <!--        <h3>-->
-          <!--          <a href="#">Sudarshan M G</a>-->
-          <!--        </h3>-->
-          <!--        <div class="designation">Technical Lead</div>-->
-          <!--        <div class="branch">ISE</div>-->
-          <!--      </div>-->
-          <!--    </div>-->
-          <!--  </div>-->
+        <!--  <div class="team-block col-sm-12 col-lg-4 col-md-6">-->
+        <!--    <div-->
+        <!--      class="inner-box wow fadeInLeft"-->
+        <!--      data-wow-delay="0ms"-->
+        <!--      data-wow-duration="150ms"-->
+        <!--    >-->
+        <!--      <div class="image">-->
+        <!--        <a href="#"></a>-->
+        <!--        <img src="assets/Sudarshan M G.jpeg" class="image" />-->
+        <!--      </div>-->
+        <!--      <div class="lower-content">-->
+        <!--        <h3>-->
+        <!--          <a href="#">Sudarshan M G</a>-->
+        <!--        </h3>-->
+        <!--        <div class="designation">Technical Lead</div>-->
+        <!--        <div class="branch">ISE</div>-->
+        <!--      </div>-->
+        <!--    </div>-->
+        <!--  </div>-->
 
-          <!-- team block6 -->
-          <!--  <div class="team-block col-sm-12 col-lg-4 col-md-6">-->
-          <!--    <div-->
-          <!--      class="inner-box wow fadeInLeft"-->
-          <!--      data-wow-delay="0ms"-->
-          <!--      data-wow-duration="150ms"-->
-          <!--    >-->
-          <!--      <div class="image">-->
-          <!--        <a href="#"></a>-->
-          <!--        <img src="assets/Akhil Babu.jpg" class="image" />-->
-          <!--      </div>-->
-          <!--      <div class="lower-content">-->
-          <!--        <h3>-->
-          <!--          <a href="#">Akhil Babu M</a>-->
-          <!--        </h3>-->
-          <!--        <div class="designation">Digital Lead</div>-->
-          <!--        <div class="branch">CSE</div>-->
-          <!--      </div>-->
-          <!--    </div>-->
-          <!--  </div>-->
+        <!-- team block6 -->
+        <!--  <div class="team-block col-sm-12 col-lg-4 col-md-6">-->
+        <!--    <div-->
+        <!--      class="inner-box wow fadeInLeft"-->
+        <!--      data-wow-delay="0ms"-->
+        <!--      data-wow-duration="150ms"-->
+        <!--    >-->
+        <!--      <div class="image">-->
+        <!--        <a href="#"></a>-->
+        <!--        <img src="assets/Akhil Babu.jpg" class="image" />-->
+        <!--      </div>-->
+        <!--      <div class="lower-content">-->
+        <!--        <h3>-->
+        <!--          <a href="#">Akhil Babu M</a>-->
+        <!--        </h3>-->
+        <!--        <div class="designation">Digital Lead</div>-->
+        <!--        <div class="branch">CSE</div>-->
+        <!--      </div>-->
+        <!--    </div>-->
+        <!--  </div>-->
 
-          <!-- team block7a -->
-          <!-- <div class="team-block col-sm-12 col-lg-4 col-md-6">
+        <!-- team block7a -->
+        <!-- <div class="team-block col-sm-12 col-lg-4 col-md-6">
             <div
               class="inner-box wow fadeInLeft"
               data-wow-delay="0ms"
@@ -298,158 +380,158 @@
             </div>
           </div> -->
 
-          <!-- team block7b -->
-          <!--  <div class="team-block col-sm-12 col-lg-4 col-md-6">-->
-          <!--    <div-->
-          <!--      class="inner-box wow fadeInLeft"-->
-          <!--      data-wow-delay="0ms"-->
-          <!--      data-wow-duration="150ms"-->
-          <!--    >-->
-          <!--      <div class="image">-->
-          <!--        <a href="#"></a>-->
-          <!--        <img src="assets/Jeevan S G.jpg" class="image" />-->
-          <!--      </div>-->
-          <!--      <div class="lower-content">-->
-          <!--        <h3>-->
-          <!--          <a href="#">Jeevan S G</a>-->
-          <!--        </h3>-->
-          <!--        <div class="designation">External Lead</div>-->
-          <!--        <div class="branch">ECE</div>-->
-          <!--      </div>-->
-          <!--    </div>-->
-          <!--  </div>-->
+        <!-- team block7b -->
+        <!--  <div class="team-block col-sm-12 col-lg-4 col-md-6">-->
+        <!--    <div-->
+        <!--      class="inner-box wow fadeInLeft"-->
+        <!--      data-wow-delay="0ms"-->
+        <!--      data-wow-duration="150ms"-->
+        <!--    >-->
+        <!--      <div class="image">-->
+        <!--        <a href="#"></a>-->
+        <!--        <img src="assets/Jeevan S G.jpg" class="image" />-->
+        <!--      </div>-->
+        <!--      <div class="lower-content">-->
+        <!--        <h3>-->
+        <!--          <a href="#">Jeevan S G</a>-->
+        <!--        </h3>-->
+        <!--        <div class="designation">External Lead</div>-->
+        <!--        <div class="branch">ECE</div>-->
+        <!--      </div>-->
+        <!--    </div>-->
+        <!--  </div>-->
 
-          <!-- team block8 -->
-          <!--  <div class="team-block col-sm-12 col-lg-4 col-md-6">-->
-          <!--    <div-->
-          <!--      class="inner-box wow fadeInLeft"-->
-          <!--      data-wow-delay="0ms"-->
-          <!--      data-wow-duration="150ms"-->
-          <!--    >-->
-          <!--      <div class="image">-->
-          <!--        <a href="#"></a>-->
-          <!--        <img src="assets/Sukshitha H N.jpg" class="image" />-->
-          <!--      </div>-->
-          <!--      <div class="lower-content">-->
-          <!--        <h3>-->
-          <!--          <a href="#">Sukshitha H N</a>-->
-          <!--        </h3>-->
-          <!--        <div class="designation">Secretary and Executive Lead</div>-->
-          <!--        <div class="branch">CSE</div>-->
-          <!--      </div>-->
-          <!--    </div>-->
-          <!--  </div>-->
+        <!-- team block8 -->
+        <!--  <div class="team-block col-sm-12 col-lg-4 col-md-6">-->
+        <!--    <div-->
+        <!--      class="inner-box wow fadeInLeft"-->
+        <!--      data-wow-delay="0ms"-->
+        <!--      data-wow-duration="150ms"-->
+        <!--    >-->
+        <!--      <div class="image">-->
+        <!--        <a href="#"></a>-->
+        <!--        <img src="assets/Sukshitha H N.jpg" class="image" />-->
+        <!--      </div>-->
+        <!--      <div class="lower-content">-->
+        <!--        <h3>-->
+        <!--          <a href="#">Sukshitha H N</a>-->
+        <!--        </h3>-->
+        <!--        <div class="designation">Secretary and Executive Lead</div>-->
+        <!--        <div class="branch">CSE</div>-->
+        <!--      </div>-->
+        <!--    </div>-->
+        <!--  </div>-->
 
-          <!-- team block9 -->
-          <!--  <div class="team-block col-sm-12 col-lg-4 col-md-6">-->
-          <!--    <div-->
-          <!--      class="inner-box wow fadeInLeft"-->
-          <!--      data-wow-delay="0ms"-->
-          <!--      data-wow-duration="150ms"-->
-          <!--    >-->
-          <!--      <div class="image">-->
-          <!--        <a href="#"></a>-->
-          <!--        <img src="assets/Navneeth H M.jpeg" class="image" />-->
-          <!--      </div>-->
-          <!--      <div class="lower-content">-->
-          <!--        <h3>-->
-          <!--          <a href="#">Navneeth H M</a>-->
-          <!--        </h3>-->
+        <!-- team block9 -->
+        <!--  <div class="team-block col-sm-12 col-lg-4 col-md-6">-->
+        <!--    <div-->
+        <!--      class="inner-box wow fadeInLeft"-->
+        <!--      data-wow-delay="0ms"-->
+        <!--      data-wow-duration="150ms"-->
+        <!--    >-->
+        <!--      <div class="image">-->
+        <!--        <a href="#"></a>-->
+        <!--        <img src="assets/Navneeth H M.jpeg" class="image" />-->
+        <!--      </div>-->
+        <!--      <div class="lower-content">-->
+        <!--        <h3>-->
+        <!--          <a href="#">Navneeth H M</a>-->
+        <!--        </h3>-->
 
-          <!--        <div class="designation">Operation and Event Lead</div>-->
-          <!--        <div class="branch">CSE</div>-->
-          <!--      </div>-->
-          <!--    </div>-->
-          <!--  </div>-->
+        <!--        <div class="designation">Operation and Event Lead</div>-->
+        <!--        <div class="branch">CSE</div>-->
+        <!--      </div>-->
+        <!--    </div>-->
+        <!--  </div>-->
 
-          <!-- team block 10 -->
-          <!--  <div class="team-block col-sm-12 col-lg-4 col-md-6">-->
-          <!--    <div-->
-          <!--      class="inner-box wow fadeInLeft"-->
-          <!--      data-wow-delay="0ms"-->
-          <!--      data-wow-duration="150ms"-->
-          <!--    >-->
-          <!--      <div class="image">-->
-          <!--        <a href="#"></a>-->
-          <!--        <img src="assets/A N Rohan.JPG" class="image" />-->
-          <!--      </div>-->
-          <!--      <div class="lower-content">-->
-          <!--        <h3>-->
-          <!--          <a href="#">A N Rohan</a>-->
-          <!--        </h3>-->
+        <!-- team block 10 -->
+        <!--  <div class="team-block col-sm-12 col-lg-4 col-md-6">-->
+        <!--    <div-->
+        <!--      class="inner-box wow fadeInLeft"-->
+        <!--      data-wow-delay="0ms"-->
+        <!--      data-wow-duration="150ms"-->
+        <!--    >-->
+        <!--      <div class="image">-->
+        <!--        <a href="#"></a>-->
+        <!--        <img src="assets/A N Rohan.JPG" class="image" />-->
+        <!--      </div>-->
+        <!--      <div class="lower-content">-->
+        <!--        <h3>-->
+        <!--          <a href="#">A N Rohan</a>-->
+        <!--        </h3>-->
 
-          <!--        <div class="designation">Treasurer</div>-->
-          <!--        <div class="branch">ME</div>-->
-          <!--      </div>-->
-          <!--    </div>-->
-          <!--  </div>-->
-          <!-- team block 11 -->
-          <!--  <div class="team-block col-sm-12 col-lg-4 col-md-6">-->
-          <!--    <div-->
-          <!--      class="inner-box wow fadeInLeft"-->
-          <!--      data-wow-delay="0ms"-->
-          <!--      data-wow-duration="150ms"-->
-          <!--    >-->
-          <!--      <div class="image">-->
-          <!--        <a href="#"></a>-->
-          <!--        <img src="assets/Anagha Dixith N.jpg" class="image" />-->
-          <!--      </div>-->
-          <!--      <div class="lower-content">-->
-          <!--        <h3>-->
-          <!--          <a href="#">Anagha Dixith N</a>-->
-          <!--        </h3>-->
+        <!--        <div class="designation">Treasurer</div>-->
+        <!--        <div class="branch">ME</div>-->
+        <!--      </div>-->
+        <!--    </div>-->
+        <!--  </div>-->
+        <!-- team block 11 -->
+        <!--  <div class="team-block col-sm-12 col-lg-4 col-md-6">-->
+        <!--    <div-->
+        <!--      class="inner-box wow fadeInLeft"-->
+        <!--      data-wow-delay="0ms"-->
+        <!--      data-wow-duration="150ms"-->
+        <!--    >-->
+        <!--      <div class="image">-->
+        <!--        <a href="#"></a>-->
+        <!--        <img src="assets/Anagha Dixith N.jpg" class="image" />-->
+        <!--      </div>-->
+        <!--      <div class="lower-content">-->
+        <!--        <h3>-->
+        <!--          <a href="#">Anagha Dixith N</a>-->
+        <!--        </h3>-->
 
-          <!--        <div class="designation">Editorial Head</div>-->
-          <!--        <div class="branch">CSE</div>-->
-          <!--      </div>-->
-          <!--    </div>-->
-          <!--  </div>-->
+        <!--        <div class="designation">Editorial Head</div>-->
+        <!--        <div class="branch">CSE</div>-->
+        <!--      </div>-->
+        <!--    </div>-->
+        <!--  </div>-->
 
-          <!-- team block 12 -->
-          <!--  <div class="team-block col-sm-12 col-lg-4 col-md-6">-->
-          <!--    <div-->
-          <!--      class="inner-box wow fadeInLeft"-->
-          <!--      data-wow-delay="0ms"-->
-          <!--      data-wow-duration="150ms"-->
-          <!--    >-->
-          <!--      <div class="image">-->
-          <!--        <a href="#"></a>-->
-          <!--        <img src="assets/Sowmya N C.jpg" class="image" />-->
-          <!--      </div>-->
-          <!--      <div class="lower-content">-->
-          <!--        <h3>-->
-          <!--          <a href="#">Sowmya N C</a>-->
-          <!--        </h3>-->
+        <!-- team block 12 -->
+        <!--  <div class="team-block col-sm-12 col-lg-4 col-md-6">-->
+        <!--    <div-->
+        <!--      class="inner-box wow fadeInLeft"-->
+        <!--      data-wow-delay="0ms"-->
+        <!--      data-wow-duration="150ms"-->
+        <!--    >-->
+        <!--      <div class="image">-->
+        <!--        <a href="#"></a>-->
+        <!--        <img src="assets/Sowmya N C.jpg" class="image" />-->
+        <!--      </div>-->
+        <!--      <div class="lower-content">-->
+        <!--        <h3>-->
+        <!--          <a href="#">Sowmya N C</a>-->
+        <!--        </h3>-->
 
-          <!--        <div class="designation">HR Lead</div>-->
-          <!--        <div class="branch">EEE</div>-->
-          <!--      </div>-->
-          <!--    </div>-->
-          <!--  </div>-->
+        <!--        <div class="designation">HR Lead</div>-->
+        <!--        <div class="branch">EEE</div>-->
+        <!--      </div>-->
+        <!--    </div>-->
+        <!--  </div>-->
 
-          <!-- team block 12 -->
-          <!--  <div class="team-block col-sm-12 col-lg-4 col-md-6">-->
-          <!--    <div-->
-          <!--      class="inner-box wow fadeInLeft"-->
-          <!--      data-wow-delay="0ms"-->
-          <!--      data-wow-duration="1500ms"-->
-          <!--    >-->
-          <!--      <div class="image">-->
-          <!--        <a href="#"></a>-->
-          <!--        <img src="assets/Abhigna.jpg" class="image" />-->
-          <!--      </div>-->
-          <!--      <div class="lower-content">-->
-          <!--        <h3>-->
-          <!--          <a href="#">Abhigna H G</a>-->
-          <!--        </h3>-->
-          <!--        <div class="designation">President & Executive Lead</div>-->
-          <!--        <div class="branch">CSE</div>-->
-          <!--      </div>-->
-          <!--    </div>-->
-          <!--  </div>-->
-          <!-------------------------------------------------------------------------3rd years--------------------------------------------------------------->
+        <!-- team block 12 -->
+        <!--  <div class="team-block col-sm-12 col-lg-4 col-md-6">-->
+        <!--    <div-->
+        <!--      class="inner-box wow fadeInLeft"-->
+        <!--      data-wow-delay="0ms"-->
+        <!--      data-wow-duration="1500ms"-->
+        <!--    >-->
+        <!--      <div class="image">-->
+        <!--        <a href="#"></a>-->
+        <!--        <img src="assets/Abhigna.jpg" class="image" />-->
+        <!--      </div>-->
+        <!--      <div class="lower-content">-->
+        <!--        <h3>-->
+        <!--          <a href="#">Abhigna H G</a>-->
+        <!--        </h3>-->
+        <!--        <div class="designation">President & Executive Lead</div>-->
+        <!--        <div class="branch">CSE</div>-->
+        <!--      </div>-->
+        <!--    </div>-->
+        <!--  </div>-->
+        <!-------------------------------------------------------------------------3rd years--------------------------------------------------------------->
 
-          <!-- <div class="container-fluid std">
+        <!-- <div class="container-fluid std">
             <div class="line"></div>
             <div>
               <h6>4th Year Student Members</h6>
@@ -457,496 +539,396 @@
             <div class="line"></div>
           </div> -->
 
-          <!-- team block1 -->
+        <!-- team block1 -->
+        <div class="team-block col-sm-12 col-lg-4 col-md-6">
+          <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
+            <div class="image">
+              <a href="#"></a>
+              <img src="assets/Anagha B S.jpg" class="image" />
+            </div>
+            <div class="lower-content">
+              <h3>
+                <a href="#">Anagha B S</a>
+              </h3>
+              <div class="designation">Executive & H R Lead</div>
+              <div class="branch">Computer Science Engg.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- team block2 -->
+        <div class="team-block col-sm-12 col-lg-4 col-md-6">
+          <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
+            <div class="image">
+              <a href="#"></a>
+              <img src="assets/Arjun H.jpg" class="image" />
+            </div>
+            <div class="lower-content">
+              <h3>
+                <a href="#">Arjun H</a>
+              </h3>
+              <div class="designation">Budget and Creative Lead</div>
+              <div class="designation">Marketing & UBA Lead</div>
+              <div class="branch">Civil Engg.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- team block3 -->
+
+        <div class="team-block col-sm-12 col-lg-4 col-md-6">
+          <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
+            <div class="image">
+              <a href="#"></a>
+              <img src="assets/Ayeshanew.jpg" class="image" />
+            </div>
+            <div class="lower-content">
+              <h3>
+                <a href="#">Ayesha Zameer</a>
+              </h3>
+              <div class="designation">Database Lead</div>
+              <div class="branch">EEE</div>
+            </div>
+          </div>
+        </div>
+        <!-- team block4 -->
+        <div class="team-block col-sm-12 col-lg-4 col-md-6">
+          <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
+            <div class="image">
+              <a href="#"></a>
+              <img src="assets/Chaithanyanew.jpg" class="image" />
+            </div>
+            <div class="lower-content">
+              <h3>
+                <a href="#">Chaithanya S L</a>
+              </h3>
+              <div class="designation">Executive & Finance Lead</div>
+              <div class="branch">Electronics & Electrical Engg.</div>
+            </div>
+          </div>
+        </div>
+        <!-- team block5 -->
+        <div class="team-block col-sm-12 col-lg-4 col-md-6">
+          <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
+            <div class="image">
+              <a href="#"></a>
+              <img src="assets/Darshan shetty.jpeg" class="image" />
+            </div>
+            <div class="lower-content">
+              <h3>
+                <a href="#">Darshan Shetty</a>
+              </h3>
+              <div class="designation">Planning Lead</div>
+              <div class="designation">Marketing & UBA Lead</div>
+              <div class="branch">Electronics and Instrumentation Engg.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- team block6 -->
+
+        <div class="team-block col-sm-12 col-lg-4 col-md-6">
+          <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
+            <div class="image">
+              <a href="#"></a>
+              <img src="assets/Harshininew.jpg" class="image" />
+            </div>
+            <div class="lower-content">
+              <h3>
+                <a href="#">Harshini N D</a>
+              </h3>
+              <div class="designation">Editorial Lead</div>
+              <div class="branch">Computer Science Engg.</div>
+            </div>
+          </div>
+        </div>
+        <!-- team block7 -->
+
+        <div class="team-block col-sm-12 col-lg-4 col-md-6">
+          <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
+            <div class="image">
+              <a href="#"></a>
+              <img src="assets/Pratheek gowda.jpg" class="image" />
+            </div>
+            <div class="lower-content">
+              <h3>
+                <a href="#">H G Pratheek Gowda</a>
+              </h3>
+              <div class="designation">Technical Lead</div>
+              <div class="branch">Computer Science Engg.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- team block8 -->
+        <div class="team-block col-sm-12 col-lg-4 col-md-6">
+          <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
+            <div class="image">
+              <a href="#"></a>
+              <img src="assets/Hemanth S.jpg" class="image" />
+            </div>
+            <div class="lower-content">
+              <h3>
+                <a href="#">Hemanth S</a>
+              </h3>
+              <div class="designation">Planning, Digital & Design Lead</div>
+              <div class="designation">Startup & Research Lead</div>
+              <div class="branch">Electronics and Instrumentation Engg.</div>
+            </div>
+          </div>
+        </div>
+        <!-- team block9 -->
+        <div class="team-block col-sm-12 col-lg-4 col-md-6">
+          <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
+            <div class="image">
+              <a href="#"></a>
+              <img src="assets/Fahadnew.jpg" class="image" style="background-size: contain" />
+            </div>
+            <div class="lower-content">
+              <h3>
+                <a href="#">Mohammed Fahad Khan</a>
+              </h3>
+              <div class="designation">Executive Lead</div>
+              <div class="branch">Mechanical Engg.</div>
+            </div>
+          </div>
+        </div>
+        <!-- team block10 -->
+        <div class="team-block col-sm-12 col-lg-4 col-md-6">
+          <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
+            <div class="image">
+              <a href="#"></a>
+              <img src="assets/PratheekaGanapathinew.png" class="image" />
+            </div>
+            <div class="lower-content">
+              <h3>
+                <a href="#">P Pratheeka Ganapathi</a>
+              </h3>
+              <div class="designation">Executive & Digital Lead</div>
+              <div class="designation">Startup & Research Lead</div>
+              <div class="branch">Information Science Engg.</div>
+            </div>
+          </div>
+        </div>
+        <!-- team block11 -->
+        <div class="team-block col-sm-12 col-lg-4 col-md-6">
+          <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
+            <div class="image">
+              <a href="#"></a>
+              <img src="assets/Prajwalnew.jpg" class="image" />
+            </div>
+            <div class="lower-content">
+              <h3>
+                <a href="#">Prajwal Kumbar H M</a>
+              </h3>
+              <div class="designation">Digital Lead</div>
+              <div class="branch">Electronics & Communication Engg.</div>
+            </div>
+          </div>
+        </div>
+        <!-- team block12 -->
+        <div class="team-block col-sm-12 col-lg-4 col-md-6">
+          <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
+            <div class="image">
+              <a href="#"></a>
+              <img src="assets/Rumaan Sharief N.JPG" class="image" />
+            </div>
+            <div class="lower-content">
+              <h3>
+                <a href="#">Rumaan Sharief N</a>
+              </h3>
+              <div class="designation">Editorial Lead</div>
+              <div class="designation">Startup & Research Lead</div>
+
+              <div class="branch">Civil Engg.</div>
+            </div>
+          </div>
+        </div>
+        <!-- team block13 -->
+        <div class="team-block col-sm-12 col-lg-4 col-md-6">
+          <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
+            <div class="image">
+              <a href="#"></a>
+              <img src="assets/SinchanaMGnew.jpg" class="image" />
+            </div>
+            <div class="lower-content">
+              <h3>
+                <a href="#">Sinchana M G</a>
+              </h3>
+              <div class="designation">Editorial Lead</div>
+              <div class="designation">Social Media & Broadcast Lead</div>
+              <div class="branch">Electronics & Communication Engg.</div>
+            </div>
+          </div>
+        </div>
+        <!-- team block14 -->
+        <div class="team-block col-sm-12 col-lg-4 col-md-6">
+          <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
+            <div class="image">
+              <a href="#"></a>
+              <img src="assets/Tejaswini A S.jpg" class="image" />
+            </div>
+            <div class="lower-content">
+              <h3>
+                <a href="#">Tejaswini A S</a>
+              </h3>
+              <div class="designation">Budget and Creative Lead</div>
+              <div class="branch">Information Science Engg.</div>
+            </div>
+          </div>
+        </div>
+        <!-- team block15 -->
+        <div class="team-block col-sm-12 col-lg-4 col-md-6">
+          <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
+            <div class="image">
+              <a href="#"></a>
+              <img src="assets/ThejaswiniMDnew.jpg" class="image" />
+            </div>
+            <div class="lower-content">
+              <h3>
+                <a href="#">Thejaswini M D</a>
+              </h3>
+              <div class="designation">Technical Lead</div>
+              <div class="branch">Computer Science Engg.</div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid std">
+          <div class="line"></div>
+          <div>
+            <!--<h6>1111Final year student members</h6>-->
+            <h6>3rd Year Student Members</h6>
+          </div>
+          <div class="line"></div>
+        </div>
+        <div class="row clearfix">
           <div class="team-block col-sm-12 col-lg-4 col-md-6">
-            <div
-              class="inner-box wow fadeInLeft"
-              data-wow-delay="0ms"
-              data-wow-duration="150ms"
-            >
+            <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
               <div class="image">
                 <a href="#"></a>
-                <img src="assets/Anagha B S.jpg" class="image" />
+                <img src="assets/adi.JPG" class="image" />
               </div>
               <div class="lower-content">
                 <h3>
-                  <a href="#">Anagha B S</a>
+                  <a href="#">Aditya M</a>
                 </h3>
-                <div class="designation">Executive & H R Lead</div>
+                <div class="designation"></div>
+                <div class="branch">Information Science Engg.</div>
+              </div>
+            </div>
+          </div>
+          <div class="team-block col-sm-12 col-lg-4 col-md-6">
+            <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
+              <div class="image">
+                <a href="#"></a>
+                <img src="assets/amith.jpg" class="image" />
+              </div>
+              <div class="lower-content">
+                <h3>
+                  <a href="#">Amith Subodh</a>
+                </h3>
+                <div class="designation"></div>
+                <div class="branch">Computer Science Engg.</div>
+              </div>
+            </div>
+          </div>
+          <div class="team-block col-sm-12 col-lg-4 col-md-6">
+            <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
+              <div class="image">
+                <a href="#"></a>
+                <img src="assets/aviksha.jpg" class="image" />
+              </div>
+              <div class="lower-content">
+                <h3>
+                  <a href="#">Aviksha Kavya Gowda</a>
+                </h3>
+                <div class="designation"></div>
+                <div class="branch">Information Science Engg.</div>
+              </div>
+            </div>
+          </div>
+          <div class="team-block col-sm-12 col-lg-4 col-md-6">
+            <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
+              <div class="image">
+                <a href="#"></a>
+                <img src="assets/chinmayee.jpg" class="image" />
+              </div>
+              <div class="lower-content">
+                <h3>
+                  <a href="#">Chinmayee Chougale</a>
+                </h3>
+                <div class="designation"></div>
+                <div class="branch">Chinmayee ChougaleScience Engg.</div>
+              </div>
+            </div>
+          </div>
+          <div class="team-block col-sm-12 col-lg-4 col-md-6">
+            <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
+              <div class="image">
+                <a href="#"></a>
+                <img src="assets/kushi.jpg" class="image" />
+              </div>
+              <div class="lower-content">
+                <h3>
+                  <a href="#">Kushi Gurumurthy</a>
+                </h3>
+                <div class="designation"></div>
+                <div class="branch">Electronics and Communication Engg.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-block col-sm-12 col-lg-4 col-md-6">
+            <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
+              <div class="image">
+                <a href="#"></a>
+                <img src="assets/nithin.jpg" class="image" />
+              </div>
+              <div class="lower-content">
+                <h3>
+                  <a href="#">Nithin Gowda M T</a>
+                </h3>
+                <div class="designation"></div>
+                <div class="branch">
+                  Computer Science and Business Systems Engg.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="team-block col-sm-12 col-lg-4 col-md-6">
+            <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
+              <div class="image">
+                <a href="#"></a>
+                <img src="assets/pragna.jpg" class="image" />
+              </div>
+              <div class="lower-content">
+                <h3>
+                  <a href="#">Pragna C </a>
+                </h3>
+                <div class="designation"></div>
                 <div class="branch">Computer Science Engg.</div>
               </div>
             </div>
           </div>
 
-          <!-- team block2 -->
           <div class="team-block col-sm-12 col-lg-4 col-md-6">
-            <div
-              class="inner-box wow fadeInLeft"
-              data-wow-delay="0ms"
-              data-wow-duration="150ms"
-            >
+            <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
               <div class="image">
                 <a href="#"></a>
-                <img src="assets/Arjun H.jpg" class="image" />
+                <img src="assets/rifa.jpg" class="image" />
               </div>
               <div class="lower-content">
                 <h3>
-                  <a href="#">Arjun H</a>
+                  <a href="#">Rifa Mariyam</a>
                 </h3>
-                <div class="designation">Budget and Creative Lead</div>
-                <div class="designation">Marketing & UBA Lead</div>
-                <div class="branch">Civil Engg.</div>
-              </div>
-            </div>
-          </div>
-
-          <!-- team block3 -->
-
-          <div class="team-block col-sm-12 col-lg-4 col-md-6">
-            <div
-              class="inner-box wow fadeInLeft"
-              data-wow-delay="0ms"
-              data-wow-duration="150ms"
-            >
-              <div class="image">
-                <a href="#"></a>
-                <img src="assets/Ayeshanew.jpg" class="image" />
-              </div>
-              <div class="lower-content">
-                <h3>
-                  <a href="#">Ayesha Zameer</a>
-                </h3>
-                <div class="designation">Database Sub Head</div>
-                <div class="branch">EEE</div>
-              </div>
-            </div>
-          </div>
-          <!-- team block4 -->
-          <div class="team-block col-sm-12 col-lg-4 col-md-6">
-            <div
-              class="inner-box wow fadeInLeft"
-              data-wow-delay="0ms"
-              data-wow-duration="150ms"
-            >
-              <div class="image">
-                <a href="#"></a>
-                <img src="assets/Chaithanyanew.jpg" class="image" />
-              </div>
-              <div class="lower-content">
-                <h3>
-                  <a href="#">Chaithanya S L</a>
-                </h3>
-                <div class="designation">Executive & Finance Lead</div>
+                <div class="designation"></div>
                 <div class="branch">Electronics & Electrical Engg.</div>
               </div>
             </div>
           </div>
-          <!-- team block5 -->
-          <div class="team-block col-sm-12 col-lg-4 col-md-6">
-            <div
-              class="inner-box wow fadeInLeft"
-              data-wow-delay="0ms"
-              data-wow-duration="150ms"
-            >
-              <div class="image">
-                <a href="#"></a>
-                <img src="assets/Darshan shetty.jpeg" class="image" />
-              </div>
-              <div class="lower-content">
-                <h3>
-                  <a href="#">Darshan Shetty</a>
-                </h3>
-                <div class="designation">Planning Lead</div>
-                <div class="designation">Marketing & UBA Lead</div>
-                <div class="branch">Electronics and Instrumentation Engg.</div>
-              </div>
-            </div>
-          </div>
-
-          <!-- team block6 -->
 
           <div class="team-block col-sm-12 col-lg-4 col-md-6">
-            <div
-              class="inner-box wow fadeInLeft"
-              data-wow-delay="0ms"
-              data-wow-duration="150ms"
-            >
-              <div class="image">
-                <a href="#"></a>
-                <img src="assets/Harshininew.jpg" class="image" />
-              </div>
-              <div class="lower-content">
-                <h3>
-                  <a href="#">Harshini N D</a>
-                </h3>
-                <div class="designation">Editorial Lead</div>
-                <div class="branch">Computer Science Engg.</div>
-              </div>
-            </div>
-          </div>
-          <!-- team block7 -->
-
-          <div class="team-block col-sm-12 col-lg-4 col-md-6">
-            <div
-              class="inner-box wow fadeInLeft"
-              data-wow-delay="0ms"
-              data-wow-duration="150ms"
-            >
-              <div class="image">
-                <a href="#"></a>
-                <img src="assets/Pratheek gowda.jpg" class="image" />
-              </div>
-              <div class="lower-content">
-                <h3>
-                  <a href="#">H G Pratheek Gowda</a>
-                </h3>
-                <div class="designation">Technical Lead</div>
-                <div class="branch">Computer Science Engg.</div>
-              </div>
-            </div>
-          </div>
-
-          <!-- team block8 -->
-          <div class="team-block col-sm-12 col-lg-4 col-md-6">
-            <div
-              class="inner-box wow fadeInLeft"
-              data-wow-delay="0ms"
-              data-wow-duration="150ms"
-            >
-              <div class="image">
-                <a href="#"></a>
-                <img src="assets/Hemanth S.jpg" class="image" />
-              </div>
-              <div class="lower-content">
-                <h3>
-                  <a href="#">Hemanth S</a>
-                </h3>
-                <div class="designation">Planning, Digital & Design Lead</div>
-                <div class="designation">Startup & Research Lead</div>
-                <div class="branch">Electronics and Instrumentation Engg.</div>
-              </div>
-            </div>
-          </div>
-          <!-- team block9 -->
-          <div class="team-block col-sm-12 col-lg-4 col-md-6">
-            <div
-              class="inner-box wow fadeInLeft"
-              data-wow-delay="0ms"
-              data-wow-duration="150ms"
-            >
-              <div class="image">
-                <a href="#"></a>
-                <img
-                  src="assets/Fahadnew.jpg"
-                  class="image"
-                  style="background-size: contain"
-                />
-              </div>
-              <div class="lower-content">
-                <h3>
-                  <a href="#">Mohammed Fahad Khan</a>
-                </h3>
-                <div class="designation">Executive Lead</div>
-                <div class="branch">Mechanical Engg.</div>
-              </div>
-            </div>
-          </div>
-          <!-- team block10 -->
-          <div class="team-block col-sm-12 col-lg-4 col-md-6">
-            <div
-              class="inner-box wow fadeInLeft"
-              data-wow-delay="0ms"
-              data-wow-duration="150ms"
-            >
-              <div class="image">
-                <a href="#"></a>
-                <img src="assets/PratheekaGanapathinew.png" class="image" />
-              </div>
-              <div class="lower-content">
-                <h3>
-                  <a href="#">P Pratheeka Ganapathi</a>
-                </h3>
-                <div class="designation">Executive & Digital Lead</div>
-                <div class="designation">Startup & Research Lead</div>
-                <div class="branch">Information Science Engg.</div>
-              </div>
-            </div>
-          </div>
-          <!-- team block11 -->
-          <div class="team-block col-sm-12 col-lg-4 col-md-6">
-            <div
-              class="inner-box wow fadeInLeft"
-              data-wow-delay="0ms"
-              data-wow-duration="150ms"
-            >
-              <div class="image">
-                <a href="#"></a>
-                <img src="assets/Prajwalnew.jpg" class="image" />
-              </div>
-              <div class="lower-content">
-                <h3>
-                  <a href="#">Prajwal Kumbar H M</a>
-                </h3>
-                <div class="designation">Digital Lead</div>
-                <div class="branch">Electronics & Communication Engg.</div>
-              </div>
-            </div>
-          </div>
-          <!-- team block12 -->
-          <div class="team-block col-sm-12 col-lg-4 col-md-6">
-            <div
-              class="inner-box wow fadeInLeft"
-              data-wow-delay="0ms"
-              data-wow-duration="150ms"
-            >
-              <div class="image">
-                <a href="#"></a>
-                <img src="assets/Rumaan Sharief N.JPG" class="image" />
-              </div>
-              <div class="lower-content">
-                <h3>
-                  <a href="#">Rumaan Sharief N</a>
-                </h3>
-                <div class="designation">Editorial Lead</div>
-                <div class="designation">Startup & Research Lead</div>
-
-                <div class="branch">Civil Engg.</div>
-              </div>
-            </div>
-          </div>
-          <!-- team block13 -->
-          <div class="team-block col-sm-12 col-lg-4 col-md-6">
-            <div
-              class="inner-box wow fadeInLeft"
-              data-wow-delay="0ms"
-              data-wow-duration="150ms"
-            >
-              <div class="image">
-                <a href="#"></a>
-                <img src="assets/SinchanaMGnew.jpg" class="image" />
-              </div>
-              <div class="lower-content">
-                <h3>
-                  <a href="#">Sinchana M G</a>
-                </h3>
-                <div class="designation">Editorial Lead</div>
-                <div class="designation">Social Media & Broadcast Lead</div>
-                <div class="branch">Electronics & Communication Engg.</div>
-              </div>
-            </div>
-          </div>
-          <!-- team block14 -->
-          <div class="team-block col-sm-12 col-lg-4 col-md-6">
-            <div
-              class="inner-box wow fadeInLeft"
-              data-wow-delay="0ms"
-              data-wow-duration="150ms"
-            >
-              <div class="image">
-                <a href="#"></a>
-                <img src="assets/Tejaswini A S.jpg" class="image" />
-              </div>
-              <div class="lower-content">
-                <h3>
-                  <a href="#">Tejaswini A S</a>
-                </h3>
-                <div class="designation">Budget and Creative Lead</div>
-                <div class="branch">Information Science Engg.</div>
-              </div>
-            </div>
-          </div>
-          <!-- team block15 -->
-          <div class="team-block col-sm-12 col-lg-4 col-md-6">
-            <div
-              class="inner-box wow fadeInLeft"
-              data-wow-delay="0ms"
-              data-wow-duration="150ms"
-            >
-              <div class="image">
-                <a href="#"></a>
-                <img src="assets/ThejaswiniMDnew.jpg" class="image" />
-              </div>
-              <div class="lower-content">
-                <h3>
-                  <a href="#">Thejaswini M D</a>
-                </h3>
-                <div class="designation">Technical Lead</div>
-                <div class="branch">Computer Science Engg.</div>
-              </div>
-            </div>
-          </div>
-          <div class="container-fluid std">
-            <div class="line"></div>
-            <div>
-              <!--<h6>1111Final year student members</h6>-->
-              <h6>3rd Year Student Members</h6>
-            </div>
-            <div class="line"></div>
-          </div>
-          <div class="row clearfix">
-            <div class="team-block col-sm-12 col-lg-4 col-md-6">
-              <div
-                class="inner-box wow fadeInLeft"
-                data-wow-delay="0ms"
-                data-wow-duration="150ms"
-              >
-                <div class="image">
-                  <a href="#"></a>
-                  <img src="assets/adi.JPG" class="image" />
-                </div>
-                <div class="lower-content">
-                  <h3>
-                    <a href="#">Aditya M</a>
-                  </h3>
-                  <div class="designation"></div>
-                  <div class="branch">Information Science Engg.</div>
-                </div>
-              </div>
-            </div>
-            <div class="team-block col-sm-12 col-lg-4 col-md-6">
-              <div
-                class="inner-box wow fadeInLeft"
-                data-wow-delay="0ms"
-                data-wow-duration="150ms"
-              >
-                <div class="image">
-                  <a href="#"></a>
-                  <img src="assets/amith.jpg" class="image" />
-                </div>
-                <div class="lower-content">
-                  <h3>
-                    <a href="#">Amith Subodh</a>
-                  </h3>
-                  <div class="designation"></div>
-                  <div class="branch">Computer Science Engg.</div>
-                </div>
-              </div>
-            </div>
-            <div class="team-block col-sm-12 col-lg-4 col-md-6">
-              <div
-                class="inner-box wow fadeInLeft"
-                data-wow-delay="0ms"
-                data-wow-duration="150ms"
-              >
-                <div class="image">
-                  <a href="#"></a>
-                  <img src="assets/aviksha.jpg" class="image" />
-                </div>
-                <div class="lower-content">
-                  <h3>
-                    <a href="#">Aviksha Kavya Gowda</a>
-                  </h3>
-                  <div class="designation"></div>
-                  <div class="branch">Information Science Engg.</div>
-                </div>
-              </div>
-            </div>
-            <div class="team-block col-sm-12 col-lg-4 col-md-6">
-              <div
-                class="inner-box wow fadeInLeft"
-                data-wow-delay="0ms"
-                data-wow-duration="150ms"
-              >
-                <div class="image">
-                  <a href="#"></a>
-                  <img src="assets/chinmayee.jpg" class="image" />
-                </div>
-                <div class="lower-content">
-                  <h3>
-                    <a href="#">Chinmayee Chougale</a>
-                  </h3>
-                  <div class="designation"></div>
-                  <div class="branch">Chinmayee ChougaleScience Engg.</div>
-                </div>
-              </div>
-            </div>
-            <div class="team-block col-sm-12 col-lg-4 col-md-6">
-              <div
-                class="inner-box wow fadeInLeft"
-                data-wow-delay="0ms"
-                data-wow-duration="150ms"
-              >
-                <div class="image">
-                  <a href="#"></a>
-                  <img src="assets/kushi.jpg" class="image" />
-                </div>
-                <div class="lower-content">
-                  <h3>
-                    <a href="#">Kushi Gurumurthy</a>
-                  </h3>
-                  <div class="designation"></div>
-                  <div class="branch">Electronics and Communication Engg.</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="team-block col-sm-12 col-lg-4 col-md-6">
-              <div
-                class="inner-box wow fadeInLeft"
-                data-wow-delay="0ms"
-                data-wow-duration="150ms"
-              >
-                <div class="image">
-                  <a href="#"></a>
-                  <img src="assets/nithin.jpg" class="image" />
-                </div>
-                <div class="lower-content">
-                  <h3>
-                    <a href="#">Nithin Gowda M T</a>
-                  </h3>
-                  <div class="designation"></div>
-                  <div class="branch">
-                    Computer Science and Business Systems Engg.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="team-block col-sm-12 col-lg-4 col-md-6">
-              <div
-                class="inner-box wow fadeInLeft"
-                data-wow-delay="0ms"
-                data-wow-duration="150ms"
-              >
-                <div class="image">
-                  <a href="#"></a>
-                  <img src="assets/pragna.jpg" class="image" />
-                </div>
-                <div class="lower-content">
-                  <h3>
-                    <a href="#">Pragna C </a>
-                  </h3>
-                  <div class="designation"></div>
-                  <div class="branch">Computer Science Engg.</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="team-block col-sm-12 col-lg-4 col-md-6">
-              <div
-                class="inner-box wow fadeInLeft"
-                data-wow-delay="0ms"
-                data-wow-duration="150ms"
-              >
-                <div class="image">
-                  <a href="#"></a>
-                  <img src="assets/rifa.jpg" class="image" />
-                </div>
-                <div class="lower-content">
-                  <h3>
-                    <a href="#">Rifa Mariyam</a>
-                  </h3>
-                  <div class="designation"></div>
-                  <div class="branch">Electronics & Electrical Engg.</div>
-                </div>
-              </div>
-            </div>
-           
-          <div class="team-block col-sm-12 col-lg-4 col-md-6">
-            <div
-              class="inner-box wow fadeInLeft"
-              data-wow-delay="0ms"
-              data-wow-duration="150ms"
-            >
+            <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
               <div class="image">
                 <a href="#"></a>
                 <img src="assets/shravani.jpg" class="image" />
@@ -961,11 +943,7 @@
             </div>
           </div>
           <div class="team-block col-sm-12 col-lg-4 col-md-6">
-            <div
-              class="inner-box wow fadeInLeft"
-              data-wow-delay="0ms"
-              data-wow-duration="150ms"
-            >
+            <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
               <div class="image">
                 <a href="#"></a>
                 <img src="assets/tejas.jpg" class="image" />
@@ -980,11 +958,7 @@
             </div>
           </div>
           <div class="team-block col-sm-12 col-lg-4 col-md-6">
-            <div
-              class="inner-box wow fadeInLeft"
-              data-wow-delay="0ms"
-              data-wow-duration="150ms"
-            >
+            <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
               <div class="image">
                 <a href="#"></a>
                 <img src="assets/veerandra.jpg" class="image" />
@@ -999,11 +973,7 @@
             </div>
           </div>
           <div class="team-block col-sm-12 col-lg-4 col-md-6">
-            <div
-              class="inner-box wow fadeInLeft"
-              data-wow-delay="0ms"
-              data-wow-duration="150ms"
-            >
+            <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
               <div class="image">
                 <a href="#"></a>
                 <img src="assets/yallappa.jpg" class="image" />
@@ -1130,36 +1100,20 @@
       <div class="container">
         <ul class="icons">
           <li>
-            <a
-              href="#"
-              class="icon fa-twitter"
-              style="color: rgb(51, 183, 235); text-decoration: none"
-              ><span class="label">Twitter</span></a
-            >
+            <a href="#" class="icon fa-twitter" style="color: rgb(51, 183, 235); text-decoration: none"><span
+                class="label">Twitter</span></a>
           </li>
           <li>
-            <a
-              href="https://www.facebook.com/mce.startup.club"
-              class="icon fa-facebook"
-              style="color: rgb(43, 43, 247); text-decoration: none"
-              ><span class="label">Facebook</span></a
-            >
+            <a href="https://www.facebook.com/mce.startup.club" class="icon fa-facebook"
+              style="color: rgb(43, 43, 247); text-decoration: none"><span class="label">Facebook</span></a>
           </li>
           <li>
-            <a
-              href="https://www.instagram.com/me_riise/"
-              class="icon fa-instagram"
-              style="color: rgb(250, 43, 112); text-decoration: none"
-              ><span class="label">Instagram</span></a
-            >
+            <a href="https://www.instagram.com/me_riise/" class="icon fa-instagram"
+              style="color: rgb(250, 43, 112); text-decoration: none"><span class="label">Instagram</span></a>
           </li>
           <li>
-            <a
-              href="mailto:meriisehsn@gmail.com"
-              class="icon fa-envelope"
-              style="color: rgb(228, 54, 11); text-decoration: none"
-              ><span class="label">Email</span></a
-            >
+            <a href="mailto:meriisehsn@gmail.com" class="icon fa-envelope"
+              style="color: rgb(228, 54, 11); text-decoration: none"><span class="label">Email</span></a>
           </li>
         </ul>
       </div>
@@ -1180,20 +1134,41 @@
         <script src="assets/js/from/init.js"></script>-->
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
       integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+      crossorigin="anonymous"></script>
+  </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        
+  function clickFunction(e) {
+            let list = document.getElementById('elements')
+            list.classList.toggle('hidden')
+            let iconName = e.getAttribute('name');
+            e.setAttribute('name', iconName === 'menu' ? 'close' : 'menu');
+        }
+
+          function toggleFunction() {
+
+            box.classList.toggle('hidden');
+            if (box.classList.contains('hidden')) {
+                icons.setAttribute('name', 'caret-down-outline');
+            } else {
+                icons.setAttribute('name', 'caret-up-outline');
+            }
+        }
+	
+
+      </script>
+</body>
+
 </html>
