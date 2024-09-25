@@ -44,6 +44,15 @@
             width: 100%;
         }
 
+        #list {
+            font-size: 15px;
+        }
+
+        #box2 {
+            z-index: 1;
+        }
+
+
         @media only screen and (min-width: 200px) and (max-width: 480px) {
             #board {
                 margin-left: 2px;
@@ -62,19 +71,16 @@
             }
         }
 
-        #list {
-            font-size: 11px;
-        }
 
         @media only screen and (min-width: 1024px) and (max-width: 1180px) {
             #list {
-                font-size: 7px;
-                 
+                font-size: 10px;
+
             }
         }
-   
 
-     
+
+
 
 
 
@@ -275,10 +281,26 @@
                     <li class="mx-2"><a href="startups.html">Start ups</a></li>
                     <li class="mx-2"><a href="https://meriise-events.vercel.app/">Events</a></li>
                     <li class="mx-2"><a href="https://www.mcehassan.ac.in/">MCE</a></li>
-                    <li class="mx-2"><a href="documents.html">Documents</a></li>
-                    <li class="mx-2"><a href="collab.html">Collaborations</a></li>
-                    <li class="mx-2"><a href="Nisp.html">MCE NISP Policy</a></li>
                     <li class="mx-2"><a href="ourAchivements.html">Achievements</a></li>
+
+
+                    <div class="flex ml-2">
+                        <li class="relative" onclick="toggleFunction2()" id="click">
+                            <a href="#" class="hover:text-blue-600">Documents</a>
+                            <ion-icon name="caret-down-outline" class="px-1" id="icons2"></ion-icon>
+
+                        </li>
+                        <li class="absolute p-2 rounded-sm mt-8 hidden rounded-xl text-md w-[130px] bg-white text-blue-600"
+                            id="box2" onclick="dropdown()">
+                            <div><a href="Nisp.html">MCE NISP Policy</a></div>
+                            <div><a href="collab.html">Collaboration</a></div>
+                            <div><a href="documents.html">Documents</a></div>
+
+                        </li>
+                    </div>
+                    <!-- <li class="mx-2"><a href="collab.html">Collaborations</a></li>
+                    <li class="mx-2"><a href="Nisp.html">MCE NISP Policy</a></li> -->
+
 
                     <div class="flex ml-2">
                         <li class="relative" onclick="toggleFunction()" id="click">
@@ -294,10 +316,12 @@
 
                         </li>
                     </div>
+
+
+
                 </ul>
             </div>
         </nav>
-
     </div>
 
 
@@ -512,8 +536,7 @@
 
 
             <div class="bg-gray-200 py-10 mx-auto">
-                <img src="images/bod/sri .jpg" alt=""
-                    class="h-[65%] rounded-2xl border-2 border-solid border-gray-500">
+                <img src="images/bod/sri .jpg" alt="" class="h-[65%] rounded-2xl border-2 border-solid border-gray-500">
                 <h2 class="text-3xl text-center mx-auto mt-5">Sri. S G Sridhar</h2>
                 <p class="text-center text-2xl">DIRECTOR</p>
                 <p class="text-center">ME-RIISE FOUNDATION</p>
@@ -1218,7 +1241,7 @@
         // const menu = document.getElementById('menu12');
         // const navlinks = document.querySelector('.navlinks');
         // const clickEvent = document.getElementById('click');
-        // const box = document.getElementById('box');
+
         // function clickFunction(e) {
         //     e.name = e.name === 'menu' ? 'close' : 'menu';
         //     navlinks.classList.toggle('top-[12%]')
@@ -1240,15 +1263,24 @@
             e.setAttribute('name', iconName === 'menu' ? 'close' : 'menu');
         }
 
-          function toggleFunction() {
-
+        function toggleFunction() {
+            const box = document.getElementById('box');
             box.classList.toggle('hidden');
-            if (box.classList.contains('hidden')) {
-                icons.setAttribute('name', 'caret-down-outline');
-            } else {
-                icons.setAttribute('name', 'caret-up-outline');
-            }
+            const icons = document.getElementById('icons'); // Select the icon element
+            const iconName = icons.getAttribute('name');
+            icons.setAttribute('name', iconName === 'caret-down-outline' ? 'caret-up-outline' : 'caret-down-outline');
         }
+
+
+        function toggleFunction2() {
+            const box = document.getElementById('box2');
+            box2.classList.toggle('hidden');
+            const icons2 = document.getElementById('icons2'); // Select the icon element
+            const iconName = icons2.getAttribute('name');
+            icons2.setAttribute('name', iconName === 'caret-down-outline' ? 'caret-up-outline' : 'caret-down-outline');
+        }
+
+
 
     </script>
 
