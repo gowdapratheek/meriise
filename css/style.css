@@ -235,10 +235,10 @@ q {
 
 .sub-head {
     color: #ff597e !important;
-    font-size: 25px;
-    font-family: "Titan One", cursive;
-    padding: 4px;
-    text-shadow: 2px 2px #565555;
+    /* font-size: 35px; */
+	font-family: "Roboto", sans-serif;
+    padding: 10px;
+    /* text-shadow: 2px 2px #565555; */
 }
 
 .sub-p {

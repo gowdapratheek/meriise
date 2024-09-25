@@ -22,7 +22,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"
     integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg=="
     crossorigin="anonymous"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- custom css -->
   <link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -33,34 +33,79 @@
           rgb(129, 216, 228),
           rgb(154, 70, 223));
     }
+
+    .main {
+      text-align: center;
+    }
+
+    .marq {
+      padding-top: 30px;
+      padding-bottom: 10px;
+    }
+
+
+    .blink {
+      animation: blink 2s infinite;
+      color: blue;
+    }
+
+    .event-list {
+      padding-top: -50px;
+      width: 100%;
+    }
+
+    #list {
+      font-size: 15px;
+    }
+
+    #box2 {
+      z-index: 1;
+    }
+
+
     @media only screen and (min-width: 200px) and (max-width: 480px) {
-            #board {
-                margin-left: 2px;
-            }
-        }
+      #board {
+        margin-left: 2px;
+      }
+    }
 
-        @media only screen and (min-width: 480px) and (max-width: 639px) {
-            #board {
-                margin-left: 2px;
-            }
-        }
+    @media only screen and (min-width: 480px) and (max-width: 639px) {
+      #board {
+        margin-left: 2px;
+      }
+    }
 
-        @media only screen and (min-width: 980px) and (max-width: 1024px) {
-            #board {
-                margin-left: 2px;
-            }
-        }
+    @media only screen and (min-width: 980px) and (max-width: 1024px) {
+      #board {
+        margin-left: 2px;
+      }
+    }
 
-        #list {
-            font-size: 11px;
-        }
 
-        @media only screen and (min-width: 1024px) and (max-width: 1180px) {
-            #list {
-                font-size: 7px;
-                 
-            }
-        }
+    @media only screen and (min-width: 1024px) and (max-width: 1180px) {
+      #list {
+        font-size: 10px;
+
+      }
+    }
+
+
+
+
+
+
+    @keyframes blink {
+      0% {
+        opacity: 5;
+      }
+
+      100% {
+        opacity: 2;
+        color: red;
+      }
+
+
+    }
   </style>
 </head>
 
@@ -120,12 +165,11 @@
 
     <nav class="bg-black lg:flex lg:items-center lg:justify-between">
       <div class="flex items-center justify-between">
-          <a href="index.html"><img src="images/meriiseNewLogo.png" alt="" class="h-20" id="logo"></a>
+        <a href="index.html"><img src="images/meriiseNewLogo.png" alt="" class="h-20"></a>
 
-          <div>
-              <ion-icon name="menu" onclick="clickFunction(this)"
-                  class="text-4xl text-blue-400 block lg:hidden"></ion-icon>
-          </div>
+        <div>
+          <ion-icon name="menu" onclick="clickFunction(this)" class="text-4xl text-blue-400 block lg:hidden"></ion-icon>
+        </div>
 
       </div>
 
@@ -134,41 +178,62 @@
 
 
       <div class="hidden lg:block" id="elements">
-          <ul class="text-blue-400 font-bold bg-black px-4 py-4 lg:flex lg:justify-between lg:items-center w-48 md:w-42 lg:w-full float-right md:float-right h-screen md:h-screen lg:h-auto z-50"
-              id="list">
-              <li class="mx-2"><a href="index.html">Home</a></li>
-              <li class="mx-2"><a href="aboutmeriise.html">About us</a></li>
-              <li class="mx-2"><a href="faculty.html">Faculty</a></li>
-              <li class="mx-2"><a href="team.html">Team MERIISE</a></li>
-              <li class="mx-2"><a href="iic.html">MHRD-IIC</a></li>
-              <li class="mx-2"><a href="nain.html">Nain</a></li>
-              <li class="mx-2"><a href="uba.html">UBA</a></li>
-              <li class="mx-2"><a href="infrastructure.html">Infrastructure</a></li>
-              <li class="mx-2"><a href="startups.html">Start ups</a></li>
-              <li class="mx-2"><a href="https://meriise-events.vercel.app/">Events</a></li>
-              <li class="mx-2"><a href="https://www.mcehassan.ac.in/">MCE</a></li>
-              <li class="mx-2"><a href="documents.html">Documents</a></li>
-              <li class="mx-2"><a href="collab.html">Collaborations</a></li>
-              <li class="mx-2"><a href="Nisp.html">MCE NISP Policy</a></li>
-              <li class="mx-2"><a href="ourAchievements.html">Achievements</a></li>
+        <ul
+          class="text-blue-400 font-bold bg-black px-4 py-4 lg:flex lg:justify-between lg:items-center w-48 md:w-42 lg:w-full float-right md:float-right h-screen md:h-screen lg:h-auto z-50"
+          id="list">
+          <li class="mx-2"><a href="index.html">Home</a></li>
+          <li class="mx-2"><a href="aboutmeriise.html">About us</a></li>
+          <li class="mx-2"><a href="faculty.html">Faculty</a></li>
+          <li class="mx-2"><a href="team.html">Team MERIISE</a></li>
+          <li class="mx-2"><a href="iic.html">MHRD-IIC</a></li>
+          <li class="mx-2"><a href="nain.html">Nain</a></li>
+          <li class="mx-2"><a href="uba.html">UBA</a></li>
+          <li class="mx-2"><a href="infrastructure.html">Infrastructure</a></li>
+          <li class="mx-2"><a href="startups.html">Start ups</a></li>
+          <li class="mx-2"><a href="https://meriise-events.vercel.app/">Events</a></li>
+          <li class="mx-2"><a href="https://www.mcehassan.ac.in/">MCE</a></li>
+          <li class="mx-2"><a href="ourAchivements.html">Achievements</a></li>
 
-              <div class="flex ml-2">
-                  <li class="relative" onclick="toggleFunction()" id="click">
-                      <a href="#" class="hover:text-blue-600">Pragyatha</a>
-                      <ion-icon name="caret-down-outline" class="px-1" id="icons"></ion-icon>
 
-                  </li>
-                  <li class="absolute p-2 rounded-sm mt-8 hidden rounded-xl text-md w-[130px] bg-white text-blue-600"
-                      id="box" onclick="dropdown()">
-                      <div><a href="pragyatha23.html">Pragyatha 23</a></div>
-                      <div><a href="pragyatha22.html">Pragyatha 22</a></div>
-                      <div><a href="prag.html">Pragyatha 19</a></div>
+          <div class="flex ml-2">
+            <li class="relative" onclick="toggleFunction2()" id="click">
+              <a href="#" class="hover:text-blue-600">Documents</a>
+              <ion-icon name="caret-down-outline" class="px-1" id="icons2"></ion-icon>
 
-                  </li>
-              </div>
-          </ul>
+            </li>
+            <li class="absolute p-2 rounded-sm mt-8 hidden rounded-xl text-md w-[130px] bg-white text-blue-600"
+              id="box2" onclick="dropdown()">
+              <div><a href="Nisp.html">MCE NISP Policy</a></div>
+              <div><a href="collab.html">Collaboration</a></div>
+              <div><a href="documents.html">Documents</a></div>
+
+            </li>
+          </div>
+          <!-- <li class="mx-2"><a href="collab.html">Collaborations</a></li>
+              <li class="mx-2"><a href="Nisp.html">MCE NISP Policy</a></li> -->
+
+
+          <div class="flex ml-2">
+            <li class="relative" onclick="toggleFunction()" id="click">
+              <a href="#" class="hover:text-blue-600">Pragyatha</a>
+              <ion-icon name="caret-down-outline" class="px-1" id="icons"></ion-icon>
+
+            </li>
+            <li class="absolute p-2 rounded-sm mt-8 hidden rounded-xl text-md w-[130px] bg-white text-blue-600" id="box"
+              onclick="dropdown()">
+              <div><a href="pragyatha23.html">Pragyatha 23</a></div>
+              <div><a href="pragyatha22.html">Pragyatha 22</a></div>
+              <div><a href="prag.html">Pragyatha 19</a></div>
+
+            </li>
+          </div>
+
+
+
+        </ul>
       </div>
-  </nav>
+    </nav>
+
 
 
   </div>
@@ -610,22 +675,30 @@
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script>
-   function clickFunction(e) {
-            let list = document.getElementById('elements')
-            list.classList.toggle('hidden')
-            let iconName = e.getAttribute('name');
-            e.setAttribute('name', iconName === 'menu' ? 'close' : 'menu');
-        }
+  function clickFunction(e) {
+    let list = document.getElementById('elements')
+    list.classList.toggle('hidden')
+    let iconName = e.getAttribute('name');
+    e.setAttribute('name', iconName === 'menu' ? 'close' : 'menu');
+  }
 
-          function toggleFunction() {
+  function toggleFunction() {
+    const box = document.getElementById('box');
+    box.classList.toggle('hidden');
+    const icons = document.getElementById('icons'); // Select the icon element
+    const iconName = icons.getAttribute('name');
+    icons.setAttribute('name', iconName === 'caret-down-outline' ? 'caret-up-outline' : 'caret-down-outline');
+  }
 
-            box.classList.toggle('hidden');
-            if (box.classList.contains('hidden')) {
-                icons.setAttribute('name', 'caret-down-outline');
-            } else {
-                icons.setAttribute('name', 'caret-up-outline');
-            }
-        }
+
+  function toggleFunction2() {
+    const box = document.getElementById('box2');
+    box2.classList.toggle('hidden');
+    const icons2 = document.getElementById('icons2'); // Select the icon element
+    const iconName = icons2.getAttribute('name');
+    icons2.setAttribute('name', iconName === 'caret-down-outline' ? 'caret-up-outline' : 'caret-down-outline');
+  }
+
 </script>
 
 </html>
