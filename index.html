@@ -24,6 +24,14 @@
 
 
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+        body {
+            overflow-y: hidden;
+            pointer-events: none;
+        }
+
+
         .main {
             text-align: center;
         }
@@ -50,6 +58,96 @@
 
         #box2 {
             z-index: 1;
+        }
+
+
+
+        .card {
+            font-family: "Inria Sans", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            z-index: 4;
+            pointer-events: all;
+            /* position: sticky; */
+        }
+
+
+        .symbol {
+            background-color: white;
+            height: 20vh;
+            border-radius: 0px 22px 22px 0px;
+            /* box-shadow: 3px 3px 3px 9px rgba(0, 0, 0, 0.5); */
+        }
+
+        .image img {
+            /* background-color: red; */
+            height: 20vh;
+
+        }
+
+        .image {
+            padding-top: 20px;
+            padding-left: 100px;
+        }
+
+        /* .wrongBtn {
+            margin: 9px;
+        } */
+        /* .logoimg {
+            height: 90px;
+            /* background-color: green; */
+        /* }  */
+
+
+        @media only screen and (max-width: 800px) {
+            .symbol {
+                border-radius: 22px 22px 0px 0px;
+            }
+
+            .image img {
+                /* background-color: red; */
+                height: 10vh;
+
+            }
+
+            .image {
+                padding-left: 60px;
+                padding-top: 1px;
+            }
+
+
+            .wrong {
+                text-align: right;
+            }
+
+
+
+
+        }
+
+        @media only screen and (max-width: 400px) {
+            .pragtext {
+                font-size: 10px;
+                /* background-color: red; */
+            }
+
+            .image img {
+                /* background-color: red; */
+                height: 10vh;
+
+            }
+
+            .image {
+                padding-left: 50px;
+            }
+
+            .wrong {
+                text-align: right;
+            }
+
+
+
+
         }
 
 
@@ -271,9 +369,9 @@
                 <ul class="text-blue-400 font-bold bg-black px-4 py-4 lg:flex lg:justify-between lg:items-center w-48 md:w-42 lg:w-full float-right md:float-right h-screen md:h-screen lg:h-auto z-50"
                     id="list">
                     <li class="mx-2"><a href="index.html">Home</a></li>
-                    <li class="mx-2"><a href="aboutmeriise.html">About us</a></li>
-                    <li class="mx-2"><a href="faculty.html">Faculty</a></li>
-                    <li class="mx-2"><a href="team.html">Team MERIISE</a></li>
+                    <li class="a1 mx-2"><a href="aboutmeriise.html">About us</a></li>
+                    <li class="a1 mx-2"><a href="faculty.html">Faculty</a></li>
+                    <li class="a1 mx-2"><a href="team.html">Team MERIISE</a></li>
                     <li class="mx-2"><a href="iic.html">MHRD-IIC</a></li>
                     <li class="mx-2"><a href="nain.html">Nain</a></li>
                     <li class="mx-2"><a href="uba.html">UBA</a></li>
@@ -285,7 +383,7 @@
 
 
                     <div class="flex ml-2">
-                        <li class="relative" onclick="toggleFunction2()" id="click">
+                        <li class="relative" onclick="toggleFunction2(event)" id="click">
                             <a href="#" class="hover:text-blue-600">Documents</a>
                             <ion-icon name="caret-down-outline" class="px-1" id="icons2"></ion-icon>
 
@@ -303,7 +401,7 @@
 
 
                     <div class="flex ml-2">
-                        <li class="relative" onclick="toggleFunction()" id="click">
+                        <li class="relative" onclick="toggleFunction(event)" id="click">
                             <a href="#" class="hover:text-blue-600">Pragyatha</a>
                             <ion-icon name="caret-down-outline" class="px-1" id="icons"></ion-icon>
 
@@ -325,7 +423,34 @@
     </div>
 
 
+    <!-- Pragyatha coming soon Card -->
 
+    <div class="card relative" style="position: sticky; top: 20px;">
+        <!-- Code starts here -->
+        <div
+            class="data absolute top-[250px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-l from-indigo-900 to-pink-500 shadow-md shadow-black rounded-3xl w-[50vw] h-[40vh]">
+            <div class="submain md:grid grid-cols-2 h-[50vh]">
+                <div class="symbol h-[20vh] md:h-[40vh] order-2">
+                    <div class="wrong text-right text-2xl text-blue-700 m-0 md:m-4">
+                        <button class="wrongBtn text-purple-700 ml-20 p-4">X</button>
+                    </div>
+                    <div class="image">
+                        <img src="pragyatha.webp" alt="">
+                    </div>
+                </div>
+                <div class="Pragyatha h-32 order-1 mt-[40px] md:mt-24">
+                    <h2 class="pragtext text-3xl md:text-6xl lg-6xl text-center text-white">Pragyatha'24</h2>
+                    <!-- <h2 class="text-4xl md:text-6xl lg-6xl text-center">2k24</h2> -->
+                    <br>
+                    <h4 class="text-2xl md:text-4xl text-center text-white">Coming Soon!</h4>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--  ml-[80px]  h-32 mt-[30px] ml-[80px] md:h-48 text-center-->
+    <!-- button : wrong text-right text-2xl text-blue-700 m-0 md:m-4 -->
 
     <section class="banner full">
 
@@ -1263,22 +1388,67 @@
             e.setAttribute('name', iconName === 'menu' ? 'close' : 'menu');
         }
 
-        function toggleFunction() {
+        document.addEventListener('click', function (event) {
+            if (!event.target.closest('#box, #box2, #icons, #icons2')) {
+                document.getElementById('box').classList.add('hidden');
+                document.getElementById('box2').classList.add('hidden');
+            }
+        });
+
+        function toggleFunction(event) {
+            event.stopPropagation(); // prevent the event from bubbling up to the document
+
             const box = document.getElementById('box');
+            const box2 = document.getElementById('box2');
+
             box.classList.toggle('hidden');
+            if (!box.classList.contains('hidden')) {
+                box2.classList.add('hidden');
+            }
+
             const icons = document.getElementById('icons'); // Select the icon element
             const iconName = icons.getAttribute('name');
             icons.setAttribute('name', iconName === 'caret-down-outline' ? 'caret-up-outline' : 'caret-down-outline');
         }
 
+        function toggleFunction2(event) {
+            event.stopPropagation(); // prevent the event from bubbling up to the document
 
-        function toggleFunction2() {
-            const box = document.getElementById('box2');
+            const box2 = document.getElementById('box2');
+            const box = document.getElementById('box');
             box2.classList.toggle('hidden');
+            if (!box2.classList.contains('hidden')) {
+                box.classList.add('hidden');
+            }
+
             const icons2 = document.getElementById('icons2'); // Select the icon element
             const iconName = icons2.getAttribute('name');
             icons2.setAttribute('name', iconName === 'caret-down-outline' ? 'caret-up-outline' : 'caret-down-outline');
         }
+
+        const wrongBtn = document.querySelector('.wrongBtn');
+        const submain = document.querySelector('.data');
+
+
+        let myInterval;
+        submain.style.display = 'none';
+        myInterval = setInterval(() => {
+            submain.style.display = 'block';
+        }, 1000);
+        wrongBtn.addEventListener('click', function () {
+            submain.style.display = 'none';
+            document.body.style.overflowY = 'auto';
+            clearInterval(myInterval);
+            document.body.style.pointerEvents = 'all';
+
+        })
+
+        // anchor.addEventListener('click', function (event) {
+        //     console.log("heloo");
+        //     event.preventDefault();
+        // });
+
+
 
 
 
