@@ -204,10 +204,14 @@
         }
 
         #opaqueScreen {
-            /* opacity: .4; */
+            opacity: .4;
             z-index: 30;
             position: absolute;
-            /* backdrop-filter: blur(50px); */
+            /* background-color:white; */
+            /* backdrop-filter: blur(700px); */
+        }
+        .blurring{
+            filter: blur(5px);
         }
     </style>
 </head>
@@ -215,6 +219,31 @@
 
 <body style="position: relative;">
     <div class="h-screen w-screen" id="opaqueScreen"></div>
+    <div class="card relative" style="position: sticky; top: -10px;">
+
+        <div
+            class="data absolute top-[350px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-l from-indigo-900 to-pink-500 shadow-md shadow-black rounded-3xl w-[50vw] h-[40vh]">
+            <div class="submain md:grid grid-cols-2 h-[50vh]">
+                <div class="symbol h-[20vh] md:h-[40vh] order-2">
+                    <div class="wrong text-right text-2xl text-blue-700 m-0 md:m-4">
+                        <button class="wrongBtn text-purple-700 ml-20 p-4">X</button>
+                    </div>
+                    <div class="image">
+                        <img src="pragyatha.webp" alt="">
+                    </div>
+                </div>
+                <div class="Pragyatha h-32 order-1 mt-[40px] md:mt-24">
+                    <h2 class="pragtext text-3xl md:text-6xl lg-6xl text-center text-white">Pragyatha'24</h2>
+                    <!-- <h2 class="text-4xl md:text-6xl lg-6xl text-center">2k24</h2> -->
+                    <br>
+                    <h4 class="text-2xl md:text-4xl text-center text-white">Coming Soon!</h4>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="blurring">
     <div class="ssheader c-hero">
         <h2 class="h-txt">
             MALNAD ENCLAVE FOR RESEARCH, INNOVATION, INCUBATION, STARTUPS AND
@@ -442,29 +471,7 @@
 
     <!-- Pragyatha coming soon Card -->
 
-    <div class="card relative" style="position: sticky; top: -10px;">
-
-        <div
-            class="data absolute top-[250px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-l from-indigo-900 to-pink-500 shadow-md shadow-black rounded-3xl w-[50vw] h-[40vh]">
-            <div class="submain md:grid grid-cols-2 h-[50vh]">
-                <div class="symbol h-[20vh] md:h-[40vh] order-2">
-                    <div class="wrong text-right text-2xl text-blue-700 m-0 md:m-4">
-                        <button class="wrongBtn text-purple-700 ml-20 p-4">X</button>
-                    </div>
-                    <div class="image">
-                        <img src="pragyatha.webp" alt="">
-                    </div>
-                </div>
-                <div class="Pragyatha h-32 order-1 mt-[40px] md:mt-24">
-                    <h2 class="pragtext text-3xl md:text-6xl lg-6xl text-center text-white">Pragyatha'24</h2>
-                    <!-- <h2 class="text-4xl md:text-6xl lg-6xl text-center">2k24</h2> -->
-                    <br>
-                    <h4 class="text-2xl md:text-4xl text-center text-white">Coming Soon!</h4>
-                </div>
-
-            </div>
-        </div>
-    </div>
+  
 
     <!--  ml-[80px]  h-32 mt-[30px] ml-[80px] md:h-48 text-center-->
     <!-- button : wrong text-right text-2xl text-blue-700 m-0 md:m-4 -->
@@ -640,10 +647,10 @@
 
 
 
-
+<br>
 
     <!-- One -->
-
+ 
 
     <section id="two" class="wrapper style3">
         <div class="inner">
@@ -653,7 +660,7 @@
         </div>
     </section>
 
-
+</div>
 
     <div class="ml-24 sm:ml-4 md:ml-2 lg:ml-10 xl:ml-12" id="board">
 
@@ -895,7 +902,7 @@
 
 
     <!-- Two -->
-    <section id="two" class="wrapper style3">
+    <!-- <section id="two" class="wrapper style3">
         <div class="inner">
             <header class="align-center">
                 <h1 style="color: white; font-size: 28px">
@@ -904,7 +911,7 @@
                 <p class="sub-p">Hassan, Karnataka</p>
             </header>
         </div>
-    </section>
+    </section> -->
 
     <!-- Three -->
     <section id="three" class="wrapper style2">
@@ -928,7 +935,7 @@
         </div>
     </section>
 
-    <section id="two" class="wrappe style2">
+    <!-- <section id="two" class="wrappe style2">
         <center>
             <div class="carrd" style="width: 90%; border: 0">
                 <div class="containerr">
@@ -978,7 +985,7 @@
                 <h2></h2>
             </center>
         </header>
-    </section>
+    </section> -->
 
     <section id="two" class="wrapper style3">
         <div class="inner">
@@ -1082,13 +1089,13 @@
         <center>
             <div class="carrd" style="width: 90%; border: 0">
                 <div class="sub-head">Unnat Bharat Abhiyan</div>
-                <div class="gallery">
-                    <div class="img-wrap">
+                <!-- <div class="gallery"> -->
+                    <!-- <div class="img-wrap"> -->
                         <!-- <div class="image fit">
                             <a href="#"><img src="images/unnat bharat.jfif" alt="" height:25% /></a>
                         </div> -->
-                    </div>
-                </div>
+                    <!-- </div> -->
+                <!-- </div> -->
 
                 <div class="containerr">
                     <p style="padding-left: 10px; padding-right: 10px">
@@ -1125,13 +1132,13 @@
                 </div>
 
 
-                <div class="gallery">
+                <!-- <div class="gallery">
                     <div class="img-wrap">
                         <div class="image fit">
                             <a href="#"><img src="images/new age1.jpg" alt="" height:25% /></a>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="containerr">
                     <p style="padding-left: 10px; padding-right: 10px">
@@ -1453,6 +1460,7 @@
         const submain = document.querySelector('.data');
         const card = document.querySelector('.card');
         const main2 = document.getElementById('opaqueScreen')
+        const blurring = document.querySelector('.blurring');
         // console.log(main2)
         let myInterval;
         submain.style.display = 'none';
@@ -1466,6 +1474,7 @@
             clearInterval(myInterval);
             document.body.style.pointerEvents = 'all';
             main2.style.display = 'none';
+            blurring.style.filter = 'none'
 
         })
 
