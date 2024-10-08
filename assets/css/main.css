@@ -4041,7 +4041,7 @@
 		.banner.full {
 			padding: 0;
 			min-height: 90vh;
-			height: 90vh !important;
+			height: 30vh !important;
 		}
 
 		.banner.half {
@@ -4136,7 +4136,7 @@
 			.banner > article:before {
 				content: '';
 				display: inline-block;
-				height: 100%;
+				height: 70%;
 				vertical-align: middle;
 			}
 
@@ -4230,8 +4230,9 @@
 
 			.banner.full {
 				padding: 0;
-				min-height: 75vh;
-				height: 75vh !important;
+				min-height: 70vh;
+				height: 70vh !important;
+				background-color: #000;
 			}
 
 		}
@@ -4241,7 +4242,7 @@
 			.banner.full {
 				padding: 0;
 				min-height: 50vh;
-				height: 50vh !important;
+				height: 70vh !important;
 			}
 
 			.banner > article {
