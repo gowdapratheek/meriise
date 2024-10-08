@@ -31,6 +31,10 @@
   <link rel="stylesheet" type="text/css" href="css/style.css" />
   <link rel="stylesheet" href="assets/css/newcss.css" />
   <style>
+    a:link {
+      text-decoration: none;
+    }
+
     .col-md-center {
       position: absolute;
       width: 800;
@@ -190,7 +194,7 @@
           <li class="mx-2"><a href="faculty.html">Faculty</a></li>
           <li class="mx-2"><a href="team.html">Team MERIISE</a></li>
           <li class="mx-2"><a href="iic.html">MHRD-IIC</a></li>
-          <li class="mx-2"><a href="nain.html">Nain</a></li>
+          <li class="mx-2"><a href="nain.html">NAIN</a></li>
           <li class="mx-2"><a href="uba.html">UBA</a></li>
           <li class="mx-2"><a href="infrastructure.html">Infrastructure</a></li>
           <li class="mx-2"><a href="startups.html">Start ups</a></li>
@@ -200,7 +204,7 @@
 
 
           <div class="flex ml-2">
-            <li class="relative" onclick="toggleFunction2()" id="click">
+            <li class="relative" onclick="toggleFunction2(event)" id="click">
               <a href="#" class="hover:text-blue-600">Documents</a>
               <ion-icon name="caret-down-outline" class="px-1" id="icons2"></ion-icon>
 
@@ -218,7 +222,7 @@
 
 
           <div class="flex ml-2">
-            <li class="relative" onclick="toggleFunction()" id="click">
+            <li class="relative" onclick="toggleFunction(event)" id="click">
               <a href="#" class="hover:text-blue-600">Pragyatha</a>
               <ion-icon name="caret-down-outline" class="px-1" id="icons"></ion-icon>
 
@@ -516,24 +520,31 @@
     <div class="container">
       <ul class="icons">
         <li>
-          <a href="#" class="icon fa-twitter" style="color: rgb(51, 183, 235); text-decoration: none"><span
+          <a href="#" class="icon fa-twitter" style="color: rgb(51, 183, 235);text-decoration: none;"><span
               class="label">Twitter</span></a>
         </li>
         <li>
           <a href="https://www.facebook.com/mce.startup.club" class="icon fa-facebook"
-            style="color: rgb(43, 43, 247); text-decoration: none"><span class="label">Facebook</span></a>
+            style="color: rgb(43, 43, 247);text-decoration: none;"><span class="label">Facebook</span></a>
         </li>
         <li>
           <a href="https://www.instagram.com/me_riise/" class="icon fa-instagram"
-            style="color: rgb(250, 43, 112); text-decoration: none"><span class="label">Instagram</span></a>
+            style="color: rgb(250, 43, 112);;text-decoration:none"><span class="label">Instagram</span></a>
         </li>
         <li>
           <a href="mailto:meriisehsn@gmail.com" class="icon fa-envelope"
-            style="color: rgb(228, 54, 11); text-decoration: none"><span class="label">Email</span></a>
+            style="color: rgb(228, 54, 11);text-decoration:none"><span class="label">Email</span></a>
         </li>
+
+        <li>
+          <a href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A72704849&keywords=me-riise%20foundation&origin=RICH_QUERY_SUGGESTION&position=0&searchId=a2da3c5d-f488-492f-9f3b-da0bce4973ef&sid=w7m&spellCorrectionEnabled=false   "
+            class="icon fa-linkedin" style="color: rgb(255, 255, 255);text-decoration:none"><span
+              class="label">Linkedin</span></a>
+        </li>
+
       </ul>
     </div>
-    <div class="copyright">© Developers Community. All rights reserved.</div>
+    <div class="copyright">&copy; ME-RIISE. All rights reserved</div>
   </footer>
 </body>
 
@@ -569,18 +580,39 @@
     e.setAttribute('name', iconName === 'menu' ? 'close' : 'menu');
   }
 
-  function toggleFunction() {
+  document.addEventListener('click', function (event) {
+    if (!event.target.closest('#box, #box2, #icons, #icons2')) {
+      document.getElementById('box').classList.add('hidden');
+      document.getElementById('box2').classList.add('hidden');
+    }
+  });
+
+  function toggleFunction(event) {
+    event.stopPropagation(); // prevent the event from bubbling up to the document
+
     const box = document.getElementById('box');
+    const box2 = document.getElementById('box2');
+
     box.classList.toggle('hidden');
+    if (!box.classList.contains('hidden')) {
+      box2.classList.add('hidden');
+    }
+
     const icons = document.getElementById('icons'); // Select the icon element
     const iconName = icons.getAttribute('name');
     icons.setAttribute('name', iconName === 'caret-down-outline' ? 'caret-up-outline' : 'caret-down-outline');
   }
 
+  function toggleFunction2(event) {
+    event.stopPropagation(); // prevent the event from bubbling up to the document
 
-  function toggleFunction2() {
-    const box = document.getElementById('box2');
+    const box2 = document.getElementById('box2');
+    const box = document.getElementById('box');
     box2.classList.toggle('hidden');
+    if (!box2.classList.contains('hidden')) {
+      box.classList.add('hidden');
+    }
+
     const icons2 = document.getElementById('icons2'); // Select the icon element
     const iconName = icons2.getAttribute('name');
     icons2.setAttribute('name', iconName === 'caret-down-outline' ? 'caret-up-outline' : 'caret-down-outline');

@@ -37,6 +37,10 @@
 
 </head>
 <style>
+	a:link {
+		text-decoration: none;
+	}
+
 	.main {
 		text-align: center;
 	}
@@ -65,10 +69,25 @@
 		z-index: 1;
 	}
 
+	.image {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 30px;
+		;
+		margin-top: -90px;
+	}
+
 
 	@media only screen and (min-width: 200px) and (max-width: 480px) {
 		#board {
 			margin-left: 2px;
+		}
+	}
+
+	@media only screen and (min-width: 200px) and (max-width: 749px) {
+		.image {
+			margin-top: 2px;
 		}
 	}
 
@@ -138,7 +157,7 @@
 					<li class="mx-2"><a href="faculty.html">Faculty</a></li>
 					<li class="mx-2"><a href="team.html">Team MERIISE</a></li>
 					<li class="mx-2"><a href="iic.html">MHRD-IIC</a></li>
-					<li class="mx-2"><a href="nain.html">Nain</a></li>
+					<li class="mx-2"><a href="nain.html">NAIN</a></li>
 					<li class="mx-2"><a href="uba.html">UBA</a></li>
 					<li class="mx-2"><a href="infrastructure.html">Infrastructure</a></li>
 					<li class="mx-2"><a href="startups.html">Start ups</a></li>
@@ -148,7 +167,7 @@
 
 
 					<div class="flex ml-2">
-						<li class="relative" onclick="toggleFunction2()" id="click">
+						<li class="relative" onclick="toggleFunction2(event)" id="click">
 							<a href="#" class="hover:text-blue-600">Documents</a>
 							<ion-icon name="caret-down-outline" class="px-1" id="icons2"></ion-icon>
 
@@ -166,7 +185,7 @@
 
 
 					<div class="flex ml-2">
-						<li class="relative" onclick="toggleFunction()" id="click">
+						<li class="relative" onclick="toggleFunction(event)" id="click">
 							<a href="#" class="hover:text-blue-600">Pragyatha</a>
 							<ion-icon name="caret-down-outline" class="px-1" id="icons"></ion-icon>
 
@@ -246,7 +265,7 @@
 	<section id="One" class="wrapper style3">
 		<div class="inner">
 			<header class="align-center mt-5">
-				<h2 class="text-4xl">About ME-RIISE</h2>
+				<h2 class="text-4xl">About ME-RIISE FOUNDATION</h2>
 				<p></p>
 			</header>
 		</div>
@@ -259,16 +278,21 @@
 				<div class="content ">
 					<!--Content-->
 
-					<div class="gallery">
-						<div class="img-wrap">
+					<!-- <div class="gallery">
+						<div class="img-wrap" >
 							<div class="image fit">
-								<a href="#"><img src="images/meriiseFront.JPG" alt="" /></a>
-							</div>
-						</div>
+								<img src="meriise.png" alt="Image not found"/> -->
+					<!-- <img src="meriise.png" alt="Girl in a jacket" width="500" height="600"> -->
+					<!-- </div> -->
+					<!-- </div> -->
+					<!-- </div> -->
+
+					<div class="image">
+						<img src="meriise.png" alt="image" width="600vw" height="50%">
 					</div>
 
 
-					<p style="padding-left: 30px;padding-right: 10px">The Malnad Enclave for Research, Innovation,
+					<!--<p style="padding-left: 30px;padding-right: 10px">The Malnad Enclave for Research, Innovation,
 						Incubation, Start-Ups and Entrepreneurship (formerly
 						STEP) began its right course of action by empowering
 						young minds to generate innovative ideas and
@@ -310,6 +334,56 @@
 						by incubating innovative ideas which benefit the society as a whole. It aims to improve
 						passionate young minds and motivate them furthermore to embark on a victorious journey right
 						from this graduation milestone of their career and professional life.
+					</p> -->
+					<p style="padding-left: 30px;padding-right: 10px">Malnad College of Engineering (MCE) was
+						established
+						in the year 1960, during the second five year plan, as a joint venture of Government of India,
+						Government of Karnataka and the Malnad Technical Education Society, Hassan. Furthering its
+						objectives beyond education MCE undertook to create social and economic impact in the Hassan
+						region by supporting innovations and start-ups in the field of agriculture, education and
+						technology in the year 2018. Thus, Malnad Enclave for Research, Innovation, Incubation,
+						Start-ups and Entrepreneurship (ME-RIISE) was formed by MCE in the year 2018 to initiate its
+						above mentioned objectives supported by Management, Teaching staff and Students.
+						<br>
+						As a step towards further expanding its reach and enhancing its impact, ME-RIISE has set up a
+						distinct entity, A Section
+						8 company, ME-RIISE FOUNDATION promoted by Malnad College of Engineering in September, 2022.
+						This Section 8 company is
+						composed of 5 Directors and 2 Advisors. ME-RIISE FOUNDATION is committed to promote innovation,
+						incubation, start-ups,
+						and entrepreneurship in the region and expand its reach, enabling students/ youth and aspiring
+						entrepreneurs to realize
+						their potential and contribute towards the growth of the economy. In order to realize its
+						vision, the foundation will
+						work in collaboration with Malnad College of Engineering (MCE) to promote innovation,
+						incubation, start-ups, and
+						entrepreneurship.
+						<br />
+						<br />
+						Proposed activities of ME-RIISE FOUNDATION are:
+						<br>
+						• Application of technology to promote arts, commerce, science, sports, education, research,
+						social welfare, religion, charity, protection of environment.
+						<br>
+						• Providing the young graduates adequate management and technical training that will enable them
+						to be creative and innovative in promoting business opportunities.
+						<br>
+						• To create job and employment opportunities for the region of our nation.
+						<br>
+						• To incubate the spirit of perseverance in the youths.
+						<br />
+						<br />
+						Over the years, ME-RIISE FOUNDATION has orchestrated more than 170 events and initiatives,
+						resulting in significant
+						benefits for over 4000 students. Through these endeavours, ME-RIISE has successfully supported
+						in bringing out 25+
+						innovative prototypes and created 10+ new applications.
+						<br>
+						<br>
+						<!-- ME-RIISE looks forward to continue on its successful venture of establishing student start-ups
+						by incubating innovative ideas which benefit the society as a whole. It aims to improve
+						passionate young minds and motivate them furthermore to embark on a victorious journey right
+						from this graduation milestone of their career and professional life. -->
 					</p>
 
 
@@ -360,6 +434,10 @@
 				<a href="mailto:meriisehsn@gmail.com" class=" p-2" style="color: rgb(228, 54, 11);text-decoration:none">
 					<i class="fa fa-envelope fa-2x"></i>
 				</a>
+
+				<a href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A72704849&keywords=me-riise%20foundation&origin=RICH_QUERY_SUGGESTION&position=0&searchId=a2da3c5d-f488-492f-9f3b-da0bce4973ef&sid=w7m&spellCorrectionEnabled=false "
+					class="p-1 icon" style="color: rgb(225, 254, 255);text-decoration:none">
+					<i class="icon fa-linkedin fa-2x"></i></a>
 			</ul>
 		</div>
 		<div class="copyright">
@@ -404,18 +482,39 @@
 		e.setAttribute('name', iconName === 'menu' ? 'close' : 'menu');
 	}
 
-	function toggleFunction() {
+	document.addEventListener('click', function (event) {
+		if (!event.target.closest('#box, #box2, #icons, #icons2')) {
+			document.getElementById('box').classList.add('hidden');
+			document.getElementById('box2').classList.add('hidden');
+		}
+	});
+
+	function toggleFunction(event) {
+		event.stopPropagation(); // prevent the event from bubbling up to the document
+
 		const box = document.getElementById('box');
+		const box2 = document.getElementById('box2');
+
 		box.classList.toggle('hidden');
+		if (!box.classList.contains('hidden')) {
+			box2.classList.add('hidden');
+		}
+
 		const icons = document.getElementById('icons'); // Select the icon element
 		const iconName = icons.getAttribute('name');
 		icons.setAttribute('name', iconName === 'caret-down-outline' ? 'caret-up-outline' : 'caret-down-outline');
 	}
 
+	function toggleFunction2(event) {
+		event.stopPropagation(); // prevent the event from bubbling up to the document
 
-	function toggleFunction2() {
-		const box = document.getElementById('box2');
+		const box2 = document.getElementById('box2');
+		const box = document.getElementById('box');
 		box2.classList.toggle('hidden');
+		if (!box2.classList.contains('hidden')) {
+			box.classList.add('hidden');
+		}
+
 		const icons2 = document.getElementById('icons2'); // Select the icon element
 		const iconName = icons2.getAttribute('name');
 		icons2.setAttribute('name', iconName === 'caret-down-outline' ? 'caret-up-outline' : 'caret-down-outline');

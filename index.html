@@ -29,7 +29,12 @@
         body {
             overflow-y: hidden;
             pointer-events: none;
+           
+
         }
+         
+
+       
 
 
         .main {
@@ -66,10 +71,13 @@
             font-family: "Inria Sans", sans-serif;
             font-weight: 700;
             font-style: normal;
-            z-index: 4;
+            z-index: 40;
             pointer-events: all;
+            filter: none;
+            /* Add this line */
             /* position: sticky; */
         }
+
 
 
         .symbol {
@@ -194,10 +202,19 @@
 
 
         }
+
+        #opaqueScreen {
+            /* opacity: .4; */
+            z-index: 30;
+            position: absolute;
+            /* backdrop-filter: blur(50px); */
+        }
     </style>
 </head>
 
-<body>
+
+<body style="position: relative;">
+    <div class="h-screen w-screen" id="opaqueScreen"></div>
     <div class="ssheader c-hero">
         <h2 class="h-txt">
             MALNAD ENCLAVE FOR RESEARCH, INNOVATION, INCUBATION, STARTUPS AND
@@ -366,14 +383,14 @@
 
 
             <div class="hidden lg:block" id="elements">
-                <ul class="text-blue-400 font-bold bg-black px-4 py-4 lg:flex lg:justify-between lg:items-center w-48 md:w-42 lg:w-full float-right md:float-right h-screen md:h-screen lg:h-auto z-50"
+                <ul class="text-blue-400 font-bold bg-black px-4 py-2 lg:flex lg:justify-between lg:items-center w-48 md:w-42 lg:w-full float-right md:float-right h-screen md:h-screen lg:h-auto z-50"
                     id="list">
                     <li class="mx-2"><a href="index.html">Home</a></li>
                     <li class="a1 mx-2"><a href="aboutmeriise.html">About us</a></li>
                     <li class="a1 mx-2"><a href="faculty.html">Faculty</a></li>
                     <li class="a1 mx-2"><a href="team.html">Team MERIISE</a></li>
                     <li class="mx-2"><a href="iic.html">MHRD-IIC</a></li>
-                    <li class="mx-2"><a href="nain.html">Nain</a></li>
+                    <li class="mx-2"><a href="nain.html">NAIN</a></li>
                     <li class="mx-2"><a href="uba.html">UBA</a></li>
                     <li class="mx-2"><a href="infrastructure.html">Infrastructure</a></li>
                     <li class="mx-2"><a href="startups.html">Start ups</a></li>
@@ -425,8 +442,8 @@
 
     <!-- Pragyatha coming soon Card -->
 
-    <div class="card relative" style="position: sticky; top: 20px;">
-        <!-- Code starts here -->
+    <div class="card relative" style="position: sticky; top: -10px;">
+
         <div
             class="data absolute top-[250px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-l from-indigo-900 to-pink-500 shadow-md shadow-black rounded-3xl w-[50vw] h-[40vh]">
             <div class="submain md:grid grid-cols-2 h-[50vh]">
@@ -556,10 +573,8 @@
     </section>
 
 
-    <br />
-    <br />
-    <br />
-    <header class="majo"></header>
+    
+    <!-- <header class="majo"></header> -->
 
     <!-- <section id="one" class="wrapper style2">
         <div class="inner">
@@ -590,7 +605,7 @@
                                            <b><font color="black" size="5px" weight="bold">Weekly Challenge  <u><blink class="blink">Click Here..! </blink></u></font></b></a>
                                 </marquee>
                                -->
-    <div class="event-list" style="text-align: center;">
+    <!-- <div class="event-list" style="text-align: center;"> -->
 
 
         <!-- <ul><li><a href="http://www.meriise.org/wc.html" style="background-color:white"><b><font color="black" size="5px" weight="bold">Weekly Challenge  <u><blink class="blink">Click Here..! </blink></u></font></b></a></li>
@@ -600,7 +615,7 @@
                          
                         <li><a href="http://meriise.org/teamUpcoming.html" style="background-color:white">
                                            <b><font color="black" size="5px" weight="bold">Upcoming Events (23/08/2023 - 25/08/2023)<u><blink class="blink">Know More..!</blink></u></font></b></a></li></ul> -->
-    </div>
+    <!-- </div> -->
     <!--<marquee behavior="scroll" direction="left" width="200%" height="60%" scrollamount="10"><a href="pragyatha22.html" class="button alt" style="width:50%; background-color:purple;"><b><font color="white" size="5px"><u>Click here..! &nbsp &nbsp &nbsp Pragyatha 22 Portal</u></font></b></a></marquee>-->
     <!-- <p style="text-align-last:center; text-size:50px">   -->
 
@@ -622,6 +637,7 @@
     <!-- </section>
         </div>
     </section> -->
+
 
 
 
@@ -700,7 +716,7 @@
             <div class="bg-gray-200 py-10 mx-auto">
                 <img src="images/bod/kiran.jpeg" alt=""
                     class="h-[65%] rounded-2xl border-2 border-solid border-gray-500">
-                <h2 class="text-3xl text-center mx-auto mt-5">SMr. Kiran H A</h2>
+                <h2 class="text-3xl text-center mx-auto mt-5">Mr. Kiran H A</h2>
                 <p class="text-center text-2xl">ADVISOR</p>
                 <p class="text-center">ME-RIISE FOUNDATION</p>
             </div>
@@ -708,7 +724,8 @@
                 <img src="images/bod/profile_1-311645.jpg" alt=""
                     class="h-[62%] rounded-2xl border-2 border-solid border-gray-500">
                 <h2 class="text-3xl text-center mx-auto mt-5">DR. A J Krishnaiah</h2>
-                <p class="text-center text-2xl">PRINCIPAL</p>
+                <p class="text-center text-2xl">PRINCIPAL , MCE Hassan</p>
+                <p class="text-center text-2xl">ADVISOR</p>
                 <p class="text-center">ME-RIISE FOUNDATION</p>
             </div>
 
@@ -1347,11 +1364,17 @@
                     <a href="mailto:meriisehsn@gmail.com" class="icon fa-envelope"
                         style="color: rgb(228, 54, 11);text-decoration:none"><span class="label">Email</span></a>
                 </li>
+
+                <li>
+                    <a href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A72704849&keywords=me-riise%20foundation&origin=RICH_QUERY_SUGGESTION&position=0&searchId=a2da3c5d-f488-492f-9f3b-da0bce4973ef&sid=w7m&spellCorrectionEnabled=false   "
+                        class="icon fa-linkedin" style="color: rgb(255, 255, 255);text-decoration:none"><span
+                            class="label">Linkedin</span></a>
+                </li>
+
             </ul>
         </div>
         <div class="copyright">&copy; ME-RIISE. All rights reserved</div>
     </footer>
-
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
@@ -1428,8 +1451,9 @@
 
         const wrongBtn = document.querySelector('.wrongBtn');
         const submain = document.querySelector('.data');
-
-
+        const card = document.querySelector('.card');
+        const main2 = document.getElementById('opaqueScreen')
+        // console.log(main2)
         let myInterval;
         submain.style.display = 'none';
         myInterval = setInterval(() => {
@@ -1437,9 +1461,11 @@
         }, 1000);
         wrongBtn.addEventListener('click', function () {
             submain.style.display = 'none';
+            card.style.display = 'none'
             document.body.style.overflowY = 'auto';
             clearInterval(myInterval);
             document.body.style.pointerEvents = 'all';
+            main2.style.display = 'none';
 
         })
 
