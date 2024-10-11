@@ -22,6 +22,10 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" href="assets/css/newcss.css">
   <style>
+    a:link {
+      text-decoration: none;
+    }
+
     .main {
       text-align: center;
     }
@@ -214,6 +218,7 @@
               onclick="dropdown()">
               <div><a href="pragyatha23.html">Pragyatha 23</a></div>
               <div><a href="pragyatha22.html">Pragyatha 22</a></div>
+              <div><a href="Pragyatha.html">Pragyatha 21</a></div>
               <div><a href="prag.html">Pragyatha 19</a></div>
 
             </li>
@@ -236,31 +241,32 @@
   </div>
 
   <footer id="footer" class="bg-black text-center p-4 text-gray-600">
-		<div class="container">
-			<ul class="icons">
-				<a href="#" class=" p-2" style="color: rgb(51, 183, 235);text-decoration: none;">
-					<i class="fab fa-twitter fa-2x"></i>
-				</a>
-				<a href="https://www.facebook.com/me_riise/" class="p-2 "
-					style="color: rgb(43, 43, 247);text-decoration: none;">
-					<i class="fab fa-facebook fa-2x"></i>
-				</a>
-				<a href="https://www.instagram.com/me_riise/" class=" p-2"
-					style="color: rgb(250, 43, 112);;text-decoration:none">
-					<i class="fab fa-instagram fa-2x"></i>
-				</a>
-				<a href="mailto:meriisehsn@gmail.com" class=" p-2" style="color: rgb(228, 54, 11);text-decoration:none">
-					<i class="fa fa-envelope fa-2x"></i>
-				</a>
-        <a href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A72704849&keywords=me-riise%20foundation&origin=RICH_QUERY_SUGGESTION&position=0&searchId=a2da3c5d-f488-492f-9f3b-da0bce4973ef&sid=w7m&spellCorrectionEnabled=false" class="p-1 icon" style="color: rgb(225, 254, 255);text-decoration:none">
+    <div class="container">
+      <ul class="icons">
+        <a href="#" class=" p-2" style="color: rgb(51, 183, 235);text-decoration: none;">
+          <i class="fab fa-twitter fa-2x"></i>
+        </a>
+        <a href="https://www.facebook.com/me_riise/" class="p-2 "
+          style="color: rgb(43, 43, 247);text-decoration: none;">
+          <i class="fab fa-facebook fa-2x"></i>
+        </a>
+        <a href="https://www.instagram.com/me_riise/" class=" p-2"
+          style="color: rgb(250, 43, 112);;text-decoration:none">
+          <i class="fab fa-instagram fa-2x"></i>
+        </a>
+        <a href="mailto:meriisehsn@gmail.com" class=" p-2" style="color: rgb(228, 54, 11);text-decoration:none">
+          <i class="fa fa-envelope fa-2x"></i>
+        </a>
+        <a href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A72704849&keywords=me-riise%20foundation&origin=RICH_QUERY_SUGGESTION&position=0&searchId=a2da3c5d-f488-492f-9f3b-da0bce4973ef&sid=w7m&spellCorrectionEnabled=false"
+          class="p-1 icon" style="color: rgb(225, 254, 255);text-decoration:none">
           <i class="fab fa-linkedin fa-2x"></i>
         </a>
-			</ul>
-		</div>
-		<div class="copyright">
-			© ME-RIISE FOUNDATION. All rights reserved.
-		</div>
-	</footer>
+      </ul>
+    </div>
+    <div class="copyright">
+      © ME-RIISE FOUNDATION. All rights reserved.
+    </div>
+  </footer>
 
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -278,50 +284,50 @@
   <!-- custom script -->
   <script src="js/script.js"></script>
   <script>
-function clickFunction(e) {
-            let list = document.getElementById('elements')
-            list.classList.toggle('hidden')
-            let iconName = e.getAttribute('name');
-            e.setAttribute('name', iconName === 'menu' ? 'close' : 'menu');
-        }
+    function clickFunction(e) {
+      let list = document.getElementById('elements')
+      list.classList.toggle('hidden')
+      let iconName = e.getAttribute('name');
+      e.setAttribute('name', iconName === 'menu' ? 'close' : 'menu');
+    }
 
-        document.addEventListener('click', function (event) {
-            if (!event.target.closest('#box, #box2, #icons, #icons2')) {
-                document.getElementById('box').classList.add('hidden');
-                document.getElementById('box2').classList.add('hidden');
-            }
-        });
+    document.addEventListener('click', function (event) {
+      if (!event.target.closest('#box, #box2, #icons, #icons2')) {
+        document.getElementById('box').classList.add('hidden');
+        document.getElementById('box2').classList.add('hidden');
+      }
+    });
 
-        function toggleFunction(event) {
-            event.stopPropagation(); // prevent the event from bubbling up to the document
+    function toggleFunction(event) {
+      event.stopPropagation(); // prevent the event from bubbling up to the document
 
-            const box = document.getElementById('box');
-            const box2 = document.getElementById('box2');
+      const box = document.getElementById('box');
+      const box2 = document.getElementById('box2');
 
-            box.classList.toggle('hidden');
-            if (!box.classList.contains('hidden')) {
-                box2.classList.add('hidden');
-            }
+      box.classList.toggle('hidden');
+      if (!box.classList.contains('hidden')) {
+        box2.classList.add('hidden');
+      }
 
-            const icons = document.getElementById('icons'); // Select the icon element
-            const iconName = icons.getAttribute('name');
-            icons.setAttribute('name', iconName === 'caret-down-outline' ? 'caret-up-outline' : 'caret-down-outline');
-        }
+      const icons = document.getElementById('icons'); // Select the icon element
+      const iconName = icons.getAttribute('name');
+      icons.setAttribute('name', iconName === 'caret-down-outline' ? 'caret-up-outline' : 'caret-down-outline');
+    }
 
-        function toggleFunction2(event) {
-            event.stopPropagation(); // prevent the event from bubbling up to the document
+    function toggleFunction2(event) {
+      event.stopPropagation(); // prevent the event from bubbling up to the document
 
-            const box2 = document.getElementById('box2');
-            const box = document.getElementById('box');
-            box2.classList.toggle('hidden');
-            if (!box2.classList.contains('hidden')) {
-                box.classList.add('hidden');
-            }
+      const box2 = document.getElementById('box2');
+      const box = document.getElementById('box');
+      box2.classList.toggle('hidden');
+      if (!box2.classList.contains('hidden')) {
+        box.classList.add('hidden');
+      }
 
-            const icons2 = document.getElementById('icons2'); // Select the icon element
-            const iconName = icons2.getAttribute('name');
-            icons2.setAttribute('name', iconName === 'caret-down-outline' ? 'caret-up-outline' : 'caret-down-outline');
-        }
+      const icons2 = document.getElementById('icons2'); // Select the icon element
+      const iconName = icons2.getAttribute('name');
+      icons2.setAttribute('name', iconName === 'caret-down-outline' ? 'caret-up-outline' : 'caret-down-outline');
+    }
 
 
   </script>
