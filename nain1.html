@@ -36,6 +36,23 @@
 </head>
 <style>
      @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+   
+    body{
+        /* min-height: 100vh; */
+        display:flex;
+        flex-direction:column;
+    }
+
+    #footer{
+        flex-shrink: 1;
+       margin-top: auto;
+     }
+
+     /* footer{
+       margin-top: calc(100vh-95px);
+       background-color: aqua;
+    }  */
+         
     #list {
         font-size: 15px;
          
@@ -49,6 +66,7 @@
         text-decoration: none;
     }
 
+    
     @media only screen and (min-width: 200px) and (max-width: 480px) {
         #board {
             margin-left: 2px;
@@ -74,6 +92,7 @@
 
         }
     }
+    
 </style>
 
 <body data-gr-c-s-loaded="true" class="vsc-initialized" style="user-select: auto">
@@ -307,7 +326,7 @@
         </div>
 
         <!--Event 1-->
-        <header class="align-center text-xl" style="margin-bottom: -20px;">
+        <!-- <header class="align-center text-xl" style="margin-bottom: -20px;">
             <h2><b>World Entrepreneurs' Day Talk</b></h2>
         </header>
 
@@ -406,9 +425,74 @@
 
         </div>
         <br>
+        <!--Footer-->
+        <!--<footer id="footer" >
+            <div class="container">
+                <ul class="icons">
+                    <li>
+                        <a href="#" class="icon fa-twitter" style="color: rgb(51, 183, 235);text-decoration: none;"><span
+                                class="label">Twitter</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/mce.startup.club" class="icon fa-facebook"
+                            style="color: rgb(43, 43, 247);text-decoration: none;"><span class="label">Facebook</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/me_riise/" class="icon fa-instagram"
+                            style="color: rgb(250, 43, 112);;text-decoration:none"><span class="label">Instagram</span></a>
+                    </li>
+                    <li>
+                        <a href="mailto:meriisehsn@gmail.com" class="icon fa-envelope"
+                            style="color: rgb(228, 54, 11);text-decoration:none"><span class="label">Email</span></a>
+                    </li>
+    
+                    <li>
+                        <a href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A72704849&keywords=me-riise%20foundation&origin=RICH_QUERY_SUGGESTION&position=0&searchId=a2da3c5d-f488-492f-9f3b-da0bce4973ef&sid=w7m&spellCorrectionEnabled=false   "
+                            class="icon fa-linkedin" style="color: rgb(255, 255, 255);text-decoration:none"><span
+                                class="label">Linkedin</span></a>
+                    </li>
+    
+                </ul>
+            </div>
+            <div class="copyright">&copy; ME-RIISE. All rights reserved</div>
+        </footer>-->
+        
+        <footer id="footer">
+            <div class="container">
+                <ul class="icons">
+                    <li>
+                        <a href="#" class="icon fa-twitter" style="color: rgb(51, 183, 235);text-decoration: none;"><span
+                                class="label">Twitter</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/mce.startup.club" class="icon fa-facebook"
+                            style="color: rgb(43, 43, 247);text-decoration: none;"><span class="label">Facebook</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/me_riise/" class="icon fa-instagram"
+                            style="color: rgb(250, 43, 112);;text-decoration:none"><span class="label">Instagram</span></a>
+                    </li>
+                    <li>
+                        <a href="mailto:meriisehsn@gmail.com" class="icon fa-envelope"
+                            style="color: rgb(228, 54, 11);text-decoration:none"><span class="label">Email</span></a>
+                    </li>
+    
+                    <li>
+                        <a href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A72704849&keywords=me-riise%20foundation&origin=RICH_QUERY_SUGGESTION&position=0&searchId=a2da3c5d-f488-492f-9f3b-da0bce4973ef&sid=w7m&spellCorrectionEnabled=false   "
+                            class="icon fa-linkedin" style="color: rgb(255, 255, 255);text-decoration:none"><span
+                                class="label">Linkedin</span></a>
+                    </li>
+    
+                </ul>
+            </div>
+            <div class="copyright">&copy; ME-RIISE FOUNDATION. All rights reserved.</div>
+        </footer>
+
+
+
 
         <!--event 3-->
-        <header class="align-center text-xl" style="margin-bottom: -20px;">
+       <!-- <header class="align-center text-xl" style="margin-bottom: -20px;">
             <h2><b>NAVAPRAVARTHAN</b></h2>
         </header>
 
@@ -441,10 +525,10 @@
             <h4 style="padding-left: 30px; padding-right: 10px"><b>Date:</b> 16-08-2022</h4>
 
         </div>
-        <br>
+        <br> -->
 
         <!--event 4-->
-        <header class="align-center text-xl" style="margin-bottom: -20px;">
+        <!--<header class="align-center text-xl" style="margin-bottom: -20px;">
             <h2><b>HARGHAR TIRANGA</b></h2>
         </header>
 
@@ -474,49 +558,19 @@
         </div>
         <br>
 
-    </section>
+    </section> -->
 
-    <div class="h-[50vh] grid grid-cols-1 md:grid-cols-2 text-center mx-24">
+    <!-- <div class="h-[50vh] grid grid-cols-1 md:grid-cols-2 text-center mx-24">
 		<div class="bg-black m-10 md:m-32 rounded-2xl p-4 h-[10vh] w-[30vw]">
 			<h1 class="text-4xl text-blue-400 text-sm md:text-3xl"><a href="nain1.html">NAIN 1.0</a></h1>
 		</div>
 		<div class="bg-black m-10 md:m-32 rounded-2xl p-4 h-[10vh] w-[30vw]">
 			<h1 class="text-4xl text-blue-400 text-sm md:text-3xl">NAIN 2.0</h1>
 		</div>
-	</div>
+	</div> -->
 
-    <!-- Footer -->
-    <footer id="footer">
-        <div class="container">
-            <ul class="icons">
-                <li>
-                    <a href="#" class="icon fa-twitter" style="color: rgb(51, 183, 235);text-decoration: none;"><span
-                            class="label">Twitter</span></a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/mce.startup.club" class="icon fa-facebook"
-                        style="color: rgb(43, 43, 247);text-decoration: none;"><span class="label">Facebook</span></a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/me_riise/" class="icon fa-instagram"
-                        style="color: rgb(250, 43, 112);;text-decoration:none"><span class="label">Instagram</span></a>
-                </li>
-                <li>
-                    <a href="mailto:meriisehsn@gmail.com" class="icon fa-envelope"
-                        style="color: rgb(228, 54, 11);text-decoration:none"><span class="label">Email</span></a>
-                </li>
-
-                <li>
-                    <a href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A72704849&keywords=me-riise%20foundation&origin=RICH_QUERY_SUGGESTION&position=0&searchId=a2da3c5d-f488-492f-9f3b-da0bce4973ef&sid=w7m&spellCorrectionEnabled=false   "
-                        class="icon fa-linkedin" style="color: rgb(255, 255, 255);text-decoration:none"><span
-                            class="label">Linkedin</span></a>
-                </li>
-
-            </ul>
-        </div>
-        <div class="copyright">&copy; ME-RIISE. All rights reserved</div>
-    </footer>
-
+    
+  
 
 
 </body>
