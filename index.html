@@ -3,7 +3,7 @@
 <html>
 
 <head>
-    <title>ME-RIISE</title>
+    <title>ME-RIISE Foundation</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- bootstrap 4 css -->
@@ -163,7 +163,16 @@
             #board {
                 margin-left: 2px;
             }
+            .visit1{
+                height: 3vh;
+                width:25vw;
+                margin-left:3rem;
+                padding-top:4px;
+                margin-top:3px;
+                
+             }
         }
+        
 
         @media only screen and (min-width: 480px) and (max-width: 639px) {
             #board {
@@ -174,6 +183,9 @@
         @media only screen and (min-width: 980px) and (max-width: 1024px) {
             #board {
                 margin-left: 2px;
+            }
+            .visit{
+                margin-right:5rem;
             }
         }
 
@@ -213,6 +225,56 @@
         .blurring{
             filter: blur(5px);
         }
+        
+        .countdown{
+            /* white-space: 3px; */
+            margin-left: 50px;
+            width:300px;
+            word-spacing: 10px;
+            
+        }
+
+        .time-unit{
+        padding-left:15px;
+                     
+        }         
+              
+        .visit{
+            border:2px solid white;
+            text-align: center;
+            color:white;
+            font-family:"Inria Sans", sans-serif;
+            border-radius:15px;
+            padding:8px 30px 8px 30px;
+            text-decoration: none;
+            margin:3em 0 0 8rem;
+
+
+
+        }
+        .visit:hover {background-color: transparent;
+        text-decoration: none;}
+
+        @media only screen and (max-width: 667px) {
+            .visit{
+            margin:0px;
+            padding:0px;
+            margin-right: 5px;
+                    
+            }
+        } 
+        @media only screen and (min-width: 400px) and (max-width: 950px) {
+            .visit {
+            margin-top:1rem;
+            }
+        }
+        @media only screen and (min-width: 770px) and (max-width: 1236px) {
+            .visit {
+            margin-top:0px;
+            margin-left:5rem;
+            }
+        }
+           
     </style>
 </head>
 
@@ -222,7 +284,7 @@
     <div class="card relative" style="position: sticky; top: -10px;">
 
         <div
-            class="data absolute top-[350px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-l from-indigo-900 to-pink-500 shadow-md shadow-black rounded-3xl w-[50vw] h-[40vh]">
+            class="data absolute top-[350px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-l from-pink-900 to-pink-500 shadow-md shadow-black rounded-3xl w-[50vw] h-[40vh]">
             <div class="submain md:grid grid-cols-2 h-[50vh]">
                 <div class="symbol h-[20vh] md:h-[40vh] order-2">
                     <div class="wrong text-right text-2xl text-blue-700 m-0 md:m-4">
@@ -234,10 +296,44 @@
                 </div>
                 <div class="Pragyatha h-32 order-1 mt-[40px] md:mt-24">
                     <h2 class="pragtext text-3xl md:text-6xl lg-6xl text-center text-white">Pragyatha'24</h2>
+                    <!-- <div class="text-white flex text-sm md:text-md lg:text-xl lg:m-10 w-full">
+                       <div><div class="time-unit mx-2" id="days">01 </div> <span>Days</span></div>
+                       <div><div class="time-unit mx-2" id="hours">01 </div> <span>Hr</span></div>
+                       <div><div class="time-unit mx-2" id="minutes">01 </div> <span>Min</span></div>
+                       <div><div class="time-unit mx-2" id="seconds">01 </div> <span>Sec</span></div>
+                        
+                    </div> -->
+                    <!-- <button class="visit flex justify-center border-2 border-white rounded-full py-2 px-5 uppercase text-xl font-bold tracking-wider text-white  mx-[6vw] hover:bg-transparent
+                     lg:my-[6vh]  md:mt-[3rem],px-2,ml-[0px]  sm:h-[3vh]   ">Visit Now</button>
+                     -->
+                     
+                    <div class="visit1">
+                    <button class="visit"><a href="http://meriise.org/pragyatha24.html">VISIT NOW</a></button>
+                    </div>
+                  
+
+
+
+
+                      <!-- sm:p-0,mx-30px,justify-center -->
+                     <!-- <button class="visit flex justify-center border-2 border-white rounded-full py-2 px-5 uppercase text-xl font-bold tracking-wider text-white hover:bg-transparent mx-[6vw] lg:my-[6vh] md:mt-[3rem] sm:my-[0vh] mx-30px"> -->
+                        <!-- Visit Now
+                    </button> -->
                     <!-- <h2 class="text-4xl md:text-6xl lg-6xl text-center">2k24</h2> -->
-                    <br>
-                    <h4 class="text-2xl md:text-4xl text-center text-white">Coming Soon!</h4>
+                
+                    <!-- <div class="countdown h-10px text-xl opacity-0.9 text-white flex space-x-10">
+                        <div id="timer justify-between" class="p-4 bg-black text-center text-[10px] md:text-[15px] w-[50vw]">
+                            <span class="time-unit" id="days">00</span> 
+                            <span class="time-unit" id="hours">00</span> 
+                            <span class="time-unit" id="minutes">00</span> 
+                            <span class="time-unit" id="seconds">00</span><br> 
+                            <span class="namings justify-between pl-3vw" >Days Hrs Mins Secs</span>
+                            <button class="visit border-none bg-white text-black px-12">Visit Now</button>
+                        </div>
+                    </div> -->
+                    
                 </div>
+
 
             </div>
         </div>
@@ -454,6 +550,7 @@
                         </li>
                         <li class="absolute p-2 rounded-sm mt-8 hidden rounded-xl text-md w-[130px] bg-white text-blue-600"
                             id="box" onclick="dropdown()">
+                            <div><a href="http://meriise.org/pragyatha24.html">Pragyatha 24</a></div>
                             <div><a href="pragyatha23.html">Pragyatha 23</a></div>
                             <div><a href="pragyatha22.html">Pragyatha 22</a></div>
                             <div><a href="Pragyatha.html">Pragyatha 21</a></div>
@@ -1484,7 +1581,36 @@
         //     console.log("heloo");
         //     event.preventDefault();
         // });
+        
+        //timer function
+        var targetDate = new Date("2024-12-31 23:59:59").getTime();
 
+// Update the countdown every 1 second
+var countdownInterval = setInterval(function() {
+    // Get the current date and time
+    var currentDate = new Date().getTime();
+
+    // Find the difference between the target date and the current date
+    var timeLeft = targetDate - currentDate;
+
+    // Calculate the time units (days, hours, minutes, seconds)
+    var days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+    // Display the result in the HTML elements
+    document.getElementById("days").innerHTML = days < 10 ? "0" + days : days;
+    document.getElementById("hours").innerHTML = hours < 10 ? "0" + hours : hours;
+    document.getElementById("minutes").innerHTML = minutes < 10 ? "0" + minutes : minutes;
+    document.getElementById("seconds").innerHTML = seconds < 10 ? "0" + seconds : seconds;
+
+    // If the countdown is finished, display a message
+    if (timeLeft < 0) {
+        clearInterval(countdownInterval);
+        document.getElementById("timer").innerHTML = "TIME'S UP!";
+    }
+}, 1000);
 
 
 
